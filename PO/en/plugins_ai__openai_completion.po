@@ -1,0 +1,54 @@
+# Module plugins_ai__openai_completion translation file for language=en
+# Copyright (C) 2024 Wingware
+# Wingware Python IDE -- www.wingware.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 10.0.4\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
+"PO-Revision-Date: 2024-06-20 07:18 EDT\n"
+"Last-Translator: Wingware <support@wingware.com>\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: plugins/ai/_openai_completion.py:83
+msgid ""
+"Run a query through ChatGPT using the configured API key and language model. "
+"The\n"
+"    (exit_code, error_output, cost, result) is passed to the given "
+"result_cb\n"
+"    asynchronously.  This starts a sub-process to satisfy the request."
+msgstr ""
+
+#: plugins/ai/_openai_completion.py:189
+msgid ""
+"Run the given query string through OpenAI's completion API. This calls the "
+"given\n"
+"    result_cb with the (error, cost, response) where error is a non-empty "
+"error on failure\n"
+"    and otherwise response is the code suggested by the language model. "
+"Return value is\n"
+"    the spawn.CProcess object running the query and a description of the "
+"query for\n"
+"    diagnostic purposes."
+msgstr ""
+
+#: plugins/ai/_openai_completion.py:245
+msgid ""
+"Count the approximate number of tokens a query will consume, in order to "
+"keep\n"
+"    usage below configured thresholds.  This is not used in production, but "
+"useful\n"
+"    during development."
+msgstr ""
+
+#: plugins/ai/_openai_completion.py:281
+msgid ""
+"This implements the 'server' used for calling the OpenAI completions API for "
+"AI\n"
+"    code complete and AI refactor."
+msgstr ""

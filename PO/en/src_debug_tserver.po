@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.0.1\n"
-"POT-Creation-Date: 2022-12-14 09:51-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2011-03-30 22:09 EDT\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -15,49 +15,21 @@ msgstr ""
 "Content-Transfer-Encoding: text/plain\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: src/debug/tserver/abstract.py:355
-msgid "Wing Debug Log File\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:356
-msgid "This file can be used to diagnose problems in debugger internals\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:357
-msgid "For help, contact support@wingware.com\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:362
-msgid "Warning:  Log file does not exist:\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:364
-msgid "Warning:  and could not be created; logging disabled\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:367
-msgid "Warning:  Log file is not a file:\n"
-msgstr ""
-
-#: src/debug/tserver/abstract.py:369
-msgid "Warning:  Logging disabled\n"
-msgstr ""
-
-#: src/debug/tserver/dbginspect.py:59 src/debug/tserver/dbgserver.py:3118
-#: src/debug/tserver/dbgutils.py:489 src/debug/tserver/dbgutils.py:515
+#: src/debug/tserver/dbginspect.py:59 src/debug/tserver/dbgserver.py:3278
+#: src/debug/tserver/dbgutils.py:594 src/debug/tserver/dbgutils.py:620
 msgid "(truncated)"
 msgstr ""
 
 #: src/debug/tserver/dbginspect.py:827 src/debug/tserver/dbginspect.py:891
 #: src/debug/tserver/dbginspect.py:967 src/debug/tserver/dbginspect.py:1175
 #: src/debug/tserver/dbginspect.py:1246 src/debug/tserver/dbginspect.py:1354
-#: src/debug/tserver/dbgutils.py:480 src/debug/tserver/dbgutils.py:508
-#: src/debug/tserver/dbgutils.py:2641
+#: src/debug/tserver/dbgutils.py:585 src/debug/tserver/dbgutils.py:613
+#: src/debug/tserver/dbgutils.py:2856
 msgid " at %s"
 msgstr ""
 
 #: src/debug/tserver/dbginspect.py:832 src/debug/tserver/dbginspect.py:896
-#: src/debug/tserver/dbginspect.py:1263 src/debug/tserver/dbgutils.py:235
+#: src/debug/tserver/dbginspect.py:1263 src/debug/tserver/dbgutils.py:242
 msgid "<opaque %s%s>"
 msgstr ""
 
@@ -66,195 +38,195 @@ msgid "<huge %s%s; len=%s>"
 msgstr ""
 
 #: src/debug/tserver/dbginspect.py:973 src/debug/tserver/dbginspect.py:994
-#: src/debug/tserver/dbgutils.py:517 src/debug/tserver/dbgutils.py:2652
-#: src/debug/tserver/dbgutils.py:2657
+#: src/debug/tserver/dbgutils.py:622 src/debug/tserver/dbgutils.py:2867
+#: src/debug/tserver/dbgutils.py:2872
 msgid "<huge %s%s; len=%i>"
 msgstr ""
 
-#: src/debug/tserver/dbginspect.py:1194 src/debug/tserver/dbgutils.py:2659
+#: src/debug/tserver/dbginspect.py:1194 src/debug/tserver/dbgutils.py:2874
 msgid "<huge %s%s>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:1349
+#: src/debug/tserver/dbgserver.py:1478
 msgid "<module>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:1492
+#: src/debug/tserver/dbgserver.py:1621
 msgid "<error evaluating>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2089 src/debug/tserver/dbgserver.py:2125
+#: src/debug/tserver/dbgserver.py:2226 src/debug/tserver/dbgserver.py:2262
 msgid "<thread %i is running>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2092 src/debug/tserver/dbgserver.py:2128
+#: src/debug/tserver/dbgserver.py:2229 src/debug/tserver/dbgserver.py:2265
 msgid "<invalid thread id %s or stack index %s>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2094 src/debug/tserver/dbgserver.py:2130
+#: src/debug/tserver/dbgserver.py:2231 src/debug/tserver/dbgserver.py:2267
 msgid "<invalid stack frame>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2158 src/debug/tserver/dbgserver.py:2187
+#: src/debug/tserver/dbgserver.py:2295 src/debug/tserver/dbgserver.py:2324
 msgid "<sys.modules does not exist>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2161 src/debug/tserver/dbgserver.py:2192
+#: src/debug/tserver/dbgserver.py:2298 src/debug/tserver/dbgserver.py:2329
 msgid "<error accessing sys.modules>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2189
+#: src/debug/tserver/dbgserver.py:2326
 msgid "<no longer exists"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2237 src/debug/tserver/dbgserver.py:2290
+#: src/debug/tserver/dbgserver.py:2374 src/debug/tserver/dbgserver.py:2427
 msgid "<no longer exists>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2268 src/debug/tserver/dbgserver.py:4647
+#: src/debug/tserver/dbgserver.py:2405 src/debug/tserver/dbgserver.py:4821
 msgid "<parent too large>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2270 src/debug/tserver/dbgserver.py:4649
+#: src/debug/tserver/dbgserver.py:2407 src/debug/tserver/dbgserver.py:4823
 msgid "<invalid parent type>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2280 src/debug/tserver/dbgserver.py:2749
+#: src/debug/tserver/dbgserver.py:2417 src/debug/tserver/dbgserver.py:2909
 msgid "<value not found>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2737
+#: src/debug/tserver/dbgserver.py:2897
 msgid "<thread is running>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:2739
+#: src/debug/tserver/dbgserver.py:2899
 msgid "<invalid context>"
 msgstr ""
 
-#: src/debug/tserver/dbgserver.py:4655
+#: src/debug/tserver/dbgserver.py:4829
 msgid "<invalid path %s at pos=%i>"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:152
+#: src/debug/tserver/dbgutils.py:159
 msgid "<undefined>"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:168
+#: src/debug/tserver/dbgutils.py:175
 msgid "at"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:178
+#: src/debug/tserver/dbgutils.py:185
 msgid "len=%s>"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:188 src/debug/tserver/dbgutils.py:2753
+#: src/debug/tserver/dbgutils.py:195 src/debug/tserver/dbgutils.py:2968
 msgid "<error handling value>"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:190
+#: src/debug/tserver/dbgutils.py:197
 msgid "<timeout>"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:198
+#: src/debug/tserver/dbgutils.py:205
 msgid "<huge "
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:218
+#: src/debug/tserver/dbgutils.py:225
 msgid "<long "
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:736 src/debug/tserver/dbgutils.py:748
+#: src/debug/tserver/dbgutils.py:841 src/debug/tserver/dbgutils.py:853
 msgid ", pos "
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:752
+#: src/debug/tserver/dbgutils.py:857
 msgid ", line "
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:754
+#: src/debug/tserver/dbgutils.py:859
 msgid "SyntaxError: "
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:782
+#: src/debug/tserver/dbgutils.py:887
 msgid "Error"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:792
+#: src/debug/tserver/dbgutils.py:897
 msgid "Error: Wing was unable to pack up an exception message"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:3668 src/debug/tserver/dbgutils.py:3684
+#: src/debug/tserver/dbgutils.py:3904 src/debug/tserver/dbgutils.py:3921
 msgid "Key"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:3668 src/debug/tserver/dbgutils.py:3684
+#: src/debug/tserver/dbgutils.py:3904 src/debug/tserver/dbgutils.py:3921
 msgid "Value"
 msgstr ""
 
-#: src/debug/tserver/dbgutils.py:3679 src/debug/tserver/dbgutils.py:3706
+#: src/debug/tserver/dbgutils.py:3916 src/debug/tserver/dbgutils.py:3943
 msgid "Item"
 msgstr ""
 
-#: src/debug/tserver/netserver.py:475
+#: src/debug/tserver/netserver.py:466
 msgid "Redirected I/O failed on closed debug connection"
 msgstr ""
 
-#: src/debug/tserver/netserver.py:638
+#: src/debug/tserver/netserver.py:629
 msgid "EOF when reading a line"
 msgstr ""
 
-#: src/debug/tserver/netserver.py:1213
+#: src/debug/tserver/netserver.py:1207
 msgid "(unavailable)"
 msgstr ""
 
-#: src/debug/tserver/netserver.py:1483
+#: src/debug/tserver/netserver.py:1480
 msgid "[omitting some output]"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:233 src/debug/tserver/startdebug.py:367
+#: src/debug/tserver/startdebug.py:244 src/debug/tserver/startdebug.py:376
 msgid "wingdb.py: Error: Debug file does not exist:"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:237 src/debug/tserver/startdebug.py:371
+#: src/debug/tserver/startdebug.py:248 src/debug/tserver/startdebug.py:380
 msgid "wingdb.py: Error: Debug file is not a file:"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:420
+#: src/debug/tserver/startdebug.py:426
 msgid "Network peer is "
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:421
+#: src/debug/tserver/startdebug.py:427
 msgid "Attach port = "
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:422
+#: src/debug/tserver/startdebug.py:428
 msgid "Initial stop = "
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:436
+#: src/debug/tserver/startdebug.py:442
 msgid "wingdb.py: Could not create debug server"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:454
+#: src/debug/tserver/startdebug.py:458
 msgid "wingdb.py: Running %s"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:465 src/debug/tserver/startdebug.py:492
+#: src/debug/tserver/startdebug.py:469 src/debug/tserver/startdebug.py:494
 msgid "wingdb.py: Server exiting abnormally on exception"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:663
+#: src/debug/tserver/startdebug.py:683
 msgid "wingdb.py: Error: Failed to start the debug server"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:664
+#: src/debug/tserver/startdebug.py:684
 msgid "wingdb.py: Error: You may be running an unsupported version of Python"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:665
+#: src/debug/tserver/startdebug.py:685
 msgid "wingdb.py: Python version = %s"
 msgstr ""
 
-#: src/debug/tserver/startdebug.py:755 src/debug/tserver/startdebug.py:757
+#: src/debug/tserver/startdebug.py:771 src/debug/tserver/startdebug.py:773
 msgid "-- Type return or enter to exit --\n"
 msgstr ""

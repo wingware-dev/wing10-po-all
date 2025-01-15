@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:51-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2003-07-10 12:23GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -36,108 +36,108 @@ msgstr ""
 msgid "Callable %s.arginfo[%s].%s failed.  Using default."
 msgstr ""
 
-#: src/command/commandmgr.py:458
+#: src/command/commandmgr.py:467
 msgid "Command name is not a string"
 msgstr ""
 
-#: src/command/commandmgr.py:461
+#: src/command/commandmgr.py:470
 msgid "Command doc is not a None, string, or callable"
 msgstr ""
 
-#: src/command/commandmgr.py:465
+#: src/command/commandmgr.py:474
 msgid "Command label is not a string or callable"
 msgstr ""
 
-#: src/command/commandmgr.py:541
+#: src/command/commandmgr.py:550
 msgid "%sarginfo not dict or callable.  Using short string args."
 msgstr ""
 
-#: src/command/commandmgr.py:553
+#: src/command/commandmgr.py:562
 msgid "%sarginfo[%s]: %s not an arg name."
 msgstr ""
 
-#: src/command/commandmgr.py:562
+#: src/command/commandmgr.py:571
 msgid "%sarginfo[%s] not CArgInfo or callable"
 msgstr ""
 
-#: src/command/commandmgr.py:571
+#: src/command/commandmgr.py:580
 msgid "%sarginfo[%s]: exception inspecting value"
 msgstr ""
 
-#: src/command/commandmgr.py:583
+#: src/command/commandmgr.py:592
 msgid "%sarginfo for %s not found.  Using short string."
 msgstr ""
 
-#: src/command/commandmgr.py:817
+#: src/command/commandmgr.py:826
 msgid "Error executing %s.available()"
 msgstr ""
 
-#: src/command/commandmgr.py:843 src/command/commandmgr.py:858
+#: src/command/commandmgr.py:852 src/command/commandmgr.py:867
 msgid "Tried to execute unavailable command %s"
 msgstr ""
 
-#: src/command/commandmgr.py:875
+#: src/command/commandmgr.py:884
 msgid "Error obtaining args for script %s"
 msgstr ""
 
-#: src/command/commandmgr.py:878
+#: src/command/commandmgr.py:887
 msgid "Error obtaining args for command %s"
 msgstr ""
 
-#: src/command/commandmgr.py:915
+#: src/command/commandmgr.py:924
 msgid "Error executing script %s"
 msgstr ""
 
-#: src/command/commandmgr.py:918
+#: src/command/commandmgr.py:927
 msgid "Error executing command %s"
 msgstr ""
 
-#: src/command/commandmgr.py:991
+#: src/command/commandmgr.py:1000
 msgid "Callable %s.arginfo raised an exception"
 msgstr ""
 
-#: src/command/commandmgr.py:998
+#: src/command/commandmgr.py:1007
 msgid ""
 "Callable %s.arginfo returned invalid arginfo; treating args as short string"
 msgstr ""
 
-#: src/command/commandmgr.py:1017
+#: src/command/commandmgr.py:1026
 msgid "Default "
 msgstr ""
 
-#: src/command/commandmgr.py:1020
+#: src/command/commandmgr.py:1029
 msgid "%s: Callable default arginfo failed"
 msgstr ""
 
-#: src/command/commandmgr.py:1038
+#: src/command/commandmgr.py:1047
 msgid "Callable %s.arginfo[%s] failed; treating arg as short string"
 msgstr ""
 
-#: src/command/commandmgr.py:1068
+#: src/command/commandmgr.py:1077
 msgid "Callable %s.label failed; using label derived from command name"
 msgstr ""
 
-#: src/command/commandmgr.py:1073
+#: src/command/commandmgr.py:1082
 msgid ""
 "Callable %s.label returned non-string; using label derived from command name"
 msgstr ""
 
-#: src/command/commandmgr.py:1103
+#: src/command/commandmgr.py:1112
 msgid "Callable %s.doc failed; using ''"
 msgstr ""
 
-#: src/command/commandmgr.py:1108
+#: src/command/commandmgr.py:1117
 msgid "Callable %s.doc returned non-string; using ''"
 msgstr ""
 
-#: src/command/commandmgr.py:1135
+#: src/command/commandmgr.py:1144
 msgid "Callable %s.flags returned non-dict; using {}"
 msgstr ""
 
-#: src/command/commandmgr.py:1478
+#: src/command/commandmgr.py:1487
 msgid "* Error(s) loading %s.%s.%s:"
 msgstr ""
 
-#: src/command/commandmgr.py:1487
+#: src/command/commandmgr.py:1496
 msgid "Exception while loading %s.%s.%s"
 msgstr ""

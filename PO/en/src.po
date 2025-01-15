@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:51-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2003-07-10 12:22GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -16,194 +16,202 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.5\n"
 
-#: src/capabilities.py:102
+#: src/capabilities.py:104
 msgid "Advanced indentation analysis and translation"
 msgstr ""
 
-#: src/capabilities.py:103
+#: src/capabilities.py:105
 msgid "Folding in the source code editor"
 msgstr ""
 
-#: src/capabilities.py:104
+#: src/capabilities.py:106
 msgid "Recent menus"
 msgstr ""
 
-#: src/capabilities.py:105
+#: src/capabilities.py:107
 msgid "Attach/detach to debug processes"
 msgstr ""
 
-#: src/capabilities.py:106
+#: src/capabilities.py:108
 msgid "Expression and value watching for debugger"
 msgstr ""
 
-#: src/capabilities.py:107
-msgid "Interactive debug probe tool"
-msgstr ""
-
-#: src/capabilities.py:108
-msgid "Debug externally launched processes"
-msgstr ""
-
 #: src/capabilities.py:109
-msgid "Advance exception handling modes"
+msgid "Interactive debug console"
 msgstr ""
 
 #: src/capabilities.py:110
-msgid "Module-oriented debug data view"
+msgid "Debug externally launched processes"
 msgstr ""
 
 #: src/capabilities.py:111
-msgid "Shared projects for use in revision control"
+msgid "Advanced exception handling modes"
 msgstr ""
 
 #: src/capabilities.py:112
-msgid "Advanced breakpoints for debugger"
+msgid "Module-oriented debug data view"
 msgstr ""
 
 #: src/capabilities.py:113
-msgid "Debug data value tooltips"
+msgid "Shared projects for use in revision control"
 msgstr ""
 
 #: src/capabilities.py:114
-msgid "Debugger breakpoint manager"
+msgid "Advanced breakpoints for debugger"
 msgstr ""
 
 #: src/capabilities.py:115
-msgid "Source code browser"
+msgid "Debug data value tooltips"
 msgstr ""
 
 #: src/capabilities.py:116
-msgid "Source assistant"
+msgid "Debugger breakpoint manager"
 msgstr ""
 
 #: src/capabilities.py:117
-msgid "Scripting support"
+msgid "Source code browser"
 msgstr ""
 
 #: src/capabilities.py:118
-msgid "Keyboard and command macro support"
+msgid "Source assistant"
 msgstr ""
 
 #: src/capabilities.py:119
-msgid "User-defined named bookmarks"
+msgid "Scripting support"
 msgstr ""
 
 #: src/capabilities.py:120
-msgid "Autocompletion"
+msgid "Keyboard and command macro support"
 msgstr ""
 
 #: src/capabilities.py:121
-msgid "Projects"
+msgid "User-defined named bookmarks"
 msgstr ""
 
 #: src/capabilities.py:122
-msgid "Wildcard and regular expression search"
+msgid "Autocompletion"
 msgstr ""
 
 #: src/capabilities.py:123
-msgid "Batch search"
+msgid "Projects"
 msgstr ""
 
 #: src/capabilities.py:124
-msgid "Disk search"
+msgid "Wildcard and regular expression search"
 msgstr ""
 
 #: src/capabilities.py:125
-msgid "Multi-window GUI support"
+msgid "Batch search"
 msgstr ""
 
 #: src/capabilities.py:126
-msgid "Messages view"
+msgid "Disk search"
 msgstr ""
 
 #: src/capabilities.py:127
-msgid "Unit testing tool"
+msgid "Multi-window GUI support"
 msgstr ""
 
 #: src/capabilities.py:128
-msgid "Support for running external processes in a console"
+msgid "Messages view"
 msgstr ""
 
 #: src/capabilities.py:129
-msgid "Code snippets"
+msgid "Unit testing tool"
 msgstr ""
 
 #: src/capabilities.py:130
-msgid "Version control"
+msgid "Support for running external processes in a console"
 msgstr ""
 
 #: src/capabilities.py:131
-msgid "Perspectives"
+msgid "Code snippets"
 msgstr ""
 
 #: src/capabilities.py:132
-msgid "Difference and merge tool"
+msgid "Version control"
 msgstr ""
 
 #: src/capabilities.py:133
-msgid "Code warnings"
+msgid "Perspectives"
 msgstr ""
 
 #: src/capabilities.py:134
-msgid "Auto-editing"
+msgid "Difference and merge tool"
 msgstr ""
 
 #: src/capabilities.py:135
-msgid "Named file sets"
+msgid "Code warnings"
 msgstr ""
 
 #: src/capabilities.py:136
-msgid "Launch Configurations"
+msgid "Auto-editing"
 msgstr ""
 
 #: src/capabilities.py:137
-msgid "IPython"
+msgid "Named file sets"
 msgstr ""
 
 #: src/capabilities.py:138
-msgid "Multi-process debugging"
+msgid "Launch Configurations"
 msgstr ""
 
 #: src/capabilities.py:139
-msgid "Find Symbol in Project"
+msgid "IPython"
+msgstr ""
+
+#: src/capabilities.py:140
+msgid "Multi-process debugging"
 msgstr ""
 
 #: src/capabilities.py:141
-msgid "Debug code executed in shells"
-msgstr ""
-
-#: src/capabilities.py:142
-msgid "Automated remote debugging"
+msgid "Find Symbol in Project"
 msgstr ""
 
 #: src/capabilities.py:143
-msgid "Multiple selections"
+msgid "Debug code executed in shells"
 msgstr ""
 
 #: src/capabilities.py:144
-msgid "Containers"
+msgid "Automated remote debugging"
 msgstr ""
 
 #: src/capabilities.py:145
-msgid "Package manager"
+msgid "Multiple selections"
 msgstr ""
 
 #: src/capabilities.py:146
-msgid "Generic support specific to Wing 101"
+msgid "Containers"
 msgstr ""
 
 #: src/capabilities.py:147
-msgid "Generic support specific to Wing Personal"
+msgid "Package manager"
 msgstr ""
 
 #: src/capabilities.py:148
+msgid "Generic support specific to Wing 101"
+msgstr ""
+
+#: src/capabilities.py:149
+msgid "Generic support specific to Wing Personal"
+msgstr ""
+
+#: src/capabilities.py:150
 msgid "Generic support specific to Wing Pro"
 msgstr ""
 
-#: src/config.py:170
+#: src/capabilities.py:151
+msgid "Import manager"
+msgstr ""
+
+#: src/capabilities.py:152
+msgid "AI-supported development"
+msgstr ""
+
+#: src/config.py:171
 msgid ""
 "Wing was written at Wingware, maker of Python IDEs since 1998.  This product "
-"contains the following third party modules:\n"
+"may contain the following third party modules:\n"
 "      \n"
 "  * UI translations by Jean Sanchez and Laurent Fasnacht (French), Christoph "
 "Heitkamp\n"
@@ -279,6 +287,37 @@ msgid ""
 "    \n"
 "  * six by Benjamin Peterson, Marc Abramowitz, Jason R. Coombs, Jon "
 "Dufresne, and many contributors\n"
+"  \n"
+"  * coverage.py by Ned Batchelder and contributors\n"
+"  \n"
+"  * annotated-types by Samuel Colvin and contributors\n"
+"  \n"
+"  * anyio by Alex Grönholm and contributors\n"
+"  \n"
+"  * certifi by Kenneth Reitz and contributors\n"
+"  \n"
+"  * distro by Nir Cohen and contributors\n"
+"  \n"
+"  * h11 by Nathaniel J. Smith and contributors\n"
+"  \n"
+"  * httpcore by Tom Christie and contributors\n"
+"  \n"
+"  * httpx by Tom Christie and contributors\n"
+"  \n"
+"  * idna by Kim Davies and contributors\n"
+"  \n"
+"  * openai by OpenAI and contributors\n"
+"  \n"
+"  * pydantic by Samuel Colvin and contributors\n"
+"  \n"
+"  * pydantic-core by Samueal Colvin and contributors\n"
+"  \n"
+"  * sniffio by Nathaniel J. Smith and contributors\n"
+"  \n"
+"  * tqdm by many contributors\n"
+"  \n"
+"  * typing-extensions by Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, "
+"Michael Lee, and contributors\n"
 "\n"
 "We gratefully acknowledge the efforts of all that have contributed to these "
 "and the other open source products and tools that are used in the "
@@ -392,7 +431,7 @@ msgid ""
 "types preference."
 msgstr ""
 
-#: src/mainprefs.py:82 src/mainprefs.py:481
+#: src/mainprefs.py:82 src/mainprefs.py:482
 msgid "Name"
 msgstr ""
 
@@ -581,43 +620,43 @@ msgid ""
 "always the specific fixed directory entered here."
 msgstr ""
 
-#: src/mainprefs.py:305
+#: src/mainprefs.py:306
 msgid "Python Files"
 msgstr ""
 
-#: src/mainprefs.py:306
+#: src/mainprefs.py:307
 msgid "Hidden & Temporary Files"
 msgstr ""
 
-#: src/mainprefs.py:307
+#: src/mainprefs.py:308
 msgid "All Source Files"
 msgstr ""
 
-#: src/mainprefs.py:308
+#: src/mainprefs.py:309
 msgid "C/C++ Files"
 msgstr ""
 
-#: src/mainprefs.py:309
+#: src/mainprefs.py:310
 msgid "HTML and XML Files"
 msgstr ""
 
-#: src/mainprefs.py:431 src/mainprefs.py:432
+#: src/mainprefs.py:432 src/mainprefs.py:433
 msgid "Spec"
 msgstr ""
 
-#: src/mainprefs.py:431 src/mainprefs.py:432
+#: src/mainprefs.py:432 src/mainprefs.py:433
 msgid "Type"
 msgstr ""
 
-#: src/mainprefs.py:437
+#: src/mainprefs.py:438
 msgid "Exclude"
 msgstr ""
 
-#: src/mainprefs.py:437
+#: src/mainprefs.py:438
 msgid "Include"
 msgstr ""
 
-#: src/mainprefs.py:443
+#: src/mainprefs.py:444
 msgid ""
 "Defines file filters to apply to file names for inclusion and exclusion from "
 "a larger set (such as scanned disk files or all project files).\n"
@@ -633,137 +672,137 @@ msgid ""
 "operations on collections of files."
 msgstr ""
 
-#: src/mainprefs.py:481
+#: src/mainprefs.py:482
 msgid "Specification"
 msgstr ""
 
-#: src/mainprefs.py:487
+#: src/mainprefs.py:488
 msgid ""
 "If True and a gtk, gdk, or glib critical message is logged, Wing tries to "
 "start a C debugger and break at the current execution point"
 msgstr ""
 
-#: src/mainprefs.py:495
+#: src/mainprefs.py:496
 msgid "Controls whether or not the splash screen is shown at startup."
 msgstr ""
 
-#: src/mainprefs.py:501
+#: src/mainprefs.py:502
 msgid "Reuse Existing Instance to Open Files"
 msgstr ""
 
-#: src/mainprefs.py:502
+#: src/mainprefs.py:503
 msgid "Always Reuse Existing Instance"
 msgstr ""
 
-#: src/mainprefs.py:503
+#: src/mainprefs.py:504
 msgid "Always Launch New Instance"
 msgstr ""
 
-#: src/mainprefs.py:508
+#: src/mainprefs.py:509
 msgid ""
 "Controls whether Wing tries to reuse an existing running instance of the IDE "
 "when it is launched again."
 msgstr ""
 
-#: src/mainprefs.py:521
+#: src/mainprefs.py:522
 msgid ""
 "When enabled, Wing will show a dialog offerring to update any remote agent "
 "that does not match Wing's version."
 msgstr ""
 
-#: src/mainprefs.py:530
+#: src/mainprefs.py:531
 msgid ""
 "When searching on the PATH, Wing will look for OpenSSH's ssh.  If it cannot "
 "be found, the built-in SSH implementation is used instead."
 msgstr ""
 
-#: src/mainprefs.py:534
+#: src/mainprefs.py:535
 msgid ""
 "When searching the PATH, Wing will look first for PuTTY's plink.exe and then "
 "for ssh.exe.  If neither is found, the built-in SSH implementation is used "
 "instead."
 msgstr ""
 
-#: src/mainprefs.py:540
+#: src/mainprefs.py:541
 msgid ""
 "The SSH implementation to use for remote development.  This is used to "
 "launch Wing's remote agent and to establish secure SSH tunnels for debugging "
 "on remote systems."
 msgstr ""
 
-#: src/mainprefs.py:543
+#: src/mainprefs.py:544
 msgid "Find %s on PATH"
 msgstr ""
 
-#: src/mainprefs.py:544
+#: src/mainprefs.py:545
 msgid "Built In"
 msgstr ""
 
-#: src/mainprefs.py:545
+#: src/mainprefs.py:546
 msgid "Use executable:"
 msgstr ""
 
-#: src/mainprefs.py:551
+#: src/mainprefs.py:552
 msgid ""
 "Controls whether to allow access to an SSH user agent like OpenSSH's ssh-"
 "agent or PuTTY's pageant."
 msgstr ""
 
-#: src/mainprefs.py:559
+#: src/mainprefs.py:560
 msgid ""
 "The maximum time in seconds to wait for SSH connections to be established."
 msgstr ""
 
-#: src/mainprefs.py:567
+#: src/mainprefs.py:568
 msgid ""
 "The maximum time in seconds to wait if a connection to a remote host is not "
 "responding.  Afterwards the connection is closed and retried."
 msgstr ""
 
-#: src/mainprefs.py:576
+#: src/mainprefs.py:577
 msgid ""
 "Controls whether to show a warning before editing a remote host "
 "configuration that is currently in use."
 msgstr ""
 
-#: src/mainprefs.py:584
+#: src/mainprefs.py:585
 msgid ""
 "Controls whether remote agent activity is directed into the IDE log instead "
 "of being written on the remote host.  This will slow down the remote agent "
 "and should only be enabled at the requestof Wingware Technical Support."
 msgstr ""
 
-#: src/mainprefs.py:595
+#: src/mainprefs.py:596
 msgid ""
 "Controls whether to show a warning before editing a container configuration "
 "or stopping a container that is currently in use."
 msgstr ""
 
-#: src/mainprefs.py:603
+#: src/mainprefs.py:604
 msgid ""
 "Controls whether to show a notice after a change in Project Properties "
 "results in a change to the effective container configuration."
 msgstr ""
 
-#: src/mainprefs.py:610
+#: src/mainprefs.py:611
 msgid ""
 "Controls whether to show a warning when a project that uses a container or "
 "cluster specifies a non-default environment."
 msgstr ""
 
-#: src/mainprefs.py:617
+#: src/mainprefs.py:618
 msgid "Automatically Restart Instances"
 msgstr ""
 
-#: src/mainprefs.py:618
+#: src/mainprefs.py:619
 msgid "Leave Instances Running"
 msgstr ""
 
-#: src/mainprefs.py:619 src/mainprefs.py:651
+#: src/mainprefs.py:620 src/mainprefs.py:652
 msgid "Prompt for Action"
 msgstr ""
 
-#: src/mainprefs.py:624
+#: src/mainprefs.py:625
 msgid ""
 "Controls what action to take if the container image for a running container "
 "instance is rebuilt or changes.  Auto-restarting instances will terminate "
@@ -771,27 +810,27 @@ msgid ""
 "confirmation."
 msgstr ""
 
-#: src/mainprefs.py:634
+#: src/mainprefs.py:635
 msgid ""
 "Controls whether to show a warning before editing a cluster configuration or "
 "stopping a cluster that is currently in use."
 msgstr ""
 
-#: src/mainprefs.py:642
+#: src/mainprefs.py:643
 msgid ""
 "Controls whether to show a notice when a cluster configuration is changed, "
 "causing the cluster to be terminated and restarted."
 msgstr ""
 
-#: src/mainprefs.py:649
+#: src/mainprefs.py:650
 msgid "Automatically Restart Cluster"
 msgstr ""
 
-#: src/mainprefs.py:650
+#: src/mainprefs.py:651
 msgid "Leave Cluster Running"
 msgstr ""
 
-#: src/mainprefs.py:656
+#: src/mainprefs.py:657
 msgid ""
 "Controls what action to take if container images used in a running cluster "
 "are rebuilt or change.  Auto-restarting the cluster will terminate without "
@@ -799,152 +838,152 @@ msgid ""
 "processes."
 msgstr ""
 
-#: src/mainprefs.py:666
+#: src/mainprefs.py:667
 msgid ""
 "Allows manual configuration of an http proxy to be used for feedback, bug "
 "reports, and license activation, all of which result in Wing connecting to "
 "wingware.com via http.  Leave user name and password blank if not required."
 msgstr ""
 
-#: src/mainprefs.py:670
+#: src/mainprefs.py:671
 msgid "No proxy server (or auto-detected)"
 msgstr ""
 
-#: src/mainprefs.py:671
+#: src/mainprefs.py:672
 msgid "Configure proxy server manually:"
 msgstr ""
 
-#: src/mainprefs.py:672
+#: src/mainprefs.py:673
 msgid "Host name"
 msgstr ""
 
-#: src/mainprefs.py:672
+#: src/mainprefs.py:673
 msgid "Port"
 msgstr ""
 
-#: src/mainprefs.py:672
+#: src/mainprefs.py:673
 msgid "User name"
 msgstr ""
 
-#: src/mainprefs.py:673
+#: src/mainprefs.py:674
 msgid "Password"
 msgstr ""
 
-#: src/mainprefs.py:679
+#: src/mainprefs.py:680
 msgid ""
 "Whether to use secure https (port 443) when accessing wingware.com for "
 "license activation, update checks, and submitting feedback or bug reports.  "
 "When disabled, http (port 80) is used instead."
 msgstr ""
 
-#: src/mainprefs.py:686 src/mainprefs.py:721
+#: src/mainprefs.py:687 src/mainprefs.py:722
 msgid "Never"
 msgstr ""
 
-#: src/mainprefs.py:687
+#: src/mainprefs.py:688
 msgid "When saving files"
 msgstr ""
 
-#: src/mainprefs.py:688
+#: src/mainprefs.py:689
 msgid "When saving files in project"
 msgstr ""
 
-#: src/mainprefs.py:692
+#: src/mainprefs.py:693
 msgid ""
 "Controls whether to automatically strip trailing white space in the editor.  "
 "May be enabled for any file or only files that are part of the current "
 "project."
 msgstr ""
 
-#: src/mainprefs.py:703
+#: src/mainprefs.py:704
 msgid "Tools and Layout"
 msgstr ""
 
-#: src/mainprefs.py:704
+#: src/mainprefs.py:705
 msgid "Tools, Layout, and Editors"
 msgstr ""
 
-#: src/mainprefs.py:705
+#: src/mainprefs.py:706
 msgid "All Visual State"
 msgstr ""
 
-#: src/mainprefs.py:709
+#: src/mainprefs.py:710
 msgid ""
 "Selects the file to use for storing and retrieving shared perspectives. By "
 "default (when value is None) the file 'perspectives' in the user settings "
 "directory is used."
 msgstr ""
 
-#: src/mainprefs.py:714 src/mainprefs.py:740
+#: src/mainprefs.py:715 src/mainprefs.py:741
 msgid "Default"
 msgstr ""
 
-#: src/mainprefs.py:715 src/mainprefs.py:741
+#: src/mainprefs.py:716 src/mainprefs.py:742
 msgid "File:"
 msgstr ""
 
-#: src/mainprefs.py:720
+#: src/mainprefs.py:721
 msgid "Always"
 msgstr ""
 
-#: src/mainprefs.py:722
+#: src/mainprefs.py:723
 msgid "Prompt"
 msgstr ""
 
-#: src/mainprefs.py:723
+#: src/mainprefs.py:724
 msgid "Configured by Perspective"
 msgstr ""
 
-#: src/mainprefs.py:726
+#: src/mainprefs.py:727
 msgid ""
 "Selects whether to auto-save perspectives when switching to another "
 "perspective. Can always auto-save, never auto-save, prompt each time a "
 "perspective is left, or auto-save as configured on a per-perspective basis."
 msgstr ""
 
-#: src/mainprefs.py:735
+#: src/mainprefs.py:736
 msgid ""
 "Selects the file to use for storing and retrieving shared named files sets. "
 "By default (when value is None) the file 'filesets' in the user settings "
 "directory is used."
 msgstr ""
 
-#: src/mainprefs.py:746
+#: src/mainprefs.py:747
 msgid "Defines which plugins are enabled or disabled."
 msgstr ""
 
-#: src/mainprefs.py:753
+#: src/mainprefs.py:754
 msgid ""
 "The amount by which to zoom font sizes in or out in the documentation viewer."
 msgstr ""
 
-#: src/mainprefs.py:758
+#: src/mainprefs.py:759
 msgid ""
 "Whether to try parsing docstrings as ReST format for display in the Source "
 "Assistant.  This may destroy formatting of some docstrings."
 msgstr ""
 
-#: src/mainprefs.py:765
+#: src/mainprefs.py:766
 msgid "Debug"
 msgstr ""
 
-#: src/mainprefs.py:766
+#: src/mainprefs.py:767
 msgid "Informational"
 msgstr ""
 
-#: src/mainprefs.py:767
+#: src/mainprefs.py:768
 msgid "Warning"
 msgstr ""
 
-#: src/mainprefs.py:768
+#: src/mainprefs.py:769
 msgid "Error"
 msgstr ""
 
-#: src/mainprefs.py:769
+#: src/mainprefs.py:770
 msgid "Severe"
 msgstr ""
 
-#: src/mainprefs.py:772
+#: src/mainprefs.py:773
 msgid ""
 "The error level at or above which the source assistant will display parse "
 "errors in PEP287 docstrings (if showing PEP287 errors) or will fall back to "
@@ -952,7 +991,7 @@ msgid ""
 "threshold, a best attempt is made to achieve a reasonable rendering."
 msgstr ""
 
-#: src/mainprefs.py:780
+#: src/mainprefs.py:781
 msgid ""
 "Whether to render docstrings even if they contain parse errors at or above "
 "the threshold set by Source Assistant PEP 287 Error Threshold.  When "
@@ -961,52 +1000,52 @@ msgid ""
 "errors."
 msgstr ""
 
-#: src/mainprefs.py:788
+#: src/mainprefs.py:789
 msgid ""
 "Whether to rewrap plain text docstrings for display in the Source "
 "Assistant.  This may destroy formatting of some docstrings."
 msgstr ""
 
-#: src/mainprefs.py:794
+#: src/mainprefs.py:795
 msgid ""
 "Whether to always show docstrings in the Source Assistant.  When disabled, "
 "only the docstring for the last displayed symbol is shown."
 msgstr ""
 
-#: src/mainprefs.py:800
+#: src/mainprefs.py:801
 msgid "Whether show docstring type and validity in the Source Assistant."
 msgstr ""
 
-#: src/mainprefs.py:806
+#: src/mainprefs.py:807
 msgid "Controls whether Wing will periodically show discount offers."
 msgstr ""
 
-#: src/mainprefs.py:812
+#: src/mainprefs.py:813
 msgid "History of updates used diagnostically"
 msgstr ""
 
-#: src/mainprefs.py:817
+#: src/mainprefs.py:818
 msgid "Used internally to select the most recently used prefs page."
 msgstr ""
 
-#: src/mainprefs.py:822
+#: src/mainprefs.py:823
 msgid ""
 "Used internally to select the most recently used properties dialog pages."
 msgstr ""
 
-#: src/mainprefs.py:828
+#: src/mainprefs.py:829
 msgid ""
 "Controls whether Wing runs in presentation mode, which magnifies the user "
 "interface.  Wing must be restarted before this value takes effect."
 msgstr ""
 
-#: src/mainprefs.py:835
+#: src/mainprefs.py:836
 msgid ""
 "The amount by which to increase UI size when presentation mode is enabled.  "
 "Wing must be restarted before this value takes effect."
 msgstr ""
 
-#: src/mainprefs.py:841
+#: src/mainprefs.py:842
 msgid ""
 "Scale factor for icons, windows, and other graphical elements other than "
 "fonts.  Can either be a single number or a ; (semicolon) separated list of "
@@ -1016,14 +1055,20 @@ msgid ""
 "before this value takes effect."
 msgstr ""
 
-#: src/mainprefs.py:851
+#: src/mainprefs.py:852
 msgid "Automatically set scale factor based on screen dpi."
 msgstr ""
 
-#: src/mainprefs.py:856
+#: src/mainprefs.py:857
 msgid ""
 "Whether to suggest per-screen scale factors at startup, based on inspection "
 "of font size on each attached display."
+msgstr ""
+
+#: src/mainprefs.py:863
+msgid ""
+"Whether to underline Alt key accelerators even if the Alt has not been "
+"pressed."
 msgstr ""
 
 #: src/premain.py:316
@@ -1042,123 +1087,123 @@ msgstr ""
 msgid "Starting version %s.%s%s"
 msgstr ""
 
-#: src/premain.py:634
+#: src/premain.py:639
 msgid "Top-level Commands"
 msgstr ""
 
-#: src/premain.py:636
+#: src/premain.py:641
 msgid "Project Manager Commands"
 msgstr ""
 
-#: src/premain.py:638
+#: src/premain.py:643
 msgid "Editor Commands"
 msgstr ""
 
-#: src/premain.py:640
+#: src/premain.py:645
 msgid "Search Manager Commands"
 msgstr ""
 
-#: src/premain.py:642
+#: src/premain.py:647
 msgid "Unit Testing Commands"
 msgstr ""
 
-#: src/premain.py:645
+#: src/premain.py:650
 msgid "Version Control Commands"
 msgstr ""
 
-#: src/premain.py:648
+#: src/premain.py:653
 msgid "Debugger Commands"
 msgstr ""
 
-#: src/premain.py:650
+#: src/premain.py:655
 msgid "Refactoring Commands"
 msgstr ""
 
-#: src/premain.py:653
+#: src/premain.py:658
 msgid "Source Browser Commands"
 msgstr ""
 
-#: src/premain.py:656
+#: src/premain.py:661
 msgid "Script-provided Add-on Commands"
 msgstr ""
 
-#: src/premain.py:692 src/premain.py:796
+#: src/premain.py:697 src/premain.py:801
 msgid "macOS"
 msgstr ""
 
-#: src/premain.py:799
+#: src/premain.py:804
 msgid "XCode"
 msgstr ""
 
-#: src/premain.py:907
+#: src/premain.py:912
 msgid "Preferences Dialog Path"
 msgstr ""
 
-#: src/premain.py:909
+#: src/premain.py:914
 msgid "Internal Name"
 msgstr ""
 
-#: src/premain.py:910
+#: src/premain.py:915
 msgid "Data Specification"
 msgstr ""
 
-#: src/premain.py:914
+#: src/premain.py:919
 msgid "Default Value"
 msgstr ""
 
-#: src/premain.py:940
+#: src/premain.py:945
 msgid "Core Preferences"
 msgstr ""
 
-#: src/premain.py:941
+#: src/premain.py:946
 msgid "User Interface Preferences"
 msgstr ""
 
-#: src/premain.py:942
+#: src/premain.py:947
 msgid "Editor Preferences"
 msgstr ""
 
-#: src/premain.py:946
+#: src/premain.py:951
 msgid "Diff/Merge Preferences"
 msgstr ""
 
-#: src/premain.py:949
+#: src/premain.py:954
 msgid "Project Manager Preferences"
 msgstr ""
 
-#: src/premain.py:950
+#: src/premain.py:955
 msgid "Debugger Preferences"
 msgstr ""
 
-#: src/premain.py:951
+#: src/premain.py:956
 msgid "Source Analysis Preferences"
 msgstr ""
 
-#: src/premain.py:955
+#: src/premain.py:960
 msgid "Code Warnings Preferences"
 msgstr ""
 
-#: src/premain.py:958
+#: src/premain.py:963
 msgid "Source Browser Preferences"
 msgstr ""
 
-#: src/premain.py:960
+#: src/premain.py:965
 msgid "Version Control Preferences"
 msgstr ""
 
-#: src/premain.py:962
+#: src/premain.py:967
 msgid "Internal Preferences"
 msgstr ""
 
-#: src/singleton.py:310
+#: src/singleton.py:314
 msgid "Creating singletons... %s"
 msgstr ""
 
-#: src/singleton.py:737 src/singleton.py:745
+#: src/singleton.py:742 src/singleton.py:750
 msgid "Cannot find Python"
 msgstr ""
 
-#: src/singleton.py:738
+#: src/singleton.py:743
 msgid ""
 "A supported version of Python could not be found.  If you have a recent "
 "Python, be sure you also have a recent version of Wing.  If you do not have "
@@ -1168,7 +1213,7 @@ msgid ""
 "use."
 msgstr ""
 
-#: src/singleton.py:746
+#: src/singleton.py:751
 msgid ""
 "A supported version of Python could not be found.  If you have a recent "
 "Python, be sure you also have a recent version of Wing.  If you do not have "
@@ -1177,29 +1222,29 @@ msgid ""
 "Configure Python in the Edit menu to select the Python Executable to use."
 msgstr ""
 
-#: src/singleton.py:869
+#: src/singleton.py:876
 msgid "Enter Command Arguments"
 msgstr ""
 
-#: src/singleton.py:1241
+#: src/singleton.py:1260
 msgid "Wing"
 msgstr ""
 
-#: src/startwing.py:859
+#: src/startwing.py:863
 msgid "Use console_%s to print a diagnostic log while running."
 msgstr ""
 
-#: src/startwing.py:862
+#: src/startwing.py:866
 msgid "--verbose                  Print a diagnostic log while running"
 msgstr ""
 
-#: src/startwing.py:866
+#: src/startwing.py:870
 msgid ""
 "--get-login-env=yes|no     Enable/disable using sh -l to get environment\n"
 "                           from a login shell [Mac only]"
 msgstr ""
 
-#: src/startwing.py:872
+#: src/startwing.py:876
 msgid ""
 "Wing %(product)s Command Line Usage:\n"
 "\n"
@@ -1232,6 +1277,6 @@ msgid ""
 "For details see https://wingware.com/doc/install/command-line-usage  \n"
 msgstr ""
 
-#: src/startwing.py:1209
+#: src/startwing.py:1213
 msgid "Fatal startup error:  Exiting Wing"
 msgstr ""

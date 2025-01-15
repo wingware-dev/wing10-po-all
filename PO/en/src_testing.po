@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2010-11-24 23:48 EST\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -90,19 +90,70 @@ msgid ""
 "disabled or the output can be stored along with the results."
 msgstr ""
 
-#: src/testing/attribs.py:112
+#: src/testing/attribs.py:108
+msgid ""
+"Whether to collect code coverage statistics when running tests, and show "
+"code coverage indicators in the IDE."
+msgstr ""
+
+#: src/testing/attribs.py:115
+msgid ""
+"Determines whether to collect code coverage only for files in project "
+"directories.  When disabled, coverage is collected for all code outside of "
+"the Python standard library."
+msgstr ""
+
+#: src/testing/attribs.py:123
+msgid ""
+"Determines whether to collect code coverage for all branches, rather than "
+"just line by line."
+msgstr ""
+
+#: src/testing/attribs.py:129
+msgid ""
+"Determines whether to merge coverage statistics obtained from different "
+"Python environments.  Merging only works if all the environments are on the "
+"same host.  This option should be disabled if using multiple hosts to run "
+"unit tests in the same project."
+msgstr ""
+
+#: src/testing/attribs.py:137
+msgid ""
+"Specify any additional arguments to pass to the coverage.py 'run' command "
+"when code coverage is being collected for unit tests run from the IDE."
+msgstr ""
+
+#: src/testing/attribs.py:144
+msgid ""
+"Determines whether to automatically clear code coverage data when the "
+"project file is closed."
+msgstr ""
+
+#: src/testing/attribs.py:151
+msgid ""
+"Internally used uniquifier for determining where to store the coverage data "
+"files."
+msgstr ""
+
+#: src/testing/attribs.py:156
+msgid ""
+"Internally used to determine when a project has been copied to a new name/"
+"location."
+msgstr ""
+
+#: src/testing/attribs.py:166
 msgid "Default for Testing Framework"
 msgstr ""
 
-#: src/testing/attribs.py:113
+#: src/testing/attribs.py:167
 msgid "Run as Package Module if in Package Directory"
 msgstr ""
 
-#: src/testing/attribs.py:114
+#: src/testing/attribs.py:168
 msgid "Always Run as a Top-Level Module"
 msgstr ""
 
-#: src/testing/attribs.py:118
+#: src/testing/attribs.py:172
 msgid ""
 "Whether to run a file in a package directory as a package module. If the "
 "file is not run as a package module, it is run as a top-level script. The "
@@ -110,240 +161,419 @@ msgid ""
 "for some frameworks may ignore this setting."
 msgstr ""
 
-#: src/testing/attribs.py:128
+#: src/testing/attribs.py:182
 msgid "Whether to wrap output lines before displaying them"
 msgstr ""
 
-#: src/testing/attribs.py:134
+#: src/testing/attribs.py:188
 msgid "Column to wrap output lines on"
 msgstr ""
 
-#: src/testing/attribs.py:140
+#: src/testing/attribs.py:194
 msgid "Whether to use a fixed width font for output"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:258 src/testing/cap_testinggui.py:330
-msgid "Output"
+#: src/testing/cap_coverage.py:286
+msgid "Coverage invocation timed out"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:281
-msgid "Chained Exception Cause:"
+#: src/testing/cap_coverage.py:302
+msgid "Coverage Configuration Warning"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:283
-msgid "Chained Exception Context:"
+#: src/testing/cap_coverage.py:323
+msgid "failed to start"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:285
-msgid "Final Exception:"
+#: src/testing/cap_coverage.py:326
+msgid "missing coverage"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:287
-msgid "Exception:"
+#: src/testing/cap_coverage.py:331
+msgid "version %s"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:333
+#: src/testing/cap_coverage.py:346
+msgid ""
+"There are multiple versions of 'coverage' installed into the Python "
+"installations that are used by unit tests in this project.  This might cause "
+"problems collecting or viewing coverage data:"
+msgstr ""
+
+#: src/testing/cap_coverage.py:350
+msgid ""
+"Before using code coverage in Wing, you must first install the package "
+"'coverage'.  It was found to be missing from the following Python "
+"installations that are used to run unit tests in this project:"
+msgstr ""
+
+#: src/testing/cap_coverage.py:366
+msgid ""
+"If code coverage does not work, you can use Wing's Packages tool to change "
+"which version of 'coverage' is used by the Python Executable configured in "
+"Project Properties."
+msgstr ""
+
+#: src/testing/cap_coverage.py:369
+msgid ""
+"However, you will need to run 'pip install coverage==<version>' manually to "
+"select the version of coverage used by the *'ed Python installations listed "
+"above."
+msgstr ""
+
+#: src/testing/cap_coverage.py:372
+msgid ""
+"If code coverage does not work, you will need to run 'pip install "
+"coverage==<version>' to select the version of coverage used by these Python "
+"installations."
+msgstr ""
+
+#: src/testing/cap_coverage.py:376
+msgid ""
+"You can use Wing's Packages tool to install 'coverage' into the Python "
+"Executable configured in Project Properties."
+msgstr ""
+
+#: src/testing/cap_coverage.py:379
+msgid ""
+"However, you will need to run 'pip install coverage' manually to install "
+"coverage into the *'ed Python installations listed above."
+msgstr ""
+
+#: src/testing/cap_coverage.py:382
+msgid ""
+"You will need to run 'pip install coverage' manually to install coverage "
+"into the Python installations listed above."
+msgstr ""
+
+#: src/testing/cap_coverage.py:389
+msgid "Show Packages Tool"
+msgstr ""
+
+#: src/testing/cap_coverage.py:390 src/testing/cap_coverage.py:496
+#: src/testing/cap_coverage.py:1051 src/testing/cap_coverage.py:1142
+#: src/testing/cap_coverage.py:1169 src/testing/cap_coverage.py:1179
+#: src/testing/cap_coverage.py:1196 src/testing/cap_coverage.py:1260
+msgid "OK"
+msgstr ""
+
+#: src/testing/cap_coverage.py:491
+msgid "Really Clear Code Coverage Data?"
+msgstr ""
+
+#: src/testing/cap_coverage.py:492
+msgid ""
+"Are you sure you want to clear all code coverage data?  You will need to re-"
+"run your unit tests to rebuild it."
+msgstr ""
+
+#: src/testing/cap_coverage.py:497 src/testing/cap_coverage.py:1086
+#: src/testing/cap_coverage.py:1332
+msgid "Cancel"
+msgstr ""
+
+#: src/testing/cap_coverage.py:737
+msgid "No coverage data found"
+msgstr ""
+
+#: src/testing/cap_coverage.py:899
+msgid "Getting measured files completed"
+msgstr ""
+
+#: src/testing/cap_coverage.py:908
+msgid "Getting all measured files..."
+msgstr ""
+
+#: src/testing/cap_coverage.py:1048
+msgid "No Coverage Data"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1049
+msgid ""
+"No coverage data has been collected.  Try running some unit tests first."
+msgstr ""
+
+#: src/testing/cap_coverage.py:1068
+msgid "Select Python Environment"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1069
+msgid ""
+"You have configured Wing to store coverage data separately for each Python "
+"environment used in testing.  Please select which environment(s) you want to "
+"include in this coverage report:"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1084
+msgid "Configure..."
+msgstr ""
+
+#: src/testing/cap_coverage.py:1085
+msgid "Generate Report"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1140 src/testing/cap_coverage.py:1177
+msgid "No Coverage Data Found"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1141 src/testing/cap_coverage.py:1178
+msgid "No coverage data was found.  Try running some unit tests first."
+msgstr ""
+
+#: src/testing/cap_coverage.py:1166
+msgid "Invalid Export Format"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1190
+msgid "Coverage Data Exported"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1215
+msgid "Select HTML Output Directory"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1224
+msgid "Select Output File"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1258
+msgid "Coverage Export Failed"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1299
+msgid "Failed to transfer the export to the local host.  Failed on %s\n"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1329
+msgid "Exporting Code Coverage Data"
+msgstr ""
+
+#: src/testing/cap_coverage.py:1345
+msgid "Executing coverage.py data export"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:243 src/testing/cap_testinggui.py:397
 msgid "Non-Python Output"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:600
+#: src/testing/cap_testinggui.py:318 src/testing/cap_testinggui.py:395
+msgid "Output"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:335
+msgid "Chained Exception Cause:"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:337
+msgid "Chained Exception Context:"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:339
+msgid "Final Exception:"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:341
+msgid "Exception:"
+msgstr ""
+
+#: src/testing/cap_testinggui.py:664
 msgid "<i>no children</i>"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:887 src/testing/cap_testinggui.py:1474
+#: src/testing/cap_testinggui.py:969 src/testing/cap_testinggui.py:1581
 msgid "_Run Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:887 src/testing/cap_testinggui.py:1475
+#: src/testing/cap_testinggui.py:969 src/testing/cap_testinggui.py:1582
 msgid "_Run"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:896 src/testing/cap_testinggui.py:1512
-#: src/testing/cap_testinggui.py:1535
+#: src/testing/cap_testinggui.py:978 src/testing/cap_testinggui.py:1619
+#: src/testing/cap_testinggui.py:1642
 msgid "_Debug Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:896 src/testing/cap_testinggui.py:1513
-#: src/testing/cap_testinggui.py:1536
+#: src/testing/cap_testinggui.py:978 src/testing/cap_testinggui.py:1620
+#: src/testing/cap_testinggui.py:1643
 msgid "_Debug"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:920
+#: src/testing/cap_testinggui.py:1002
 msgid "Filter: "
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1025
+#: src/testing/cap_testinggui.py:1107
 msgid "Succeeded"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1027
+#: src/testing/cap_testinggui.py:1109
 msgid "Failed"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1029
+#: src/testing/cap_testinggui.py:1111
 msgid "Error"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1031
+#: src/testing/cap_testinggui.py:1113
 msgid "Syntax Error"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1033
+#: src/testing/cap_testinggui.py:1115
 msgid "Running"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1073
+#: src/testing/cap_testinggui.py:1155
 msgid "No tests to run"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1151
+#: src/testing/cap_testinggui.py:1242
 msgid "Clear All Test Results?"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1152
+#: src/testing/cap_testinggui.py:1243
 msgid "Are you sure you want to clear all the stored test results?"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1153
+#: src/testing/cap_testinggui.py:1244
 msgid "Clear _All"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1154
+#: src/testing/cap_testinggui.py:1245
 msgid "_Cancel"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1218
+#: src/testing/cap_testinggui.py:1309
 msgid "Remove File"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1218
+#: src/testing/cap_testinggui.py:1309
 msgid "Remove Files"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1226
+#: src/testing/cap_testinggui.py:1317
 msgid "Sort Tests Alphabetically"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1231
+#: src/testing/cap_testinggui.py:1322
 msgid "Sort Tests by Source Order"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1234
+#: src/testing/cap_testinggui.py:1325
 msgid "Use Fixed Width Font For Output"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1239 src/testing/cap_testinggui.py:1246
+#: src/testing/cap_testinggui.py:1330 src/testing/cap_testinggui.py:1337
 msgid "Goto Source"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1240
+#: src/testing/cap_testinggui.py:1331
 msgid "Run Test"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1241
+#: src/testing/cap_testinggui.py:1332
 msgid "Debug Test"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1242
+#: src/testing/cap_testinggui.py:1333
 msgid "Run All Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1243
+#: src/testing/cap_testinggui.py:1334
 msgid "Clear All Results"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1247
+#: src/testing/cap_testinggui.py:1338
 msgid "Abort Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1252
+#: src/testing/cap_testinggui.py:1343
 msgid "Expand All Failed Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1253
+#: src/testing/cap_testinggui.py:1344
 msgid "Collapse All Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1255
+#: src/testing/cap_testinggui.py:1346
 msgid "Wrap Output Lines"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1259
+#: src/testing/cap_testinggui.py:1350
 msgid "Add Files from Project..."
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1260
+#: src/testing/cap_testinggui.py:1351
 msgid "Add Single File..."
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1263
+#: src/testing/cap_testinggui.py:1354
 msgid "File Properties..."
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1265
+#: src/testing/cap_testinggui.py:1356
 msgid "Select All"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1272
+#: src/testing/cap_testinggui.py:1363
 msgid "Copy Selected Text"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1276
+#: src/testing/cap_testinggui.py:1367
 msgid "Copy Failure Summary"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1280
+#: src/testing/cap_testinggui.py:1371
 msgid "Copy All Results"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1286
+#: src/testing/cap_testinggui.py:1377
 msgid "Show Testing Documentation"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1443
+#: src/testing/cap_testinggui.py:1550
 msgid "Completed tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1470
+#: src/testing/cap_testinggui.py:1577
 msgid "_Abort Tests"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1471 src/testing/cap_testinggui.py:1531
+#: src/testing/cap_testinggui.py:1578 src/testing/cap_testinggui.py:1638
 msgid "_Abort"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1519
+#: src/testing/cap_testinggui.py:1626
 msgid "_Stop Debug"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1520
+#: src/testing/cap_testinggui.py:1627
 msgid "_Stop"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1530
+#: src/testing/cap_testinggui.py:1637
 msgid "_Abort Debug"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1662 src/testing/cap_testinggui.py:1672
+#: src/testing/cap_testinggui.py:1769 src/testing/cap_testinggui.py:1779
 msgid "Testing"
 msgstr ""
 
-#: src/testing/cap_testinggui.py:1677
+#: src/testing/cap_testinggui.py:1784
 msgid "Unit Tests"
 msgstr ""
 
-#: src/testing/manager.py:954
+#: src/testing/manager.py:964
 msgid "Automatically Ignored Exceptions"
 msgstr ""
 
-#: src/testing/manager.py:955
+#: src/testing/manager.py:965
 msgid ""
 "Wing has automatically ignored some intermediate exception reports to get "
 "you directly to the exception in your pytest code.  These will be remembered "
 "in your project."
 msgstr ""
 
-#: src/testing/manager.py:960
+#: src/testing/manager.py:970
 msgid "_OK"
 msgstr ""
 
@@ -351,168 +581,194 @@ msgstr ""
 msgid "Results from unknown test file: {}"
 msgstr ""
 
-#: src/testing/proppanels.py:36
+#: src/testing/proppanels.py:35
 msgid "Default Test Framework"
 msgstr ""
 
-#: src/testing/proppanels.py:40
+#: src/testing/proppanels.py:39
 msgid "Test file patterns"
 msgstr ""
 
-#: src/testing/proppanels.py:44
+#: src/testing/proppanels.py:43
 msgid "Pattern Type"
 msgstr ""
 
-#: src/testing/proppanels.py:45
+#: src/testing/proppanels.py:44
 msgid "Pattern"
 msgstr ""
 
-#: src/testing/proppanels.py:55
+#: src/testing/proppanels.py:54
 msgid "Output Wrap column"
 msgstr ""
 
-#: src/testing/proppanels.py:69 src/testing/proppanels.py:204
+#: src/testing/proppanels.py:68 src/testing/proppanels.py:214
 msgid "Environment"
 msgstr ""
 
-#: src/testing/proppanels.py:76
+#: src/testing/proppanels.py:75
 msgid "Process Model"
 msgstr ""
 
-#: src/testing/proppanels.py:80
+#: src/testing/proppanels.py:79
 msgid "Number of Processes"
 msgstr ""
 
-#: src/testing/proppanels.py:84
+#: src/testing/proppanels.py:83
 msgid "Run As Package Modules"
 msgstr ""
 
-#: src/testing/proppanels.py:89
+#: src/testing/proppanels.py:88
 msgid "Save In Project File"
 msgstr ""
 
-#: src/testing/proppanels.py:93 src/testing/proppanels.py:212
+#: src/testing/proppanels.py:93
+msgid "Use Code Coverage"
+msgstr ""
+
+#: src/testing/proppanels.py:99
+msgid "Measure Coverage Only in Project Files"
+msgstr ""
+
+#: src/testing/proppanels.py:112
+msgid "Extra Coverage Args"
+msgstr ""
+
+#: src/testing/proppanels.py:118
+msgid "Clear Data on Project Close"
+msgstr ""
+
+#: src/testing/proppanels.py:124
+msgid "Combine Data from Multiple Python Environments"
+msgstr ""
+
+#: src/testing/proppanels.py:129 src/testing/proppanels.py:222
 msgid "_Testing"
 msgstr ""
 
-#: src/testing/proppanels.py:157
+#: src/testing/proppanels.py:166
 msgid "For Django you must add a test file pattern for manage.py"
 msgstr ""
 
-#: src/testing/proppanels.py:159
-msgid "Django testing will ignore test files other than manage.py"
+#: src/testing/proppanels.py:168
+msgid ""
+"Django testing will ignore test files other than manage.py.  You will need "
+"to set Test Framework in each file's properties and run them separately."
 msgstr ""
 
-#: src/testing/proppanels.py:174
+#: src/testing/proppanels.py:184
 msgid "Default (%s)"
 msgstr ""
 
-#: src/testing/proppanels.py:177
+#: src/testing/proppanels.py:187
 msgid "Test Framework"
 msgstr ""
 
-#: src/testing/proppanels.py:189
+#: src/testing/proppanels.py:199
 msgid "Use Project Setting and Run Args:"
 msgstr ""
 
-#: src/testing/proppanels.py:190
+#: src/testing/proppanels.py:200
 msgid ""
 "Use the testing configuration from Project Properties with the specified run "
 "arguments"
 msgstr ""
 
-#: src/testing/proppanels.py:192
+#: src/testing/proppanels.py:202
 msgid "Use Selected Launch Configuration:"
 msgstr ""
 
-#: src/testing/proppanels.py:193
+#: src/testing/proppanels.py:203
 msgid "Select a custom launch configuration for testing this file"
 msgstr ""
 
-#: src/testing/proppanels.py:196
+#: src/testing/proppanels.py:206
 msgid ""
 "The environment to use when running this file as a unit test.  Either select "
 "a launch configuration, or use the given run arguments with the project-"
 "specified environment."
 msgstr ""
 
-#: src/testing/proppanels.py:229
+#: src/testing/proppanels.py:239
 msgid ""
 "Setting testing framework to Django has not effect for files other than "
 "manage.py"
 msgstr ""
 
-#: src/testing/runtests.py:303
+#: src/testing/runtests.py:315
 msgid "Starting local tests: %s"
 msgstr ""
 
-#: src/testing/runtests.py:355
+#: src/testing/runtests.py:368
 msgid "Starting tests on container %s: %s"
 msgstr ""
 
-#: src/testing/runtests.py:398
+#: src/testing/runtests.py:412
 msgid "Starting tests on hostname %s: %s"
 msgstr ""
 
-#: src/testing/runtests.py:443
+#: src/testing/runtests.py:456
 msgid "Debugging local tests: %s"
 msgstr ""
 
-#: src/testing/runtests.py:476 src/testing/runtests.py:534
-#: src/testing/runtests.py:591
+#: src/testing/runtests.py:489 src/testing/runtests.py:551
+#: src/testing/runtests.py:608
 msgid "Could not start debug process"
 msgstr ""
 
-#: src/testing/runtests.py:503
+#: src/testing/runtests.py:520
 msgid "Debugging tests on container %s: %s"
 msgstr ""
 
-#: src/testing/runtests.py:561
+#: src/testing/runtests.py:578
 msgid "Debugging tests on hostname %s: %s"
 msgstr ""
 
-#: src/testing/runtests.py:618
+#: src/testing/runtests.py:635
 msgid "Test process aborted: some tests were not run"
 msgstr ""
 
-#: src/testing/runtests.py:855
+#: src/testing/runtests.py:912
 msgid "Could not debug tests because container '{}' could not be started."
 msgstr ""
 
-#: src/testing/runtests.py:857
+#: src/testing/runtests.py:914
 msgid "Could not run tests because container '{}' could not be started."
 msgstr ""
 
-#: src/testing/runtests.py:877
+#: src/testing/runtests.py:934
 msgid ""
 "Could not debug in-cluster tests because cluster '{}' is not already running."
 msgstr ""
 
-#: src/testing/runtests.py:879
+#: src/testing/runtests.py:936
 msgid ""
 "Could not run in-cluster tests because cluster '{}' is not already running."
 msgstr ""
 
-#: src/testing/runtests.py:958 src/testing/runtests.py:962
+#: src/testing/runtests.py:1015 src/testing/runtests.py:1019
 msgid "Test process suddenly quit while running %s"
 msgstr ""
 
-#: src/testing/runtests.py:960
+#: src/testing/runtests.py:1017
 msgid " in %s"
 msgstr ""
 
-#: src/testing/runtests.py:970
+#: src/testing/runtests.py:1027
 msgid "Could not execute test runner"
 msgstr ""
 
-#: src/testing/runtests.py:977
+#: src/testing/runtests.py:1034
 msgid "Could not read any output from test runner"
 msgstr ""
 
-#: src/testing/runtests.py:1008
+#: src/testing/runtests.py:1066
 msgid "Could not Debug Tests::{}"
 msgstr ""
 
-#: src/testing/runtests.py:1010
+#: src/testing/runtests.py:1068
 msgid "Could not Run Tests::{}"
+msgstr ""
+
+#: src/testing/runtests.py:1080
+msgid "Failed to inspect remote locations"
 msgstr ""

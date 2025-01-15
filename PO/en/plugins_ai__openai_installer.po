@@ -1,0 +1,56 @@
+# Module plugins_ai__openai_installer translation file for language=en
+# Copyright (C) 2024 Wingware
+# Wingware Python IDE -- www.wingware.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 10.0.4\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
+"PO-Revision-Date: 2024-06-20 07:18 EDT\n"
+"Last-Translator: Wingware <support@wingware.com>\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: plugins/ai/_openai_installer.py:48
+msgid ""
+"Get the location of install prefix and the directory that needs to be added "
+"to\n"
+"  the Python path in order to use the openai package"
+msgstr ""
+
+#: plugins/ai/_openai_installer.py:67
+msgid ""
+"Determine whether installation of openai dependencies is needed.  Returns\n"
+"  (needed, action) where needed is True only if the installations is needed "
+"and\n"
+"  action describes what the installation will do."
+msgstr ""
+
+#: plugins/ai/_openai_installer.py:85
+msgid ""
+"Install openai into Python using pip and --prefix option to place it into "
+"the user\n"
+"  directory. Calls result_cb with (error, output) as the installation "
+"progress. If error\n"
+"  is not None, the process has failed and error contains the error string. "
+"If output is\n"
+"  not None the process is running and has printed output. If both error and "
+"output are\n"
+"  None then the process has completed successfully."
+msgstr ""
+
+#: plugins/ai/_openai_installer.py:106
+msgid "Failed to start OpenAI installation process, with the following error:"
+msgstr ""
+
+#: plugins/ai/_openai_installer.py:114
+msgid "The OpenAI installation process failed with exit code {}"
+msgstr ""
+
+#: plugins/ai/_openai_installer.py:116
+msgid "The OpenAI installation did not create expected directory {}"
+msgstr ""

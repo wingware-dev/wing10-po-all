@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:51-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2003-07-10 12:22GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -56,33 +56,33 @@ msgstr ""
 msgid "_Abandon Changes & Reload Files"
 msgstr ""
 
-#: src/cache/textcache.py:478
+#: src/cache/textcache.py:488
 msgid "Failed to read %s:  %s"
 msgstr ""
 
-#: src/cache/textcache.py:574
+#: src/cache/textcache.py:587
 msgid "Could not read container-only file"
 msgstr ""
 
-#: src/cache/textcache.py:586
+#: src/cache/textcache.py:599
 msgid "Could not read file due to remote agent abort"
 msgstr ""
 
-#: src/cache/textcache.py:692
+#: src/cache/textcache.py:713
 msgid "Codec not found"
 msgstr ""
 
-#: src/cache/textcache.py:693
+#: src/cache/textcache.py:714
 msgid ""
 "Could not convert file %s when reading it -- the codec for the '%s' text "
 "encoding could not be found.  Trying default encoding '%s' instead."
 msgstr ""
 
-#: src/cache/textcache.py:718
+#: src/cache/textcache.py:739
 msgid "Could not convert from encoding"
 msgstr ""
 
-#: src/cache/textcache.py:719
+#: src/cache/textcache.py:740
 msgid ""
 "Could not convert all characters in %s when reading it as a %s encoded "
 "file.  Replacing unmappable characters with ?'s so saving the file may "
@@ -91,11 +91,11 @@ msgid ""
 "Default Encoding preference."
 msgstr ""
 
-#: src/cache/textcache.py:736
+#: src/cache/textcache.py:757
 msgid "Could not convert any characters in file"
 msgstr ""
 
-#: src/cache/textcache.py:737
+#: src/cache/textcache.py:758
 msgid ""
 "Failed to convert any characters in %s when reading it as a %s encoded "
 "file.  Reading it as a latin-1 encoded file instead which will probably "
@@ -104,34 +104,34 @@ msgid ""
 "after changing the Files / Default Encoding preference."
 msgstr ""
 
-#: src/cache/textcache.py:749
+#: src/cache/textcache.py:770
 msgid "Could not read file"
 msgstr ""
 
-#: src/cache/textcache.py:750
+#: src/cache/textcache.py:771
 msgid ""
 "Read failed because characters could not be read in %s when reading it as a "
 "%s encoded file."
 msgstr ""
 
-#: src/cache/textcache.py:952
+#: src/cache/textcache.py:973
 msgid ""
 "Unsupported encoding '%s' found in encoding comment -- Wing cannot write "
 "this file until the comment is changed"
 msgstr ""
 
-#: src/cache/textcache.py:992
+#: src/cache/textcache.py:1013
 msgid "Could not convert text \"%s\" on line %d to the %s encoding"
 msgstr ""
 
-#: src/cache/textcache.py:995
+#: src/cache/textcache.py:1016
 msgid "Could not convert file contents to the %s encoding"
 msgstr ""
 
-#: src/cache/textcache.py:1094
+#: src/cache/textcache.py:1131
 msgid "General write error"
 msgstr ""
 
-#: src/cache/textcache.py:1310
+#: src/cache/textcache.py:1326
 msgid "Encoding of %s changed to %s"
 msgstr ""

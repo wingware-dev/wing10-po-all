@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2003-07-10 12:24GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -384,7 +384,7 @@ msgid ""
 "comment should be changed instead."
 msgstr ""
 
-#: src/wingutils/savable.py:866
+#: src/wingutils/savable.py:852
 msgid "Unknown"
 msgstr ""
 

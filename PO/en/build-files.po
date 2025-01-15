@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:51-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2003-07-10 12:22GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -16,34 +16,34 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 "X-Generator: KBabel 0.9.5\n"
 
-#: build-files/releasebuild.py:1734
+#: build-files/releasebuild.py:1784
 msgid "Introduction to Wing %s"
 msgstr ""
 
-#: build-files/releasebuild.py:1735
+#: build-files/releasebuild.py:1785
 msgid "Wing %s Reference Manual"
 msgstr ""
 
-#: build-files/releasebuild.py:1736
+#: build-files/releasebuild.py:1786
 msgid "Wing %s How-Tos"
 msgstr ""
 
-#: build-files/releasebuild.py:1737
+#: build-files/releasebuild.py:1787
 msgid "Wing %s Quick Start Guide"
 msgstr ""
 
-#: build-files/releasebuild.py:1786
+#: build-files/releasebuild.py:1836
 msgid "Table of Contents"
 msgstr ""
 
-#: build-files/releasebuild.py:2376
+#: build-files/releasebuild.py:2415
 msgid "Wing Pro - Non-Commercial Use"
 msgstr ""
 
-#: build-files/releasebuild.py:2377
+#: build-files/releasebuild.py:2416
 msgid "Wing Pro - Commercial Use"
 msgstr ""
 
-#: build-files/releasebuild.py:2378
+#: build-files/releasebuild.py:2417
 msgid "Wing Pro - 30-Day Trial"
 msgstr ""

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.1.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2006-05-17 23:14 EDT\n"
 "Last-Translator: Claudia Walenzyk <support@wingide.com>\n"
 "Language-Team: None\n"
@@ -155,199 +155,199 @@ msgstr ""
 msgid "Select Directory..."
 msgstr ""
 
-#: src/search/cap_batch.py:215 src/search/interactive.py:123
+#: src/search/cap_batch.py:216 src/search/interactive.py:123
 msgid "_Case sensitive"
 msgstr ""
 
-#: src/search/cap_batch.py:216 src/search/interactive.py:128
+#: src/search/cap_batch.py:217 src/search/interactive.py:128
 msgid "_Whole words"
 msgstr ""
 
-#: src/search/cap_batch.py:239
+#: src/search/cap_batch.py:240
 msgid "_Text search"
 msgstr ""
 
-#: src/search/cap_batch.py:240
+#: src/search/cap_batch.py:241
 msgid "Wil_dcard search"
 msgstr ""
 
-#: src/search/cap_batch.py:241
+#: src/search/cap_batch.py:242
 msgid "Rege_x search"
 msgstr ""
 
-#: src/search/cap_batch.py:255
+#: src/search/cap_batch.py:256
 msgid "_Look in: "
 msgstr ""
 
-#: src/search/cap_batch.py:268
+#: src/search/cap_batch.py:269
 msgid "F_ilter: "
 msgstr ""
 
-#: src/search/cap_batch.py:293
+#: src/search/cap_batch.py:294
 msgid "_Name Only"
 msgstr ""
 
-#: src/search/cap_batch.py:294
+#: src/search/cap_batch.py:295
 msgid "_Window Title"
 msgstr ""
 
-#: src/search/cap_batch.py:295
+#: src/search/cap_batch.py:296
 msgid "_Full Path"
 msgstr ""
 
-#: src/search/cap_batch.py:296
+#: src/search/cap_batch.py:297
 msgid "_Group"
 msgstr ""
 
-#: src/search/cap_batch.py:315
+#: src/search/cap_batch.py:316
 msgid "Replace Operates on Disk"
 msgstr ""
 
-#: src/search/cap_batch.py:318
+#: src/search/cap_batch.py:319
 msgid "Result File Na_me"
 msgstr ""
 
-#: src/search/cap_batch.py:326
+#: src/search/cap_batch.py:327
 msgid "Show Search T_ype In Tool"
 msgstr ""
 
-#: src/search/cap_batch.py:331 src/search/interactive.py:176
+#: src/search/cap_batch.py:332 src/search/interactive.py:176
 msgid "Show _Replace"
 msgstr ""
 
-#: src/search/cap_batch.py:336 src/search/interactive.py:182
+#: src/search/cap_batch.py:337 src/search/interactive.py:182
 msgid "Find _After Replace"
 msgstr ""
 
-#: src/search/cap_batch.py:341
+#: src/search/cap_batch.py:342
 msgid "Rec_ursive Directory Search"
 msgstr ""
 
-#: src/search/cap_batch.py:354
+#: src/search/cap_batch.py:355
 msgid "File Set Name"
 msgstr ""
 
-#: src/search/cap_batch.py:354
+#: src/search/cap_batch.py:355
 msgid "The name under which to store the list of matching files"
 msgstr ""
 
-#: src/search/cap_batch.py:356
+#: src/search/cap_batch.py:357
 msgid "Create File Set"
 msgstr ""
 
-#: src/search/cap_batch.py:360
+#: src/search/cap_batch.py:361
 msgid "_Omit Binary Files"
 msgstr ""
 
-#: src/search/cap_batch.py:361
+#: src/search/cap_batch.py:362
 msgid "Auto-re_start Searches"
 msgstr ""
 
-#: src/search/cap_batch.py:362
+#: src/search/cap_batch.py:363
 msgid "Open _First Match"
 msgstr ""
 
-#: src/search/cap_batch.py:364
+#: src/search/cap_batch.py:365
 msgid "Show Line _Numbers"
 msgstr ""
 
-#: src/search/cap_batch.py:368
+#: src/search/cap_batch.py:369
 msgid "Copy Results to Clipboard"
 msgstr ""
 
-#: src/search/cap_batch.py:371
+#: src/search/cap_batch.py:372
 msgid "Name Result File Set"
 msgstr ""
 
-#: src/search/cap_batch.py:375
+#: src/search/cap_batch.py:376
 msgid "_Case Sensitive"
 msgstr ""
 
-#: src/search/cap_batch.py:376
+#: src/search/cap_batch.py:377
 msgid "_Whole Words"
 msgstr ""
 
-#: src/search/cap_batch.py:405
+#: src/search/cap_batch.py:406
 msgid "Show Search in Files Documentation"
 msgstr ""
 
-#: src/search/cap_batch.py:602 src/search/cap_batch.py:624
+#: src/search/cap_batch.py:603 src/search/cap_batch.py:625
 msgid "Search in files state"
 msgstr ""
 
-#: src/search/cap_batch.py:944
+#: src/search/cap_batch.py:945
 msgid "Line %s: "
 msgstr ""
 
-#: src/search/cap_batch.py:950
+#: src/search/cap_batch.py:951
 msgid "%s, line %i: "
 msgstr ""
 
-#: src/search/cap_batch.py:972
+#: src/search/cap_batch.py:973
 msgid "File: %s\n"
 msgstr ""
 
-#: src/search/cap_batch.py:1551 src/search/interactive.py:715
+#: src/search/cap_batch.py:1552 src/search/interactive.py:715
 msgid "Wrapped "
 msgstr ""
 
-#: src/search/cap_batch.py:1554
+#: src/search/cap_batch.py:1555
 msgid "%sFile: %s"
 msgstr ""
 
-#: src/search/cap_batch.py:1624
+#: src/search/cap_batch.py:1625
 msgid "Search Aborted"
 msgstr ""
 
-#: src/search/cap_batch.py:1717
+#: src/search/cap_batch.py:1718
 msgid "Directory does not exist: \"%s\""
 msgstr ""
 
-#: src/search/cap_batch.py:1724
+#: src/search/cap_batch.py:1725
 msgid "Directory search not supported"
 msgstr ""
 
-#: src/search/cap_batch.py:1740
+#: src/search/cap_batch.py:1741
 msgid "Search Starting"
 msgstr ""
 
-#: src/search/cap_batch.py:1821
+#: src/search/cap_batch.py:1822
 msgid "Found %i matches in %i files"
 msgstr ""
 
-#: src/search/cap_batch.py:1827
+#: src/search/cap_batch.py:1828
 msgid "Reading directory: "
 msgstr ""
 
-#: src/search/cap_batch.py:1831
+#: src/search/cap_batch.py:1832
 msgid "Searching remote files..."
 msgstr ""
 
-#: src/search/cap_batch.py:1854
+#: src/search/cap_batch.py:1855
 msgid "Scanning: "
 msgstr ""
 
-#: src/search/cap_batch.py:1864
+#: src/search/cap_batch.py:1865
 msgid "Search Paused"
 msgstr ""
 
-#: src/search/cap_batch.py:1868
+#: src/search/cap_batch.py:1869
 msgid "Search Continued"
 msgstr ""
 
-#: src/search/cap_batch.py:1899 src/search/interactive.py:503
+#: src/search/cap_batch.py:1900 src/search/interactive.py:503
 msgid "No search string"
 msgstr ""
 
-#: src/search/cap_batch.py:1932 src/search/interactive.py:333
+#: src/search/cap_batch.py:1933 src/search/interactive.py:333
 msgid "Could not replace:  No previous search match"
 msgstr ""
 
-#: src/search/cap_batch.py:1936
+#: src/search/cap_batch.py:1937
 msgid "Failed to display editor for replace"
 msgstr ""
 
-#: src/search/cap_batch.py:1987
+#: src/search/cap_batch.py:1988
 msgid ""
 "You have configured Replace All to open all altered files into Wing.\n"
 "\n"
@@ -357,7 +357,7 @@ msgid ""
 "Are you sure you want to do this?"
 msgstr ""
 
-#: src/search/cap_batch.py:1992
+#: src/search/cap_batch.py:1993
 msgid ""
 "You have configured Replace All to operate directly on disk files (already "
 "open files will be changed only within Wing and left unsaved).\n"
@@ -367,27 +367,27 @@ msgid ""
 "Are you sure you want to do this?"
 msgstr ""
 
-#: src/search/cap_batch.py:1998
+#: src/search/cap_batch.py:1999
 msgid "Confirm Replace All"
 msgstr ""
 
-#: src/search/cap_batch.py:1999
+#: src/search/cap_batch.py:2000
 msgid "_Replace All"
 msgstr ""
 
-#: src/search/cap_batch.py:2000
+#: src/search/cap_batch.py:2001
 msgid "_Cancel"
 msgstr ""
 
-#: src/search/cap_batch.py:2141
+#: src/search/cap_batch.py:2142
 msgid "Filter '%s' is invalid"
 msgstr ""
 
-#: src/search/cap_batch.py:2729 src/search/cap_batch.py:2736
+#: src/search/cap_batch.py:2730 src/search/cap_batch.py:2737
 msgid "Warning: Replace All"
 msgstr ""
 
-#: src/search/cap_batch.py:2730
+#: src/search/cap_batch.py:2731
 msgid ""
 "You have set Replace All to operate directly on disk files (already open "
 "files will be changed only within Wing until they are saved to disk).\n"
@@ -397,7 +397,7 @@ msgid ""
 "revision control system."
 msgstr ""
 
-#: src/search/cap_batch.py:2737
+#: src/search/cap_batch.py:2738
 msgid ""
 "You have set Replace All to open altered files into Wing.\n"
 "\n"
@@ -405,142 +405,144 @@ msgid ""
 "not alter disk files until saved."
 msgstr ""
 
-#: src/search/cap_batch.py:2780 src/search/cap_batch.py:2790
+#: src/search/cap_batch.py:2781 src/search/cap_batch.py:2791
 msgid "Search in Files"
 msgstr ""
 
-#: src/search/cap_batch.py:2795
+#: src/search/cap_batch.py:2796
 msgid "Multiple File Search and Replace"
 msgstr ""
 
-#: src/search/cap_usesgui.py:323
+#: src/search/cap_usesgui.py:331
 msgid "Possible match"
 msgstr ""
 
-#: src/search/cap_usesgui.py:324
+#: src/search/cap_usesgui.py:332
 msgid "Unlikely match"
 msgstr ""
 
-#: src/search/cap_usesgui.py:341
+#: src/search/cap_usesgui.py:349
 msgid "Whole file"
 msgstr ""
 
-#: src/search/cap_usesgui.py:369
+#: src/search/cap_usesgui.py:366
 msgid "%s, line %s:"
 msgstr ""
 
-#: src/search/cap_usesgui.py:697
+#: src/search/cap_usesgui.py:674
 msgid "Searching..."
 msgstr ""
 
-#: src/search/cap_usesgui.py:784
+#: src/search/cap_usesgui.py:761
 msgid "Refresh"
 msgstr ""
 
-#: src/search/cap_usesgui.py:786
+#: src/search/cap_usesgui.py:763
 msgid "Show Possible Uses"
 msgstr ""
 
-#: src/search/cap_usesgui.py:788
+#: src/search/cap_usesgui.py:765
 msgid "Show matches where either the match or the search symbol is undefined"
 msgstr ""
 
-#: src/search/cap_usesgui.py:790
+#: src/search/cap_usesgui.py:767
 msgid "Show Unlikely Uses"
 msgstr ""
 
-#: src/search/cap_usesgui.py:792
+#: src/search/cap_usesgui.py:769
 msgid ""
 "Show matches where definition of the match does not match the definition of "
 "the search symbol"
 msgstr ""
 
-#: src/search/cap_usesgui.py:799
+#: src/search/cap_usesgui.py:776
 msgid "Search Project Files"
 msgstr ""
 
-#: src/search/cap_usesgui.py:801
+#: src/search/cap_usesgui.py:778
 msgid "Search for uses in all Python files in the project"
 msgstr ""
 
-#: src/search/cap_usesgui.py:805
+#: src/search/cap_usesgui.py:782
 msgid "Search Original File"
 msgstr ""
 
-#: src/search/cap_usesgui.py:807
+#: src/search/cap_usesgui.py:784
 msgid "Search for uses in the file where the symbol was selected"
 msgstr ""
 
-#: src/search/cap_usesgui.py:813
-msgid "Find Imported Items Everywhere"
+#: src/search/cap_usesgui.py:790
+msgid "Only Find Original Name"
 msgstr ""
 
-#: src/search/cap_usesgui.py:815
-msgid "Find uses of imported module, class, function, attribute in all files"
+#: src/search/cap_usesgui.py:792
+msgid ""
+"Only find uses of original name and not uses of the class/function/module "
+"that it refers to"
 msgstr ""
 
-#: src/search/cap_usesgui.py:832
+#: src/search/cap_usesgui.py:809
 msgid "Points of use"
 msgstr ""
 
-#: src/search/cap_usesgui.py:848
+#: src/search/cap_usesgui.py:825
 msgid "Uses of module "
 msgstr ""
 
-#: src/search/cap_usesgui.py:850
+#: src/search/cap_usesgui.py:827
 msgid "Uses of "
 msgstr ""
 
-#: src/search/cap_usesgui.py:857
+#: src/search/cap_usesgui.py:834
 msgid "All"
 msgstr ""
 
-#: src/search/cap_usesgui.py:862 src/search/cap_usesgui.py:863
+#: src/search/cap_usesgui.py:839 src/search/cap_usesgui.py:840
 msgid "in %s"
 msgstr ""
 
-#: src/search/cap_usesgui.py:866
+#: src/search/cap_usesgui.py:843
 msgid "in Project Files"
 msgstr ""
 
-#: src/search/cap_usesgui.py:886
+#: src/search/cap_usesgui.py:863
 msgid "Uses of module %s"
 msgstr ""
 
-#: src/search/cap_usesgui.py:899
+#: src/search/cap_usesgui.py:876
 msgid "Uses of class %s (%s)"
 msgstr ""
 
-#: src/search/cap_usesgui.py:902
+#: src/search/cap_usesgui.py:879
 msgid "Uses of method %s (%s)"
 msgstr ""
 
-#: src/search/cap_usesgui.py:905
+#: src/search/cap_usesgui.py:882
 msgid "Uses of function %s (%s)"
 msgstr ""
 
-#: src/search/cap_usesgui.py:972
+#: src/search/cap_usesgui.py:949
 msgid "Previous Match"
 msgstr ""
 
-#: src/search/cap_usesgui.py:973
+#: src/search/cap_usesgui.py:950
 msgid "Next Match"
 msgstr ""
 
-#: src/search/cap_usesgui.py:979
+#: src/search/cap_usesgui.py:956
 msgid ""
 "Select a symbol in an editor and use Find Points of Use in the Source menu"
 msgstr ""
 
-#: src/search/cap_usesgui.py:987
+#: src/search/cap_usesgui.py:964
 msgid "Show Documentation"
 msgstr ""
 
-#: src/search/cap_usesgui.py:1047
+#: src/search/cap_usesgui.py:1024
 msgid "Uses"
 msgstr ""
 
-#: src/search/cap_usesgui.py:1052
+#: src/search/cap_usesgui.py:1029
 msgid "Points of Use"
 msgstr ""
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 9.0.1\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2022-12-14 09:33 EST\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -15,128 +15,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: plugins/container/lxc.py:28
+#: plugins/container/lxc.py:30
 msgid "Support for launching an LXC container instance and commands."
 msgstr ""
 
-#: plugins/container/lxc.py:72
+#: plugins/container/lxc.py:74
 msgid "Get a list of running image_ids"
 msgstr ""
 
-#: plugins/container/lxc.py:87
+#: plugins/container/lxc.py:89
 msgid "Output:"
 msgstr ""
 
-#: plugins/container/lxc.py:93
+#: plugins/container/lxc.py:95
 msgid "Failed to run 'lxc list'"
 msgstr ""
 
-#: plugins/container/lxc.py:98
+#: plugins/container/lxc.py:100
 msgid "Failed to parse 'lxc list' output"
 msgstr ""
 
-#: plugins/container/lxc.py:104
+#: plugins/container/lxc.py:106
 msgid "Failed to start 'lxc list'"
 msgstr ""
 
-#: plugins/container/lxc.py:146
+#: plugins/container/lxc.py:148
 msgid "LXC instance {} failed to start; err={}"
 msgstr ""
 
-#: plugins/container/lxc.py:155
+#: plugins/container/lxc.py:157
 msgid "Failed to start LXC instance: {}"
 msgstr ""
 
-#: plugins/container/lxc.py:167 plugins/container/lxc.py:259
+#: plugins/container/lxc.py:169 plugins/container/lxc.py:261
 msgid "Running: {}"
 msgstr ""
 
-#: plugins/container/lxc.py:181
+#: plugins/container/lxc.py:183
 msgid "lxc start failed to start - timeout"
 msgstr ""
 
-#: plugins/container/lxc.py:236
+#: plugins/container/lxc.py:238
 msgid "Terminated LXC container {}"
 msgstr ""
 
-#: plugins/container/lxc.py:246
+#: plugins/container/lxc.py:248
 msgid "Failed to run 'lxc stop {}'"
 msgstr ""
 
-#: plugins/container/lxc.py:267
+#: plugins/container/lxc.py:269
 msgid "Undo configuration put into place by __ConfigureAndLaunch"
 msgstr ""
 
-#: plugins/container/lxc.py:304 plugins/container/lxc.py:497
+#: plugins/container/lxc.py:307 plugins/container/lxc.py:500
 msgid "Starting command {} in {}"
 msgstr ""
 
-#: plugins/container/lxc.py:308
+#: plugins/container/lxc.py:311
 msgid "Process failed to start"
 msgstr ""
 
-#: plugins/container/lxc.py:311 plugins/container/lxc.py:505
+#: plugins/container/lxc.py:314 plugins/container/lxc.py:508
 msgid "Process failed with errno={}"
 msgstr ""
 
-#: plugins/container/lxc.py:318
+#: plugins/container/lxc.py:321
 msgid "Deconfigure failed"
 msgstr ""
 
-#: plugins/container/lxc.py:320
+#: plugins/container/lxc.py:323
 msgid "Deconfigure complete"
 msgstr ""
 
-#: plugins/container/lxc.py:334
+#: plugins/container/lxc.py:337
 msgid "Deconfiguring container"
 msgstr ""
 
-#: plugins/container/lxc.py:458
+#: plugins/container/lxc.py:461
 msgid ""
 "Stop container if running, remove any stale configuration added previously\n"
 "    in __ConfigureAndLaunch and then start reconfiguration and launch"
 msgstr ""
 
-#: plugins/container/lxc.py:464
+#: plugins/container/lxc.py:467
 msgid ""
 "Set up environment variables, file mounts, port forwards, and other "
 "networking\n"
 "    used by container, and then launch the container instance."
 msgstr ""
 
-#: plugins/container/lxc.py:501
+#: plugins/container/lxc.py:504
 msgid "Process failed to start:"
 msgstr ""
 
-#: plugins/container/lxc.py:512
+#: plugins/container/lxc.py:515
 msgid "LXC configuration succeeded"
 msgstr ""
 
-#: plugins/container/lxc.py:515
+#: plugins/container/lxc.py:518
 msgid "LXC configuration failed"
 msgstr ""
 
-#: plugins/container/lxc.py:523
+#: plugins/container/lxc.py:526
 msgid "Configuring LXC instance {}"
 msgstr ""
 
-#: plugins/container/lxc.py:540
+#: plugins/container/lxc.py:543
 msgid "Return a list of all active container instances"
 msgstr ""
 
-#: plugins/container/lxc.py:557
+#: plugins/container/lxc.py:560
 msgid "Timed out in 'lxc info {}'"
 msgstr ""
 
-#: plugins/container/lxc.py:572
+#: plugins/container/lxc.py:575
 msgid "Failed to parse output from 'lxc info {}'"
 msgstr ""
 
-#: plugins/container/lxc.py:579
+#: plugins/container/lxc.py:582
 msgid "Failed to run 'lxc info {}'"
 msgstr ""
 
-#: plugins/container/lxc.py:590
+#: plugins/container/lxc.py:593
 msgid ""
 "Register a callback to invoke when the runtime status of containers change. "
 "The\n"
@@ -147,6 +147,6 @@ msgid ""
 "    kStartFailed, kTerminating."
 msgstr ""
 
-#: plugins/container/lxc.py:598
+#: plugins/container/lxc.py:601
 msgid "Remove a callback previously registered with RegisterStatusCallback()."
 msgstr ""

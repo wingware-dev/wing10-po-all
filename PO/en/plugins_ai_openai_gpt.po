@@ -1,0 +1,328 @@
+# Module plugins_ai_openai_gpt translation file for language=en
+# Copyright (C) 2024 Wingware
+# Wingware Python IDE -- www.wingware.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 10.0.4\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
+"PO-Revision-Date: 2024-06-20 07:18 EDT\n"
+"Last-Translator: Wingware <support@wingware.com>\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: plugins/ai/openai_gpt.py:50
+msgid "Use Key File {}"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:51
+msgid "Use Key File:"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:52
+msgid "Use Key:"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:56
+msgid "API Key"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:57
+msgid "Model"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:58
+msgid "Billing Currency Symbol"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:59
+msgid "Cost/1K Prompt Tokens"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:60
+msgid "Cost/1K Result Tokens"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:77
+msgid "Key file does not exist: {}"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:77
+msgid "You need to purchase an OpenAI API key"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:79
+msgid "You must enter a purchased OpenAI API key"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:82
+msgid "You must choose an OpenAI model"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:85
+msgid "You must enter a currency symbol for cost display"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:90
+msgid "Cost of prompt tokens must be a number"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:95
+msgid "Cost of result tokens must be a number"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:100
+msgid ""
+"Request a suggestion for code to insert after the given insertion point in "
+"the\n"
+"    editor with given filename and content text. Optionally, also include "
+"the given extra\n"
+"    files in the query as a dictionary from file name to file content.\n"
+"    \n"
+"    This calls the given result_cb with the (error, cost, response) where "
+"error is\n"
+"    a non-empty error on failure and otherwise response is the code "
+"suggested by the\n"
+"    language model.\n"
+"\n"
+"    Return value is the spawn.CProcess object running the query and a "
+"description of the\n"
+"    query for diagnostic purposes."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:131
+msgid ""
+"Refactor the selected text using a written request from the user, within "
+"the\n"
+"    context of the named file and its full content. Optionally, also include "
+"the given\n"
+"    extra files in the query as a dictionary from file name to file "
+"content.\n"
+"    \n"
+"    This calls the given result_cb with the (error, cost,response) where "
+"error is a\n"
+"    non-empty error on failure and otherwise response is the replacement "
+"code suggested by\n"
+"    the language model.\n"
+"    \n"
+"    Return value is the spawn.CProcess object running the query and a "
+"description of the\n"
+"    query for diagnostic purposes."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:163
+msgid "AI Refactor failed:"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:165
+msgid "Starting AI Refactor:"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:170
+msgid ""
+"An AI assistant that uses OpenAI's Assistants API to implement chat. Each "
+"assistant\n"
+"    can be associated with a number of files as context for that chat. One "
+"or more chat\n"
+"    threads may be created, each of which consists of a sequence of requests "
+"and\n"
+"    responses. Each request may have a file associated with it, in addition "
+"to those that\n"
+"    are attached to the assistant as a whole.\n"
+"    \n"
+"    All operations run asynchronously, with the result of the operation "
+"being passed back\n"
+"    to the caller through a callable result_cb."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:184
+msgid ""
+"Constructor. The given log_cb is called with output suitable for logging "
+"when\n"
+"        there is diagnostic output from the server process."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:203
+msgid ""
+"Create the underlying services and connect to them.\n"
+"        \n"
+"        Calls result_cb(error: str) where error is an error string suitable "
+"for logging if\n"
+"        the connection failed, and None on success."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:237
+msgid ""
+"Create the assistant in the OpenAI account, using the given assistant name.\n"
+"        This creates an OpenAI assistant in the user's account.\n"
+"        \n"
+"        Calls result_cb(error: str) where error is an error string suitable "
+"for logging if\n"
+"        it fails to create the resources, or None on success."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:250
+msgid ""
+"Delete this OpenAI Assistant instance and all its threads, and then remove "
+"the\n"
+"        Assistant and all associated uploaded files from the user's OpenAI "
+"account.\n"
+"        \n"
+"        Calls result_cb(error: str) where error is an error string suitable "
+"for logging if\n"
+"        there were any failures or None if all resources were successfully "
+"deleted from\n"
+"        the OpenAI account.\n"
+"        \n"
+"        If there are errors, some resources could not be deleted and should "
+"be removed\n"
+"        later with delete_assistant_from_account() and "
+"delete_uploaded_file_from_account()."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:273
+msgid ""
+"Get the OpenAI id for this assistant.  The value is None if the assistant\n"
+"        hasn't been created yet."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:279
+msgid ""
+"Set the context files to use for this assistant as a whole.  This includes\n"
+"        all the files other than the current file that are relevant to "
+"conversation\n"
+"        threads hosted by the assistant.  The files should be sent most "
+"important first\n"
+"        since OpenAI limits how many can be associated with the assistant.\n"
+"    \n"
+"        The arg files is a list of (filename, content_file) where "
+"content_file is None\n"
+"        if the primary file content should be used or non-None if it "
+"contains the\n"
+"        content to use for the file, encoded as utf-8.\n"
+"    \n"
+"        Returns (file_ids, error) where file_ids is a list of Open AI file "
+"ids for the\n"
+"        context files on success and error is and error message if one or "
+"more file\n"
+"        failed to upload or associate with the assistant.\n"
+"    \n"
+"        When there are errors, there may still be items in file_ids for the "
+"files that were\n"
+"        successfully processed."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:302
+msgid ""
+"Create a new chat thread managed by this assistant. Calls the given\n"
+"        result_cb(thread_id: str, error: str) when complete, where thread_id "
+"is the\n"
+"        thread id on success and error is an error string on failure."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:309
+msgid ""
+"Delete the given chat thread managed by this assistant. Calls the given\n"
+"        result_cb(deleted: bool) when complete, where indicating whether the "
+"thread was\n"
+"        successfully deleted."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:317
+msgid ""
+"Add a user request to the given thread and run it. Optionally, the request "
+"may\n"
+"        be associated with a filename with given content and/or a range of "
+"selected text\n"
+"        that serves as the focus for the message.\n"
+"        \n"
+"        Calls the given result_cb(status: str, response: str, mime_types: "
+"list[str],\n"
+"        cost:float, error: str) when the request has finished running, "
+"where:\n"
+"        \n"
+"        * status is one of: queued, in_progress, requires_action, "
+"cancelling, cancelled,\n"
+"          failed, completed, or expired\n"
+"        * response is a list of lines in the AI's response, or None if the "
+"request failed\n"
+"        * mime_types is a dictionary from line number in the response "
+"(0=first) to\n"
+"          the mime type of that line. This is used to indicate some lines "
+"are Python\n"
+"          code or other types of code. Those lines not in the mime_types "
+"dictionary\n"
+"          are plain text.\n"
+"        * cost is the amount that the request cost to run\n"
+"        * error is set to a string suitable for logging if the request "
+"failed\n"
+"        \n"
+"        Returns a unique ID for the request that can be sent to "
+"cancel_request()\n"
+"        "
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:348
+msgid "Cancel the currently running request in the given thread."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:358
+msgid ""
+"Get the list of uploaded files for this assistant. Returns a list of "
+"(file_id,\n"
+"        filename).\n"
+"        \n"
+"        This resulting file_ids list includes files in the current context, "
+"files\n"
+"        associated with a request on threads that still exists, and also any "
+"others that\n"
+"        were previously uploaded not yet removed from the OpenAI account. "
+"This occurs\n"
+"        because unused uploaded files are cached in the account while the "
+"assistant still\n"
+"        exists, in order to avoid repeated re-uploads."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:371
+msgid ""
+"Delete the given file from the OpenAI account. Returns an error if the file "
+"was\n"
+"        not deleted, and None on success.  This runs synchronously and thus "
+"may take\n"
+"        time to complete."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:379
+msgid ""
+"Delete the given assistant from the OpenAI account.  This runs "
+"synchronously\n"
+"        and thus may time some time to complete."
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:386
+msgid ""
+"Delete all assistants and files that were created by this OpenAI integration "
+"and\n"
+"        all uploaded files matching the given prefix in path name from the "
+"OpenAI account.\n"
+"    \n"
+"        This is used for cleanup when normal resource removal fails. Use "
+"with caution, since\n"
+"        this may remove assistants and files that are in use!"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:419
+msgid "Key file {} does not exist"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:440
+msgid "Could not find openai.key in settings or installation directory"
+msgstr ""
+
+#: plugins/ai/openai_gpt.py:443
+msgid "Invalid OpenAI API key configuration"
+msgstr ""

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 9.0.1\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2022-12-14 09:33 EST\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -35,9 +35,9 @@ msgstr ""
 msgid "_Install Selected"
 msgstr ""
 
-#: src/package/cap_packageinstallgui.py:101 src/package/manager.py:1248
-#: src/package/manager.py:1280 src/package/manager.py:1427
-#: src/package/manager.py:1669
+#: src/package/cap_packageinstallgui.py:101 src/package/manager.py:1530
+#: src/package/manager.py:1565 src/package/manager.py:1715
+#: src/package/manager.py:1977
 msgid "_Cancel"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "depends on"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:136 src/package/manager.py:1668
+#: src/package/cap_packagepanel.py:136 src/package/manager.py:1976
 msgid "_OK"
 msgstr ""
 
@@ -183,399 +183,445 @@ msgstr ""
 msgid "Initiali_ze requirements.txt"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:239
+#: src/package/cap_packagepanel.py:238
+msgid "Initiali_ze for Poetry"
+msgstr ""
+
+#: src/package/cap_packagepanel.py:241
 msgid "Initiali_ze for pipenv"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:243
+#: src/package/cap_packagepanel.py:245
 msgid "_Install New Packages...."
 msgstr ""
 
-#: src/package/cap_packagepanel.py:247 src/package/cap_packagepanel.py:504
+#: src/package/cap_packagepanel.py:249 src/package/cap_packagepanel.py:520
 msgid "_Remove Selected Packages"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:248 src/package/cap_packagepanel.py:507
+#: src/package/cap_packagepanel.py:250 src/package/cap_packagepanel.py:523
 msgid "_Update Selected Packages"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:250 src/package/cap_packagepanel.py:511
+#: src/package/cap_packagepanel.py:252 src/package/cap_packagepanel.py:527
 msgid "Set Package _Version..."
 msgstr ""
 
-#: src/package/cap_packagepanel.py:252 src/package/cap_packagepanel.py:514
+#: src/package/cap_packagepanel.py:254 src/package/cap_packagepanel.py:530
 msgid "Show Selected in _PyPI"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:258
+#: src/package/cap_packagepanel.py:260
 msgid "Install _Missing Packages"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:259
+#: src/package/cap_packagepanel.py:261
 msgid "R_emove Unused Packages"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:262
+#: src/package/cap_packagepanel.py:264
 msgid "_Freeze to requirements.txt"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:264
+#: src/package/cap_packagepanel.py:266
 msgid "E_xport to environment.yml"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:267
+#: src/package/cap_packagepanel.py:268
+msgid "U_pdate poetry.lock"
+msgstr ""
+
+#: src/package/cap_packagepanel.py:271
 msgid "U_pdate Pipfile.lock"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:285
+#: src/package/cap_packagepanel.py:289
 msgid "_Auto-Detect Package Manager"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:296
+#: src/package/cap_packagepanel.py:300
 msgid "Set Configuration Directory..."
 msgstr ""
 
-#: src/package/cap_packagepanel.py:308
+#: src/package/cap_packagepanel.py:312
 msgid "Auto-Upda_te {}"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:316
+#: src/package/cap_packagepanel.py:321
 msgid "Unin_stall Removes Unused Dependencies"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:321
+#: src/package/cap_packagepanel.py:326
 msgid "Confirm _Operations"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:326
+#: src/package/cap_packagepanel.py:331
 msgid "_Auto-correct Python Executable"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:331
+#: src/package/cap_packagepanel.py:336
 msgid "Show _Console"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:334
+#: src/package/cap_packagepanel.py:339
 msgid "Show Package Management _Documentation"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:390
-msgid "Waiting..."
+#: src/package/cap_packagepanel.py:402
+msgid "Error Scanning for Packages!"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:435
+#: src/package/cap_packagepanel.py:408
+msgid "Failed to obtain package list: {}"
+msgstr ""
+
+#: src/package/cap_packagepanel.py:429
+msgid "Failed to read package configuration: {}"
+msgstr ""
+
+#: src/package/cap_packagepanel.py:451
 msgid "No package manager"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:437
+#: src/package/cap_packagepanel.py:453
 msgid "using {}"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:439
+#: src/package/cap_packagepanel.py:455
 msgid "[readonly]"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:444
+#: src/package/cap_packagepanel.py:460
 msgid "no {} found"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:522
+#: src/package/cap_packagepanel.py:538
 msgid "_Refresh"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:610
+#: src/package/cap_packagepanel.py:626
 msgid "Packages"
 msgstr ""
 
-#: src/package/cap_packagepanel.py:615
+#: src/package/cap_packagepanel.py:631
 msgid "Packages installed for the current Python Executable"
 msgstr ""
 
-#: src/package/manager.py:144
+#: src/package/manager.py:145
 msgid "Package Operation"
 msgstr ""
 
-#: src/package/manager.py:211
+#: src/package/manager.py:212
 msgid "Failed to obtain PyPI index; err:"
 msgstr ""
 
-#: src/package/manager.py:219
+#: src/package/manager.py:220
 msgid "Failed to start process to fetch PyPI package index"
 msgstr ""
 
-#: src/package/manager.py:358
+#: src/package/manager.py:366
 msgid "Inspecting Anaconda {} in {}"
 msgstr ""
 
-#: src/package/manager.py:362
+#: src/package/manager.py:370
 msgid "Process failed to start"
 msgstr ""
 
-#: src/package/manager.py:365
+#: src/package/manager.py:373
 msgid "Process failed with errno={}"
 msgstr ""
 
-#: src/package/manager.py:392
+#: src/package/manager.py:400
 msgid "Inspecting {} Anaconda installations for environments"
 msgstr ""
 
-#: src/package/manager.py:565 src/package/manager.py:609
-#: src/package/manager.py:750 src/package/manager.py:814
-#: src/package/manager.py:1087 src/package/manager.py:1322
-#: src/package/manager.py:1542 src/package/manager.py:1608
-#: src/package/manager.py:1768 src/package/manager.py:1981
-#: src/package/manager.py:2126 src/package/manager.py:2408
+#: src/package/manager.py:581 src/package/manager.py:627
+#: src/package/manager.py:682 src/package/manager.py:728
+#: src/package/manager.py:871 src/package/manager.py:945
+#: src/package/manager.py:1154 src/package/manager.py:1364
+#: src/package/manager.py:1610 src/package/manager.py:1846
+#: src/package/manager.py:1916 src/package/manager.py:2082
+#: src/package/manager.py:2300 src/package/manager.py:2452
+#: src/package/manager.py:2764
 msgid "Output:"
 msgstr ""
 
-#: src/package/manager.py:572
-msgid "Found pipenv in active Python base: {}"
+#: src/package/manager.py:588
+msgid "Found Poetry in active Python base: {}"
 msgstr ""
 
-#: src/package/manager.py:574
-msgid "Auto-installing pipenv into active Python base: {}"
+#: src/package/manager.py:590
+msgid "Auto-installing Poetry into active Python base: {}"
 msgstr ""
 
-#: src/package/manager.py:578
-msgid "Failed to start process to check for pipenv"
+#: src/package/manager.py:594
+msgid "Failed to start process to check for Poetry"
 msgstr ""
 
-#: src/package/manager.py:580 src/package/manager.py:624
-#: src/package/manager.py:790 src/package/manager.py:846
-#: src/package/manager.py:1116 src/package/manager.py:1337
-#: src/package/manager.py:1558 src/package/manager.py:1628
-#: src/package/manager.py:1786 src/package/manager.py:2005
-#: src/package/manager.py:2144 src/package/manager.py:2427
+#: src/package/manager.py:596 src/package/manager.py:642
+#: src/package/manager.py:697 src/package/manager.py:743
+#: src/package/manager.py:921 src/package/manager.py:977
+#: src/package/manager.py:1178 src/package/manager.py:1398
+#: src/package/manager.py:1625 src/package/manager.py:1862
+#: src/package/manager.py:1936 src/package/manager.py:2100
+#: src/package/manager.py:2325 src/package/manager.py:2470
+#: src/package/manager.py:2788
 msgid "Running:"
 msgstr ""
 
-#: src/package/manager.py:580 src/package/manager.py:624
-#: src/package/manager.py:790 src/package/manager.py:846
-#: src/package/manager.py:1116 src/package/manager.py:1337
-#: src/package/manager.py:1558 src/package/manager.py:1628
-#: src/package/manager.py:1786 src/package/manager.py:2005
-#: src/package/manager.py:2144 src/package/manager.py:2427
+#: src/package/manager.py:596 src/package/manager.py:642
+#: src/package/manager.py:697 src/package/manager.py:743
+#: src/package/manager.py:921 src/package/manager.py:977
+#: src/package/manager.py:1178 src/package/manager.py:1398
+#: src/package/manager.py:1625 src/package/manager.py:1862
+#: src/package/manager.py:1936 src/package/manager.py:2100
+#: src/package/manager.py:2325 src/package/manager.py:2470
+#: src/package/manager.py:2788
 msgid "in"
 msgstr ""
 
-#: src/package/manager.py:592 src/package/manager.py:706
-#: src/package/manager.py:733 src/package/manager.py:1308
-#: src/package/manager.py:1490 src/package/manager.py:1527
-#: src/package/manager.py:1584
+#: src/package/manager.py:610 src/package/manager.py:711
+#: src/package/manager.py:825 src/package/manager.py:854
+#: src/package/manager.py:1593 src/package/manager.py:1792
+#: src/package/manager.py:1829 src/package/manager.py:1888
 msgid "Package manager is not ready"
 msgstr ""
 
-#: src/package/manager.py:597
+#: src/package/manager.py:615 src/package/manager.py:716
 msgid "Another package manager is already in use"
 msgstr ""
 
-#: src/package/manager.py:616
+#: src/package/manager.py:634
+msgid "Failed to install Poetry"
+msgstr ""
+
+#: src/package/manager.py:640
+msgid "Failed to start process to install Poetry"
+msgstr ""
+
+#: src/package/manager.py:689
+msgid "Found pipenv in active Python base: {}"
+msgstr ""
+
+#: src/package/manager.py:691
+msgid "Auto-installing pipenv into active Python base: {}"
+msgstr ""
+
+#: src/package/manager.py:695
+msgid "Failed to start process to check for pipenv"
+msgstr ""
+
+#: src/package/manager.py:735
 msgid "Failed to install pipenv"
 msgstr ""
 
-#: src/package/manager.py:622
+#: src/package/manager.py:741
 msgid "Failed to start process to install pipenv"
 msgstr ""
 
-#: src/package/manager.py:660
+#: src/package/manager.py:779
 msgid "Container"
 msgstr ""
 
-#: src/package/manager.py:662
+#: src/package/manager.py:781
 msgid "Cluster"
 msgstr ""
 
-#: src/package/manager.py:665
+#: src/package/manager.py:784
 msgid "Remote"
 msgstr ""
 
-#: src/package/manager.py:670
+#: src/package/manager.py:789
 msgid "Virtualenv"
 msgstr ""
 
-#: src/package/manager.py:672
+#: src/package/manager.py:791
 msgid "Python"
 msgstr ""
 
-#: src/package/manager.py:757
+#: src/package/manager.py:878 src/package/manager.py:1161
 msgid "Failed to get package list"
 msgstr ""
 
-#: src/package/manager.py:775
+#: src/package/manager.py:900 src/package/manager.py:1169
 msgid "Failed to parse package list"
 msgstr ""
 
-#: src/package/manager.py:788
+#: src/package/manager.py:919 src/package/manager.py:1176
 msgid "Failed to start process to list packages"
 msgstr ""
 
-#: src/package/manager.py:821
+#: src/package/manager.py:952
 msgid "Failed to get conda package list"
 msgstr ""
 
-#: src/package/manager.py:829
+#: src/package/manager.py:960
 msgid "Failed to parse conda package list"
 msgstr ""
 
-#: src/package/manager.py:844
+#: src/package/manager.py:975
 msgid "Failed to start process to list conda packages"
 msgstr ""
 
-#: src/package/manager.py:931
+#: src/package/manager.py:1068
 msgid "No package manager found"
 msgstr ""
 
-#: src/package/manager.py:937
+#: src/package/manager.py:1074
 msgid "Unsupported package manager"
 msgstr ""
 
-#: src/package/manager.py:953 src/package/manager.py:969
+#: src/package/manager.py:1090 src/package/manager.py:1106
 msgid "Failed to read package manager configuration file"
 msgstr ""
 
-#: src/package/manager.py:1093
-msgid "Failed to get pipenv virtualenv"
+#: src/package/manager.py:1370
+msgid "Failed to get the virtualenv managed by {}"
 msgstr ""
 
-#: src/package/manager.py:1110
-msgid "Failed to find pipenv's virtualenv"
+#: src/package/manager.py:1392
+msgid "Failed to find the virtualenv managed by {}"
 msgstr ""
 
-#: src/package/manager.py:1114
-msgid "Failed to start process to find pipenv's virtualenv"
+#: src/package/manager.py:1396
+msgid "Failed to start process to find the virtualenv managed by {}"
 msgstr ""
 
-#: src/package/manager.py:1150 src/package/manager.py:1466
-#: src/package/manager.py:1516 src/package/manager.py:1574
+#: src/package/manager.py:1432 src/package/manager.py:1764
+#: src/package/manager.py:1818 src/package/manager.py:1878
 msgid "Operation Failed"
 msgstr ""
 
-#: src/package/manager.py:1151
+#: src/package/manager.py:1433
 msgid ""
 "Could not set Python Executable for non-existent remote host configuration {}"
 msgstr ""
 
-#: src/package/manager.py:1160
+#: src/package/manager.py:1442
 msgid "Incorrect Python Environment"
 msgstr ""
 
-#: src/package/manager.py:1161
+#: src/package/manager.py:1443
 msgid ""
 "The Python Executable set in Project Properties does not match the "
-"virtualenv set up by pipenv.  Your project is using the following Python:"
+"virtualenv set up by {}.  Your project is using the following Python:"
 msgstr ""
 
-#: src/package/manager.py:1164
-msgid "The virtualenv created by pipenv is:"
+#: src/package/manager.py:1446
+msgid "The virtualenv created by {} is:"
 msgstr ""
 
-#: src/package/manager.py:1166
+#: src/package/manager.py:1448
 msgid ""
 "If this is not corrected, Wing will run your code in the wrong Python "
 "environment.  Do you want to fix your project configuration?"
 msgstr ""
 
-#: src/package/manager.py:1174
+#: src/package/manager.py:1456
 msgid "_Fix automatically without prompting"
 msgstr ""
 
-#: src/package/manager.py:1178
+#: src/package/manager.py:1460
 msgid "Fix Python Executable"
 msgstr ""
 
-#: src/package/manager.py:1179 src/package/manager.py:2192
+#: src/package/manager.py:1461 src/package/manager.py:2518
 msgid "Cancel"
 msgstr ""
 
-#: src/package/manager.py:1238
+#: src/package/manager.py:1520
 msgid "Remove Packages?"
 msgstr ""
 
-#: src/package/manager.py:1240
+#: src/package/manager.py:1522
 msgid ""
 "Are you sure you want to remove the following packages from {} and uninstall "
 "them?"
 msgstr ""
 
-#: src/package/manager.py:1243 src/package/manager.py:1414
+#: src/package/manager.py:1525 src/package/manager.py:1702
 msgid "Are you sure you want to uninstall the following packages?"
 msgstr ""
 
-#: src/package/manager.py:1247
+#: src/package/manager.py:1529
 msgid "_Remove Packages"
 msgstr ""
 
-#: src/package/manager.py:1270
+#: src/package/manager.py:1553
 msgid "Update Packages?"
 msgstr ""
 
-#: src/package/manager.py:1271
+#: src/package/manager.py:1554
 msgid ""
-"Are you sure you want to upgrade the following packages to the latest "
+"Are you sure you want to update the following packages to the latest "
 "available version?"
 msgstr ""
 
-#: src/package/manager.py:1274
+#: src/package/manager.py:1557
 msgid "This also updates {}"
 msgstr ""
 
-#: src/package/manager.py:1276
+#: src/package/manager.py:1559
+msgid "This also updates pyproject.toml and poetry.lock."
+msgstr ""
+
+#: src/package/manager.py:1561
 msgid "This also updates Pipfile and Pipfile.lock."
 msgstr ""
 
-#: src/package/manager.py:1279
+#: src/package/manager.py:1564
 msgid "_Update Packages"
 msgstr ""
 
-#: src/package/manager.py:1292 src/package/manager.py:1404
+#: src/package/manager.py:1577 src/package/manager.py:1692
 msgid "Removing Unused Packages"
 msgstr ""
 
-#: src/package/manager.py:1297
+#: src/package/manager.py:1582
 msgid "Package Removal Complete"
 msgstr ""
 
-#: src/package/manager.py:1298
+#: src/package/manager.py:1583
 msgid "Package removal was successful"
 msgstr ""
 
-#: src/package/manager.py:1302
+#: src/package/manager.py:1587
 msgid "Package Removal Failed"
 msgstr ""
 
-#: src/package/manager.py:1303
+#: src/package/manager.py:1588
 msgid "Package removal failed: {}"
 msgstr ""
 
-#: src/package/manager.py:1329
+#: src/package/manager.py:1617
 msgid "Failed to remove unused packages"
 msgstr ""
 
-#: src/package/manager.py:1335
+#: src/package/manager.py:1623
 msgid "Failed to start process to remove unused packages"
 msgstr ""
 
-#: src/package/manager.py:1354
+#: src/package/manager.py:1642
 msgid "Failed to obtain installed packages list"
 msgstr ""
 
-#: src/package/manager.py:1364
+#: src/package/manager.py:1652
 msgid "Could not read configuration {}"
 msgstr ""
 
-#: src/package/manager.py:1387
+#: src/package/manager.py:1675
 msgid "No Unused Packages"
 msgstr ""
 
-#: src/package/manager.py:1388
+#: src/package/manager.py:1676
 msgid "All of the currently installed packages are used by requirements.txt."
 msgstr ""
 
-#: src/package/manager.py:1413
+#: src/package/manager.py:1701
 msgid "Uninstall Packages?"
 msgstr ""
 
-#: src/package/manager.py:1420
+#: src/package/manager.py:1708
 msgid ""
 "Note that you may end up uninstalling packages that are in use if your "
 "requirements.txt contains packages without listing their dependencies.  This "
@@ -583,218 +629,240 @@ msgid ""
 "'Freeze to requirements.txt' in Wing's Packages tool."
 msgstr ""
 
-#: src/package/manager.py:1426
+#: src/package/manager.py:1714
 msgid "_Uninstall"
 msgstr ""
 
-#: src/package/manager.py:1433
+#: src/package/manager.py:1721
 msgid "Finding Configured Packages"
 msgstr ""
 
-#: src/package/manager.py:1437
+#: src/package/manager.py:1725
 msgid "Finding Installed Packages"
 msgstr ""
 
-#: src/package/manager.py:1468
+#: src/package/manager.py:1766
+msgid "Failed to initialize for Poetry: {}"
+msgstr ""
+
+#: src/package/manager.py:1768
 msgid "Failed to initialize pipenv: {}"
 msgstr ""
 
-#: src/package/manager.py:1471
+#: src/package/manager.py:1771
 msgid "Failed to create {}"
 msgstr ""
 
-#: src/package/manager.py:1473
+#: src/package/manager.py:1773
 msgid "Operation Completed"
 msgstr ""
 
-#: src/package/manager.py:1475
+#: src/package/manager.py:1775
+msgid ""
+"Successfully initialized Poetry, which created pyproject.toml and poetry."
+"lock in {}"
+msgstr ""
+
+#: src/package/manager.py:1777
 msgid ""
 "Successfully initialized pipenv, which created Pipfile and Pipfile.lock in {}"
 msgstr ""
 
-#: src/package/manager.py:1478
+#: src/package/manager.py:1780
 msgid "Successfully created {}"
 msgstr ""
 
-#: src/package/manager.py:1512
+#: src/package/manager.py:1814
 msgid "Installing Missing Packages"
 msgstr ""
 
-#: src/package/manager.py:1517
+#: src/package/manager.py:1819
 msgid "Applying the package configuration failed: {}"
 msgstr ""
 
-#: src/package/manager.py:1519 src/package/manager.py:1577
+#: src/package/manager.py:1821 src/package/manager.py:1881
 msgid "Operation Succeeded"
 msgstr ""
 
-#: src/package/manager.py:1520
+#: src/package/manager.py:1822
 msgid "The package configuration was applied successfully"
 msgstr ""
 
-#: src/package/manager.py:1549
+#: src/package/manager.py:1853
 msgid "Failed to sync packages"
 msgstr ""
 
-#: src/package/manager.py:1556
+#: src/package/manager.py:1860
 msgid "Failed to start process to sync packages"
 msgstr ""
 
-#: src/package/manager.py:1575
+#: src/package/manager.py:1879
 msgid "Updating the package configuration failed: {}"
 msgstr ""
 
-#: src/package/manager.py:1578
+#: src/package/manager.py:1882
 msgid ""
 "The package configuration file {} has been updated for the currently "
 "installed packages and versions."
 msgstr ""
 
-#: src/package/manager.py:1591
+#: src/package/manager.py:1895
 msgid "Freezing to {}"
 msgstr ""
 
-#: src/package/manager.py:1598
+#: src/package/manager.py:1902
 msgid "Exporting to {}"
 msgstr ""
 
-#: src/package/manager.py:1603
+#: src/package/manager.py:1906 src/package/manager.py:1911
 msgid "Updating {}"
 msgstr ""
 
-#: src/package/manager.py:1615
+#: src/package/manager.py:1923
 msgid "Failed to freeze packages"
 msgstr ""
 
-#: src/package/manager.py:1626
+#: src/package/manager.py:1934
 msgid "Failed to start process to freeze packages"
 msgstr ""
 
-#: src/package/manager.py:1640
+#: src/package/manager.py:1948
 msgid "Select Package Version"
 msgstr ""
 
-#: src/package/manager.py:1641
+#: src/package/manager.py:1949
 msgid ""
 "Enter the version or <a href='https://www.python.org/dev/peps/pep-0440/"
 "#version-specifiers'>PEP 440 version specifier</a> to use for package {}:"
 msgstr ""
 
-#: src/package/manager.py:1681 src/package/manager.py:1695
-#: src/package/manager.py:1918 src/package/manager.py:1935
+#: src/package/manager.py:1989 src/package/manager.py:2003
+#: src/package/manager.py:2232 src/package/manager.py:2249
 msgid "Failed to write configuration file"
 msgstr ""
 
-#: src/package/manager.py:1704
+#: src/package/manager.py:2012
 msgid "Installing Packages"
 msgstr ""
 
-#: src/package/manager.py:1776
+#: src/package/manager.py:2090
 msgid ""
 "Failed to install packages.  The package or package version, if given, may "
 "not be available."
 msgstr ""
 
-#: src/package/manager.py:1784
+#: src/package/manager.py:2098
 msgid "Failed to start process to install packages"
 msgstr ""
 
-#: src/package/manager.py:1788
+#: src/package/manager.py:2102
 msgid "Installation Starting"
 msgstr ""
 
-#: src/package/manager.py:1817 src/package/manager.py:2033
-#: src/package/manager.py:2218
+#: src/package/manager.py:2131 src/package/manager.py:2353
+#: src/package/manager.py:2544
 msgid "Reading requirements.txt"
 msgstr ""
 
-#: src/package/manager.py:1838 src/package/manager.py:2041
-#: src/package/manager.py:2224 src/package/manager.py:2418
+#: src/package/manager.py:2152 src/package/manager.py:2361
+#: src/package/manager.py:2550 src/package/manager.py:2779
 msgid "Updating requirements.txt"
 msgstr ""
 
-#: src/package/manager.py:1911
+#: src/package/manager.py:2225
 msgid "Writing configuration file"
 msgstr ""
 
-#: src/package/manager.py:1989
+#: src/package/manager.py:2308
 msgid "Failed to remove packages"
 msgstr ""
 
-#: src/package/manager.py:2001
+#: src/package/manager.py:2321
 msgid "Failed to start process to remove packages"
 msgstr ""
 
-#: src/package/manager.py:2003
+#: src/package/manager.py:2323
 msgid "Removing Packages"
 msgstr ""
 
-#: src/package/manager.py:2133
+#: src/package/manager.py:2459
 msgid ""
 "Failed to update packages.  The package or package version, if given may not "
 "be available."
 msgstr ""
 
-#: src/package/manager.py:2140
+#: src/package/manager.py:2466
 msgid "Failed to start process to update packages"
 msgstr ""
 
-#: src/package/manager.py:2142
+#: src/package/manager.py:2468
 msgid "Updating Packages"
 msgstr ""
 
-#: src/package/manager.py:2172
+#: src/package/manager.py:2498
 msgid "Reading Pyfile"
 msgstr ""
 
-#: src/package/manager.py:2180
+#: src/package/manager.py:2506
 msgid "Update requirements.txt?"
 msgstr ""
 
-#: src/package/manager.py:2181
+#: src/package/manager.py:2507
 msgid ""
 "Packages cannot be updated without removing version specifiers from "
 "requirements.txt.  Wing will edit the file to remove the version listed for "
 "the following packages:"
 msgstr ""
 
-#: src/package/manager.py:2185
+#: src/package/manager.py:2511
 msgid "Do you want to proceed?"
 msgstr ""
 
-#: src/package/manager.py:2191
+#: src/package/manager.py:2517
 msgid "Update Packages"
 msgstr ""
 
-#: src/package/manager.py:2275
+#: src/package/manager.py:2601
 msgid "Updating Pyfile"
 msgstr ""
 
-#: src/package/manager.py:2371
+#: src/package/manager.py:2703
+msgid "Both pyproject.toml and poetry.lock already exist in {}"
+msgstr ""
+
+#: src/package/manager.py:2706
 msgid "A Pipfile already exists in {}"
 msgstr ""
 
-#: src/package/manager.py:2374
+#: src/package/manager.py:2709
 msgid "A requirements.txt already exists in {}"
 msgstr ""
 
-#: src/package/manager.py:2378
+#: src/package/manager.py:2713
 msgid "Inspecting Configuration"
 msgstr ""
 
-#: src/package/manager.py:2386
+#: src/package/manager.py:2723
+msgid "Installing Poetry"
+msgstr ""
+
+#: src/package/manager.py:2732
 msgid "Installing pipenv"
 msgstr ""
 
-#: src/package/manager.py:2395
+#: src/package/manager.py:2741
 msgid "Initializing"
 msgstr ""
 
-#: src/package/manager.py:2415
+#: src/package/manager.py:2771
 msgid "Failed to initialize package manager"
 msgstr ""
 
-#: src/package/manager.py:2425
+#: src/package/manager.py:2776
+msgid "Poetry init failed to create a pyproject.toml"
+msgstr ""
+
+#: src/package/manager.py:2786
 msgid "Failed to start process to initialize package manager"
 msgstr ""
 

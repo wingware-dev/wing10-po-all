@@ -1,0 +1,376 @@
+# Module plugins_ai__openai_chat translation file for language=en
+# Copyright (C) 2024 Wingware
+# Wingware Python IDE -- www.wingware.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 10.0.4\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
+"PO-Revision-Date: 2024-06-20 07:18 EDT\n"
+"Last-Translator: Wingware <support@wingware.com>\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: plugins/ai/_openai_chat.py:66
+msgid "Get the overall openai API client"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:89
+msgid ""
+"AI assistant class for AI Chat.  This implementation uses the new OpenAI\n"
+"  Assistants API."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:98
+msgid ""
+"Initialize the assistant, using the given assistant name.  This creates\n"
+"    an OpenAI vector_store and assistant in the user's account.  Returns an "
+"error string if\n"
+"    it fails to create the resources, or None on success."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:142
+msgid ""
+"Delete this OpenAI Assistant instance and all associated uploaded files from "
+"the\n"
+"    user's OpenAI account. Returns a list of errors if there were any "
+"failures or None on\n"
+"    success. If there are errors, some resources could not be deleted and "
+"should be\n"
+"    removed later with static methods delete_assistant_from_account() and\n"
+"    delete_uploaded_file_from_account()."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:181
+msgid "Get the OpenAI id for this assistant"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:186
+msgid ""
+"Set the context files to use for this assistant as a whole.  This includes\n"
+"    all the files other than the current file that are relevant to "
+"conversation\n"
+"    threads hosted by the assistant.  The files should be sent most "
+"important first\n"
+"    since OpenAI limits how many can be associated with the assistant.\n"
+"    \n"
+"    The arg files is a list of (filename, content_file) where content_file "
+"is None\n"
+"    if the primary file content should be used or non-None if it contains "
+"the\n"
+"    content to use for the file, encoded as utf-8.\n"
+"\n"
+"    Returns (file_ids, error) where file_ids is a list of Open AI file ids "
+"for the\n"
+"    context files on success and error is and error message if one or more "
+"file\n"
+"    failed to upload or associate with the assistant.\n"
+"\n"
+"    When there are errors, there may still be items in file_ids for the "
+"files that were\n"
+"    successfully processed."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:249
+msgid ""
+"Get the filename for the given Open AI file id.  Returns None if the "
+"file_id\n"
+"    is no longer in the files being managed by this assistant."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:258
+msgid ""
+"Get a list of (file_id, filename) for all the files that have been uploaded "
+"into\n"
+"    the user's account. This includes files in the current context, and also "
+"any others\n"
+"    that were previously uploaded but not yet removed."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:269
+msgid ""
+"Create a new chat thread managed by this assistant.  Returns (thread, "
+"error)\n"
+"    where thread is a Thread object on success and error is an error string "
+"on failure."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:286
+msgid ""
+"Delete the file identified by the given OpenAI file id.  This is a class "
+"method\n"
+"    so that it can be used to delete stale file ids after the assistant "
+"instance is gone.\n"
+"    Returns an error if the file was not deleted, or otherwise None."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:317
+msgid ""
+"Delete the given vector_store by ID from the OpenAI account. Returns an "
+"error if the\n"
+"    vector store was not deleted, or otherwise None."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:351
+msgid ""
+"Delete the given assistant by ID from the OpenAI account. Returns an error "
+"if the\n"
+"    assistant was not deleted, or otherwise None."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:388
+msgid ""
+"Delete all assistants, vector stores, and files that were created by this "
+"OpenAI integration\n"
+"    and all uploaded files matching the given prefix in path name from the "
+"OpenAI account.\n"
+"    \n"
+"    When untitled_vector_stores is True this deletes also all untitled "
+"vector stores also, which\n"
+"    were created in large numbers of earlier versions of Wing and the OpenAI "
+"API.\n"
+"    \n"
+"    This is used for cleanup when normal resource removal fails. Use with "
+"caution, since\n"
+"    this may remove assistants and files that are in use!"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:456
+msgid "Clear/initialize this instance to blank"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:466
+msgid ""
+"Add the given file to this assistant.  The file may either be used for\n"
+"    context or referenced from individual messages in threads.  Files are\n"
+"    uploaded if not already there and updated if the content changes.\n"
+"\n"
+"    Returns (file_id, error) where file_id is the Open AI file id on "
+"success\n"
+"    and error is an error string on failure."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:498
+msgid ""
+"Get md5 hash of the given filename and its content, to uniquely identify\n"
+"    that version of the file"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:507
+msgid ""
+"Make sure that the given file has been uploaded.  Returns (file_id, error)\n"
+"    where file_id is the Open AI file id for the file on success and error "
+"is an\n"
+"    error string if the upload failed."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:536
+msgid ""
+"Associate the given file ID with this assistant, so it is considered to\n"
+"    be part of the context for all threads managed by it.  Returns an error "
+"string\n"
+"    on failure or None on success."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:559
+msgid ""
+"Remove the given file ID from the files that are associated with this\n"
+"    assistant, as context for all threads managed by it.  Returns an error "
+"string\n"
+"    on failure or None on success."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:587
+msgid "Called by a thread when it is deleted"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:593
+msgid ""
+"Purge any unneeded uploaded files, based on which files are being used by\n"
+"    the current assistant context set with set_context() and by messages in "
+"the\n"
+"    threads managed by this assistant."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:607
+msgid ""
+"Purge a single upload if no longer needed. We don't purge files that are in "
+"use by\n"
+"    the assistant context or a thread message and we keep files around for "
+"up to six hours\n"
+"    when unused, as long as the assistant still exists, to avoid having to "
+"re-upload them."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:635
+msgid "A single chat thread that belongs to an assistant."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:638
+msgid "Create a new thread and associate it with the given Assistant instance."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:649
+msgid "Get the Open AI thread id for this thread"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:654
+msgid ""
+"Add a new user message to the thread with the given message. The filename "
+"and\n"
+"    content are the main context for the message, the one currently open in "
+"an editor, and\n"
+"    focus is the selection or other subset of that file that the user has "
+"focused on.\n"
+"    Returns (message_id, description) where message_id is the OpenAI message "
+"ID or None on\n"
+"    failure, and description is a verbose description of the data sent to "
+"OpenAI for the\n"
+"    request, appropriate for logging."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:767
+msgid ""
+"Create a run of this thread.  Threads may be run multiple times and the AI "
+"will\n"
+"    append its own messages to the thread in response, one for each run.  "
+"Returns\n"
+"    (thread, error) where thread is the Thread instance and error is an "
+"error string\n"
+"    if creation of the OpenAI run failed."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:781
+msgid ""
+"Delete this thread through the OpenAI API.  If deletion fails, we also keep "
+"around\n"
+"    this local thread instance.  Returns True if deletion succeeded or False "
+"on failure."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:801
+msgid ""
+"Get all the messages in this thread, most recent first. Returns (messages, "
+"error)\n"
+"    where messages is a list of (message_id, assistant_id, role, message, "
+"file_ids) where\n"
+"    message_id is the OpenAI id for the message, assistant_id is the OpenAI "
+"id for the\n"
+"    assistant that manages the thread, role is one of 'user' (a user "
+"message) or\n"
+"    'assistant' (a message/response added by the assistant), message is the "
+"text of the\n"
+"    message, and file_ids is a list of the OpenAI file ids associated with "
+"this message.\n"
+"    If an error occured retrieving the messages then error is set to an "
+"error string\n"
+"    that can be logged."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:825
+msgid ""
+"A run for a Thread.  Running a thread causes the AI to append a message to "
+"the thread,\n"
+"  with its response to user messages in the thread."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:829
+msgid "Create the run instance for running the given chat thread"
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:835
+msgid ""
+"Start the run.  This returns an error string on failure or None on success."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:854
+msgid "Cancel this run, rather than letting it complete."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:874
+msgid ""
+"Check the status of this run.  Returns (error, status, completion_time) "
+"where\n"
+"    error is an error string if the status could not be obtained, status is "
+"one of\n"
+"    (queued, in_progress, requires_action, cancelling, cancelled, failed, "
+"completed,\n"
+"    or expired) and completion_time is the time at which the run terminated "
+"if it\n"
+"    is cancelled, failure, completed, or expired."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:900
+msgid ""
+"Get the total cost of this run.  This is computed based on the number of "
+"OpenAI\n"
+"    tokens consumed in the message and response and the configured costs per "
+"1K tokens.\n"
+"    Returns (cost, error) where error is an error string if the cost could "
+"not be\n"
+"    obtained from OpenAI."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:927
+msgid ""
+"Utility to get the time at which the given OpenAI Run object ended.  This "
+"exists\n"
+"    only because the time is put into different places depending on final "
+"status.\n"
+"    Returns None if the run hasn't completed."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:944
+msgid ""
+"Parse the given output message from the AI to remove any code block "
+"indicators and\n"
+"  generate a mapping from line number in the converted message to mime type "
+"for that line,\n"
+"  if it was part of a code block. No entry in the map means that line is "
+"plain text.\n"
+"  Returns (converted_output, mime_map)."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:1014
+msgid ""
+"Utility to get the mime type for the given OpenAI block type.  Note that "
+"OpenAI\n"
+"  block types are not well documented and the mapping was produced by asking "
+"OpenAI\n"
+"  to create it."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:1258
+msgid ""
+"Start the OpenAI Assistant server. Calls result_cb(exit_code, error, host, "
+"port) with\n"
+"  an exit_code != -1 if the server processed exited, error set to a string "
+"suitable for\n"
+"  logging if there are errors, and host and port set once the server has "
+"started and is\n"
+"  listening for connections. Calls output_cb(output) when there is any "
+"output from the\n"
+"  server that is suitable for logging."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:1352
+msgid ""
+"Client implementation for connecting to and sending requests to "
+"AssistantServer.\n"
+"  This class just contains the support code for communication and not the "
+"public\n"
+"  methods used by the IDE."
+msgstr ""
+
+#: plugins/ai/_openai_chat.py:1490
+msgid ""
+"This implements the server used for for calling OpenAI Assistants API for AI "
+"Chat. It\n"
+"  starts the server and when ready prints a status message that indicates "
+"what the\n"
+"  connection host and port should be for the client."
+msgstr ""

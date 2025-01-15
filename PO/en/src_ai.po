@@ -1,0 +1,865 @@
+# Module src_ai translation file for language=en
+# Copyright (C) 2024 Wingware
+# Wingware Python IDE -- www.wingware.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 10.0.4\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
+"PO-Revision-Date: 2024-06-20 07:18 EDT\n"
+"Last-Translator: Wingware <support@wingware.com>\n"
+"Language-Team: None\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: src/ai/aichat.py:105
+msgid ""
+"Failed to create AI provider thread for this chat.  See Console for details."
+msgstr ""
+
+#: src/ai/aichat.py:178
+msgid ""
+"Could not create the AI provider assistant.  See the Console for details."
+msgstr ""
+
+#: src/ai/aichat.py:179
+msgid "You can try right-clicking to start a new conversation."
+msgstr ""
+
+#: src/ai/aichat.py:238
+msgid ""
+"No active AI provider.  Please configure one first on the Config: AI "
+"Provider page of this tool."
+msgstr ""
+
+#: src/ai/aichat.py:281
+msgid "Context upload disallowed.  No context files uploaded."
+msgstr ""
+
+#: src/ai/aichat.py:287
+msgid "Context upload failed: No assistant exists"
+msgstr ""
+
+#: src/ai/aichat.py:292
+msgid "Context upload failed: Assistant is not ready"
+msgstr ""
+
+#: src/ai/aichat.py:338
+msgid "Warning: Some auto-context files failed to upload"
+msgstr ""
+
+#: src/ai/aichat.py:364
+msgid ""
+"Updated AI Chat context with uploaded files (*=currently in context)): {}"
+msgstr ""
+
+#: src/ai/aichat.py:366
+msgid "Updated AI Chat context with no uploaded files"
+msgstr ""
+
+#: src/ai/aichat.py:444
+msgid "You have disallowed this request."
+msgstr ""
+
+#: src/ai/aichat.py:484
+msgid ""
+"There is no active conversation.  See Console for errors and right-click to "
+"start a new one."
+msgstr ""
+
+#: src/ai/aichat.py:503
+msgid "Failed to submit the request.  See Console for details"
+msgstr ""
+
+#: src/ai/aichat.py:524
+msgid "Request canceled"
+msgstr ""
+
+#: src/ai/aichat.py:526
+msgid "Request failed"
+msgstr ""
+
+#: src/ai/aichat.py:528
+msgid "Request expired"
+msgstr ""
+
+#: src/ai/aichat.py:530
+msgid "Unexpected request status {}"
+msgstr ""
+
+#: src/ai/aichat.py:556
+msgid "Focus"
+msgstr ""
+
+#: src/ai/aichat.py:557
+msgid "_Send"
+msgstr ""
+
+#: src/ai/aichat.py:559
+msgid "None"
+msgstr ""
+
+#: src/ai/aichat.py:562
+msgid "Target"
+msgstr ""
+
+#: src/ai/aichat.py:588
+msgid ""
+"Specifies which code may be changed by the refactoring operation. The rest "
+"of the file will be left untouched."
+msgstr ""
+
+#: src/ai/aichat.py:595
+msgid "Current Selection"
+msgstr ""
+
+#: src/ai/aichat.py:596
+msgid "Current Block"
+msgstr ""
+
+#: src/ai/aichat.py:597
+msgid "Current Scope"
+msgstr ""
+
+#: src/ai/aichat.py:598
+msgid "Whole File"
+msgstr ""
+
+#: src/ai/aichat.py:608 src/ai/aichat.py:775
+msgid "Click to select context files"
+msgstr ""
+
+#: src/ai/aichat.py:615
+msgid ""
+"Enable to include relevant imported and project files as context for your "
+"request.  This may increase quality but also increases response time and "
+"costs.  See the AI Assisted Development documentation for details."
+msgstr ""
+
+#: src/ai/aichat.py:621
+msgid "Auto-_Context"
+msgstr ""
+
+#: src/ai/aichat.py:657
+msgid "_Abort"
+msgstr ""
+
+#: src/ai/aichat.py:779 src/ai/aichat.py:1086 src/ai/aichat.py:1114
+msgid "Uploads Disallowed - No context files"
+msgstr ""
+
+#: src/ai/aichat.py:942
+msgid "Computing Context Files"
+msgstr ""
+
+#: src/ai/aichat.py:964
+msgid "Clear _Excludes"
+msgstr ""
+
+#: src/ai/aichat.py:967
+msgid "Clear _Includes"
+msgstr ""
+
+#: src/ai/aichat.py:973 src/ai/aichat.py:1038 src/ai/aichat.py:1102
+msgid "Auto-Context Files:"
+msgstr ""
+
+#: src/ai/aichat.py:980 src/ai/aichat.py:1129
+msgid "[uploading]"
+msgstr ""
+
+#: src/ai/aichat.py:983 src/ai/aichat.py:1132
+msgid "[waiting]"
+msgstr ""
+
+#: src/ai/aichat.py:986 src/ai/aichat.py:1135
+msgid "[upload failed]"
+msgstr ""
+
+#: src/ai/aichat.py:989 src/ai/aichat.py:1138
+msgid "[ready]"
+msgstr ""
+
+#: src/ai/aichat.py:1003
+msgid "[exceeded context size]"
+msgstr ""
+
+#: src/ai/aichat.py:1034
+msgid "No files in context"
+msgstr ""
+
+#: src/ai/aichat.py:1040 src/ai/aichat.py:1144
+msgid "Auto-Context Files [uploading]:"
+msgstr ""
+
+#: src/ai/aichat.py:1042 src/ai/aichat.py:1146
+msgid "Auto-Context Files [waiting]:"
+msgstr ""
+
+#: src/ai/aichat.py:1044 src/ai/aichat.py:1148
+msgid "Auto-Context Files [upload failed]:"
+msgstr ""
+
+#: src/ai/aichat.py:1046 src/ai/aichat.py:1150
+msgid "Auto-Context Files [ready]:"
+msgstr ""
+
+#: src/ai/aichat.py:1050
+msgid "Configure Context..."
+msgstr ""
+
+#: src/ai/aichat.py:1051
+msgid "Show Documentation..."
+msgstr ""
+
+#: src/ai/aichat.py:1106 src/ai/aichat.py:1155
+msgid "Auto-Context - No included files"
+msgstr ""
+
+#: src/ai/aichat.py:1179
+msgid "AI Refactoring Failed"
+msgstr ""
+
+#: src/ai/aichat.py:1201
+msgid "Cost: {}{:.3f} ({}{:.3f} Total) {}"
+msgstr ""
+
+#: src/ai/aichat.py:1276
+msgid "Clipboard copy operation failed"
+msgstr ""
+
+#: src/ai/aichat.py:1317
+msgid "_New Conversation"
+msgstr ""
+
+#: src/ai/aichat.py:1319
+msgid "Select _All"
+msgstr ""
+
+#: src/ai/aichat.py:1321
+msgid "C_opy"
+msgstr ""
+
+#: src/ai/aichat.py:1322
+msgid "_Paste"
+msgstr ""
+
+#: src/ai/aichat.py:1324
+msgid "_Clear"
+msgstr ""
+
+#: src/ai/aichat.py:1326
+msgid "Copy This Code to Clipboard"
+msgstr ""
+
+#: src/ai/aichat.py:1327
+msgid "Paste This Code into Current Editor"
+msgstr ""
+
+#: src/ai/aichat.py:1328
+msgid "Paste This Code into a New File"
+msgstr ""
+
+#: src/ai/aichat.py:1331
+msgid "Print..."
+msgstr ""
+
+#: src/ai/aichat.py:1332
+msgid "_Save a Copy..."
+msgstr ""
+
+#: src/ai/aichat.py:1404
+msgid "Request aborted"
+msgstr ""
+
+#: src/ai/aipanel.py:131
+msgid "Please enter a description of the changes you would like to make"
+msgstr ""
+
+#: src/ai/aipanel.py:159
+msgid "Request Aborted"
+msgstr ""
+
+#: src/ai/aipanel.py:195
+msgid "No current editor to refactor."
+msgstr ""
+
+#: src/ai/aipanel.py:205
+msgid ""
+"Size of AI refactoring target ({}KB) exceeds configured maximum local "
+"context size ({}KB)"
+msgstr ""
+
+#: src/ai/aipanel.py:243
+msgid "AI refactoring failed"
+msgstr ""
+
+#: src/ai/aipanel.py:270
+msgid "AI Refactor Completed"
+msgstr ""
+
+#: src/ai/aipanel.py:300
+msgid "{} (old)"
+msgstr ""
+
+#: src/ai/aipanel.py:321
+msgid "Waiting for {}"
+msgstr ""
+
+#: src/ai/aipanel.py:353
+msgid "Invalid Configuration"
+msgstr ""
+
+#: src/ai/aipanel.py:354
+msgid "Some configuration errors occurred:"
+msgstr ""
+
+#: src/ai/aipanel.py:382 src/ai/aipanel.py:504
+msgid "Apply"
+msgstr ""
+
+#: src/ai/aipanel.py:399
+msgid "Disabled"
+msgstr ""
+
+#: src/ai/aipanel.py:464
+msgid "AI Provider for Code Suggestion and Refactoring"
+msgstr ""
+
+#: src/ai/aipanel.py:464
+msgid "Provider"
+msgstr ""
+
+#: src/ai/aipanel.py:541
+msgid "Max Local Context (KB)"
+msgstr ""
+
+#: src/ai/aipanel.py:542
+msgid ""
+"The maximum amount of context from the current editor to send with each AI "
+"request."
+msgstr ""
+
+#: src/ai/aipanel.py:544
+msgid "Max Context Size (KB)"
+msgstr ""
+
+#: src/ai/aipanel.py:545
+msgid ""
+"The maximum amount of all types of context to send with each AI request."
+msgstr ""
+
+#: src/ai/aipanel.py:547
+msgid "Max Preload Context (KB)"
+msgstr ""
+
+#: src/ai/aipanel.py:548
+msgid ""
+"The maximum amount of context to preload or preprocess by automatically "
+"uploading files to the AI provider."
+msgstr ""
+
+#: src/ai/aipanel.py:550
+msgid "Max Context Files"
+msgstr ""
+
+#: src/ai/aipanel.py:551
+msgid "The maximum number of context files to use for any AI request."
+msgstr ""
+
+#: src/ai/aipanel.py:553
+msgid "Auto-Context: Imported Project Files"
+msgstr ""
+
+#: src/ai/aipanel.py:554
+msgid ""
+"Whether Auto-Context includes imported project files as context for AI "
+"assisted development requests."
+msgstr ""
+
+#: src/ai/aipanel.py:556
+msgid "Auto-Context: Open Project Files"
+msgstr ""
+
+#: src/ai/aipanel.py:557
+msgid ""
+"Whether Auto-Context includes currently open project files as context for AI "
+"assisted development requests."
+msgstr ""
+
+#: src/ai/aipanel.py:559
+msgid "Auto-Context: Other Project Files"
+msgstr ""
+
+#: src/ai/aipanel.py:560
+msgid ""
+"Whether Auto-Context includes other (non-open) project files as context for "
+"AI assisted development requests."
+msgstr ""
+
+#: src/ai/aipanel.py:562
+msgid "Custom Files"
+msgstr ""
+
+#: src/ai/aipanel.py:565
+msgid ""
+"Files to always include as context with each AI assisted development "
+"request, even when Auto-Context is disabled."
+msgstr ""
+
+#: src/ai/aipanel.py:568
+msgid "AI Suggest Uses Auto-Context"
+msgstr ""
+
+#: src/ai/aipanel.py:569
+msgid ""
+"Whether to include relevant imported and project files with AI assisted "
+"development requests."
+msgstr ""
+
+#: src/ai/aipanel.py:590
+msgid "Context"
+msgstr ""
+
+#: src/ai/aipanel.py:590
+msgid "Context Configuration for AI Code Suggestion and Refactoring"
+msgstr ""
+
+#: src/ai/aipanel.py:604
+msgid "_Requests"
+msgstr ""
+
+#: src/ai/aipanel.py:613
+msgid "AI Refactoring"
+msgstr ""
+
+#: src/ai/aipanel.py:617
+msgid "AI Chat (beta)"
+msgstr ""
+
+#: src/ai/aipanel.py:621
+msgid "Config: Request Context"
+msgstr ""
+
+#: src/ai/aipanel.py:625
+msgid "Config: AI Provider"
+msgstr ""
+
+#: src/ai/aipanel.py:645
+msgid "Console"
+msgstr ""
+
+#: src/ai/aipanel.py:669
+msgid "_Enter Key Executes Refactor"
+msgstr ""
+
+#: src/ai/aipanel.py:671
+msgid "_Enter Key Sends Chat Message"
+msgstr ""
+
+#: src/ai/aipanel.py:685
+msgid "Refactor _Replaces Old Code"
+msgstr ""
+
+#: src/ai/aipanel.py:686
+msgid "Refactor Comments _Out Old Code"
+msgstr ""
+
+#: src/ai/aipanel.py:687
+msgid "Refactor _Starts Comparison"
+msgstr ""
+
+#: src/ai/aipanel.py:695
+msgid "Reset Costs"
+msgstr ""
+
+#: src/ai/aipanel.py:703
+msgid "Revoke Upload Permission"
+msgstr ""
+
+#: src/ai/aipanel.py:720
+msgid "Show _Console"
+msgstr ""
+
+#: src/ai/aipanel.py:725
+msgid "Show _Documentation"
+msgstr ""
+
+#: src/ai/aipanel.py:731
+msgid "History _Previous"
+msgstr ""
+
+#: src/ai/aipanel.py:733
+msgid "History _Next"
+msgstr ""
+
+#: src/ai/aipanel.py:746
+msgid "Save Current AI Refactor Request"
+msgstr ""
+
+#: src/ai/aipanel.py:748
+msgid "Name of the new saved AI refactoring request"
+msgstr ""
+
+#: src/ai/aipanel.py:750 src/ai/manager.py:1390 src/ai/manager.py:1531
+msgid "Name"
+msgstr ""
+
+#: src/ai/aipanel.py:758
+msgid "_Save Current Request..."
+msgstr ""
+
+#: src/ai/aipanel.py:763
+msgid "_Manage Saved Requests..."
+msgstr ""
+
+#: src/ai/aipanel.py:768
+msgid "Saved Requests:"
+msgstr ""
+
+#: src/ai/aipanel.py:885
+msgid "AI"
+msgstr ""
+
+#: src/ai/aipanel.py:890
+msgid "AI Assisted Development"
+msgstr ""
+
+#: src/ai/attribs.py:18
+msgid ""
+"Remembers whether the user has allowed Wing to upload code to AI providers."
+msgstr ""
+
+#: src/ai/attribs.py:41
+msgid ""
+"Selects the AI provider configuration to use for AI assisted development"
+msgstr ""
+
+#: src/ai/attribs.py:47
+msgid ""
+"The maximum size in kilobytes for the code in the current file that may be "
+"included with each AI assisted development request."
+msgstr ""
+
+#: src/ai/attribs.py:54
+msgid ""
+"The maximum total size in kilobytes of context included with each AI "
+"assisted development request.  This includes context from the current file, "
+"manually specified context files, and files or parts of files selected by "
+"auto-context, when it is enabled."
+msgstr ""
+
+#: src/ai/attribs.py:62
+msgid ""
+"The maximum total size in kilobytes of context from any source that may be "
+"preloaded or preprocessed, by uploading files to the AI provider."
+msgstr ""
+
+#: src/ai/attribs.py:69
+msgid "The maximum number of context files to use with any AI request."
+msgstr ""
+
+#: src/ai/attribs.py:75
+msgid ""
+"Whether to include imported project files when automatically adding files "
+"other than the current file as context for AI requests."
+msgstr ""
+
+#: src/ai/attribs.py:82
+msgid ""
+"Whether to include open project files when automatically adding files other "
+"than the current file as context for AI requests."
+msgstr ""
+
+#: src/ai/attribs.py:89
+msgid ""
+"Whether to include other (non-open) project files when automatically adding "
+"files other than the current file as context for AI requests."
+msgstr ""
+
+#: src/ai/attribs.py:96
+msgid ""
+"Selects disk files to always include as context for AI assisted development "
+"requests.  These are always included first, before any auto-context files, "
+"up to the configured maximum context size."
+msgstr ""
+
+#: src/ai/attribs.py:104
+msgid ""
+"Whether to automatically include files other than the current file with AI "
+"suggest requests.  When enabled, project files imported into the current "
+"edit or currently open in the IDE are included with the AI request.  The "
+"number of files actually included with is limited by the configured maximum "
+"context size."
+msgstr ""
+
+#: src/ai/attribs.py:114
+msgid "Stores the cost of the most recent AI assisted development request."
+msgstr ""
+
+#: src/ai/attribs.py:120
+msgid "Stores the total cost of all AI assisted development requests."
+msgstr ""
+
+#: src/ai/attribs.py:126
+msgid "Stores the AI refactoring request history"
+msgstr ""
+
+#: src/ai/attribs.py:132
+msgid "Stores files that have been excluded from Auto-Context."
+msgstr ""
+
+#: src/ai/attribs.py:138
+msgid "Stores files that have been preferred for inclusion in Auto-Context."
+msgstr ""
+
+#: src/ai/commands.py:94
+msgid "Invalid AI Refactoring Query Name"
+msgstr ""
+
+#: src/ai/commands.py:95
+msgid "There is no stored AI refactoring query named {}"
+msgstr ""
+
+#: src/ai/manager.py:959
+msgid "AI Provider Failure"
+msgstr ""
+
+#: src/ai/manager.py:960
+msgid "Wing failed to load the active AI provider."
+msgstr ""
+
+#: src/ai/manager.py:962
+msgid "AI Assisted Development is Disabled"
+msgstr ""
+
+#: src/ai/manager.py:963
+msgid "AI assisted development is disabled."
+msgstr ""
+
+#: src/ai/manager.py:964
+msgid "Do you want to configure AI assisted development now?"
+msgstr ""
+
+#: src/ai/manager.py:970 src/ai/manager.py:1051 src/ai/manager.py:1126
+msgid "Cancel"
+msgstr ""
+
+#: src/ai/manager.py:971
+msgid "Configure"
+msgstr ""
+
+#: src/ai/manager.py:1009
+msgid "Installing AI Provider"
+msgstr ""
+
+#: src/ai/manager.py:1031
+msgid "Allow Uploading Code to AI Providers?"
+msgstr ""
+
+#: src/ai/manager.py:1033
+msgid ""
+"Wing's AI features may upload some or all of your code to your selected AI "
+"provider.  You should read your AI provider's privacy and data protection "
+"policies and check whether they are consistent with your requirements before "
+"you proceed.\n"
+"\n"
+"Do you want to allow Wing to upload code to your AI provider?"
+msgstr ""
+
+#: src/ai/manager.py:1049
+msgid "Show Documentation"
+msgstr ""
+
+#: src/ai/manager.py:1050
+msgid "Allow Uploads"
+msgstr ""
+
+#: src/ai/manager.py:1088
+msgid "Installing dependencies for {}"
+msgstr ""
+
+#: src/ai/manager.py:1098
+msgid "{} Installation Failed"
+msgstr ""
+
+#: src/ai/manager.py:1103
+msgid "Installation Complete"
+msgstr ""
+
+#: src/ai/manager.py:1112
+msgid "Installation Aborted"
+msgstr ""
+
+#: src/ai/manager.py:1113
+msgid ""
+"You have chosen not to install AI provider support packages.  AI supported "
+"development has been disabled.  You can re-enable it any time from the "
+"Configuration page of the AI tool."
+msgstr ""
+
+#: src/ai/manager.py:1117
+msgid "Install {} Support Packages?"
+msgstr ""
+
+#: src/ai/manager.py:1119
+msgid "Wing Pro would like to install packages for AI provider {}."
+msgstr ""
+
+#: src/ai/manager.py:1121
+msgid "Do you want to continue with the installation?"
+msgstr ""
+
+#: src/ai/manager.py:1125
+msgid "Install"
+msgstr ""
+
+#: src/ai/manager.py:1351
+msgid "Create a new saved AI refactoring request"
+msgstr ""
+
+#: src/ai/manager.py:1354
+msgid "Edit the selected AI refactoring request"
+msgstr ""
+
+#: src/ai/manager.py:1357
+msgid "Duplicate the selected AI refactoring request"
+msgstr ""
+
+#: src/ai/manager.py:1360
+msgid "Delete the selected AI refactoring request"
+msgstr ""
+
+#: src/ai/manager.py:1363
+msgid "New"
+msgstr ""
+
+#: src/ai/manager.py:1364
+msgid "Edit"
+msgstr ""
+
+#: src/ai/manager.py:1365
+msgid "Duplicate"
+msgstr ""
+
+#: src/ai/manager.py:1366
+msgid "Delete"
+msgstr ""
+
+#: src/ai/manager.py:1387
+msgid "_Close"
+msgstr ""
+
+#: src/ai/manager.py:1390
+msgid "Auto-Context"
+msgstr ""
+
+#: src/ai/manager.py:1390
+msgid "Shared"
+msgstr ""
+
+#: src/ai/manager.py:1390 src/ai/manager.py:1535
+msgid "Request"
+msgstr ""
+
+#: src/ai/manager.py:1390 src/ai/manager.py:1807
+msgid "Key Binding"
+msgstr ""
+
+#: src/ai/manager.py:1426
+msgid "Right click on the list for additional operations"
+msgstr ""
+
+#: src/ai/manager.py:1439
+msgid "Manage AI Refactoring Requests"
+msgstr ""
+
+#: src/ai/manager.py:1505
+msgid "Missing Name"
+msgstr ""
+
+#: src/ai/manager.py:1506
+msgid "You must enter a name for your saved AI refactoring request"
+msgstr ""
+
+#: src/ai/manager.py:1511
+msgid "Missing Request"
+msgstr ""
+
+#: src/ai/manager.py:1512
+msgid ""
+"You must enter a non-empty request to instruct the AI assistant what you "
+"want to change"
+msgstr ""
+
+#: src/ai/manager.py:1529
+msgid "Edit AI Refactoring Request"
+msgstr ""
+
+#: src/ai/manager.py:1532
+msgid "The name for the AI refactoring request."
+msgstr ""
+
+#: src/ai/manager.py:1536
+msgid "The AI refactoring request string."
+msgstr ""
+
+#: src/ai/manager.py:1543 src/ai/manager.py:1602 src/ai/manager.py:1693
+msgid "_OK"
+msgstr ""
+
+#: src/ai/manager.py:1545 src/ai/manager.py:1603 src/ai/manager.py:1694
+msgid "_Cancel"
+msgstr ""
+
+#: src/ai/manager.py:1599
+msgid "Overwrite Existing Saved Request?"
+msgstr ""
+
+#: src/ai/manager.py:1600
+msgid ""
+"That saved AI refactoring request already exists.  Are you sure you want to "
+"overwrite the existing named request '%s'?"
+msgstr ""
+
+#: src/ai/manager.py:1689
+msgid "Confirm Deletion"
+msgstr ""
+
+#: src/ai/manager.py:1690
+msgid "Are you sure you want to delete saved AI refactoring request '%s'?"
+msgstr ""
+
+#: src/ai/manager.py:1736
+msgid "_New..."
+msgstr ""
+
+#: src/ai/manager.py:1737
+msgid "_Edit..."
+msgstr ""
+
+#: src/ai/manager.py:1738
+msgid "D_uplicate..."
+msgstr ""
+
+#: src/ai/manager.py:1739
+msgid "_Delete..."
+msgstr ""
+
+#: src/ai/manager.py:1741
+msgid "Set _Key Binding..."
+msgstr ""
+
+#: src/ai/manager.py:1790
+msgid "AI Refactoring Request Key Binding"
+msgstr ""
+
+#: src/ai/manager.py:1808
+msgid ""
+"The key binding to assign to the named AI refactoring request.  When "
+"pressed, this causes Wing to apply that request to the current file or "
+"selection."
+msgstr ""

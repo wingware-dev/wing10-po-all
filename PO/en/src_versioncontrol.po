@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2010-11-24 23:48 EST\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -163,49 +163,49 @@ msgstr ""
 msgid "Could not find git working directory"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1026
+#: src/versioncontrol/cap_git.py:1024
 msgid "Pull from repository"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1027
+#: src/versioncontrol/cap_git.py:1025
 msgid "Pull from"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1028
+#: src/versioncontrol/cap_git.py:1026
 msgid "_Pull"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1039 src/versioncontrol/cap_git.py:1085
+#: src/versioncontrol/cap_git.py:1037 src/versioncontrol/cap_git.py:1083
 #: src/versioncontrol/widgets.py:2185 src/versioncontrol/widgets.py:2229
 msgid "(current)"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1042 src/versioncontrol/cap_git.py:1088
+#: src/versioncontrol/cap_git.py:1040 src/versioncontrol/cap_git.py:1086
 #: src/versioncontrol/widgets.py:2189 src/versioncontrol/widgets.py:2233
 msgid "Branch name"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1072
+#: src/versioncontrol/cap_git.py:1070
 msgid "Push branch to repository"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1073 src/versioncontrol/cap_hg.py:671
+#: src/versioncontrol/cap_git.py:1071 src/versioncontrol/cap_hg.py:671
 msgid "Push to"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1074 src/versioncontrol/cap_hg.py:672
+#: src/versioncontrol/cap_git.py:1072 src/versioncontrol/cap_hg.py:672
 msgid "_Push"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1119
+#: src/versioncontrol/cap_git.py:1122
 msgid "Fetch changes from repository"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1120
+#: src/versioncontrol/cap_git.py:1123
 msgid "Fetch from"
 msgstr ""
 
-#: src/versioncontrol/cap_git.py:1121
+#: src/versioncontrol/cap_git.py:1124
 msgid "_Fetch"
 msgstr ""
 
@@ -701,7 +701,7 @@ msgid "Configure %s"
 msgstr ""
 
 #: src/versioncontrol/widgets.py:2309
-msgid "Display Documentation"
+msgid "Show Documentation"
 msgstr ""
 
 #: src/versioncontrol/widgets.py:2314

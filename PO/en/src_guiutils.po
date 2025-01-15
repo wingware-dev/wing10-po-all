@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2003-07-10 12:23GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -16,17 +16,17 @@ msgstr ""
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 0.9.5\n"
 
-#: src/guiutils/dialogs.py:631 src/guiutils/filedialog_qt4.py:1202
-#: src/guiutils/formbuilder.py:1454 src/guiutils/formutils.py:512
-#: src/guiutils/formutils.py:844 src/guiutils/trash.py:158
+#: src/guiutils/dialogs.py:751 src/guiutils/filedialog_qt4.py:1203
+#: src/guiutils/formbuilder.py:1463 src/guiutils/formutils.py:602
+#: src/guiutils/formutils.py:934 src/guiutils/trash.py:158
 msgid "_OK"
 msgstr ""
 
-#: src/guiutils/dialogs.py:729 src/guiutils/widgets_qt4.py:4114
+#: src/guiutils/dialogs.py:852 src/guiutils/widgets_qt4.py:4216
 msgid "Details"
 msgstr ""
 
-#: src/guiutils/dialogs.py:825
+#: src/guiutils/dialogs.py:1000
 msgid "<untitled item>"
 msgstr ""
 
@@ -102,131 +102,131 @@ msgstr ""
 msgid "Executable Files (*)"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:220 src/guiutils/filedialog_qt4.py:236
+#: src/guiutils/filedialog_qt4.py:221 src/guiutils/filedialog_qt4.py:237
 msgid "Create"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:231
+#: src/guiutils/filedialog_qt4.py:232
 msgid "Use Executable"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:235 src/guiutils/filedialog_qt4.py:242
-#: src/guiutils/filedialog_qt4.py:291
+#: src/guiutils/filedialog_qt4.py:236 src/guiutils/filedialog_qt4.py:243
+#: src/guiutils/filedialog_qt4.py:292
 msgid "Directory Name"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:246 src/guiutils/filedialog_qt4.py:252
-#: src/guiutils/filedialog_qt4.py:292 src/guiutils/filedialog_qt4.py:723
+#: src/guiutils/filedialog_qt4.py:247 src/guiutils/filedialog_qt4.py:253
+#: src/guiutils/filedialog_qt4.py:293 src/guiutils/filedialog_qt4.py:724
 msgid "OK"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:251
+#: src/guiutils/filedialog_qt4.py:252
 msgid "Name"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:556
+#: src/guiutils/filedialog_qt4.py:557
 msgid "Name of new directory:"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:564
+#: src/guiutils/filedialog_qt4.py:565
 msgid "_Create"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:565
+#: src/guiutils/filedialog_qt4.py:566
 msgid "Ca_ncel"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:568
+#: src/guiutils/filedialog_qt4.py:569
 msgid "Create New Directory"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:696
+#: src/guiutils/filedialog_qt4.py:697
 msgid "Host:"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:721
+#: src/guiutils/filedialog_qt4.py:722
 msgid "_Open File"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:724 src/guiutils/filedialog_qt4.py:727
+#: src/guiutils/filedialog_qt4.py:725 src/guiutils/filedialog_qt4.py:728
 msgid "Filename:"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:726
+#: src/guiutils/filedialog_qt4.py:727
 msgid "_Save As"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:729
+#: src/guiutils/filedialog_qt4.py:730
 msgid "_Select File"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:731
+#: src/guiutils/filedialog_qt4.py:732
 msgid "_Create Directory"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:732
+#: src/guiutils/filedialog_qt4.py:733
 msgid "Directory name:"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:734
+#: src/guiutils/filedialog_qt4.py:735
 msgid "_Select Directory"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:746
+#: src/guiutils/filedialog_qt4.py:747
 msgid "Show hidden files"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:752
+#: src/guiutils/filedialog_qt4.py:753
 msgid "_New Directory"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:758 src/guiutils/formbuilder.py:1455
-#: src/guiutils/formutils.py:519 src/guiutils/formutils.py:845
-#: src/guiutils/trash.py:95 src/guiutils/widgets_qt4.py:2712
+#: src/guiutils/filedialog_qt4.py:759 src/guiutils/formbuilder.py:1464
+#: src/guiutils/formutils.py:609 src/guiutils/formutils.py:935
+#: src/guiutils/trash.py:95 src/guiutils/widgets_qt4.py:2737
 msgid "_Cancel"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:955
+#: src/guiutils/filedialog_qt4.py:956
 msgid "Waiting for remote agent"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:957
+#: src/guiutils/filedialog_qt4.py:958
 msgid "Waiting for container"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:998
+#: src/guiutils/filedialog_qt4.py:999
 msgid "Could not reach remote agent"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1154
+#: src/guiutils/filedialog_qt4.py:1155
 msgid "Waiting for Server"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1155
+#: src/guiutils/filedialog_qt4.py:1156
 msgid "Cannot create a directory -- the server is not responding."
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1170
+#: src/guiutils/filedialog_qt4.py:1171
 msgid "Invalid Directory"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1171
+#: src/guiutils/filedialog_qt4.py:1172
 msgid "The directory name '%s' is invalid"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1177
+#: src/guiutils/filedialog_qt4.py:1178
 msgid "Directory Create Failed"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1178
+#: src/guiutils/filedialog_qt4.py:1179
 msgid "Failed to create the directory %s: %s"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1314
+#: src/guiutils/filedialog_qt4.py:1315
 msgid "Invalid Selection"
 msgstr ""
 
-#: src/guiutils/filedialog_qt4.py:1315
+#: src/guiutils/filedialog_qt4.py:1316
 msgid "The selected item is not a file"
 msgstr ""
 
@@ -238,62 +238,62 @@ msgstr ""
 msgid "False"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:875 src/guiutils/formbuilder.py:1001
-#: src/guiutils/formbuilder.py:1051 src/guiutils/formbuilder.py:1114
-#: src/guiutils/formbuilder.py:1771
+#: src/guiutils/formbuilder.py:884 src/guiutils/formbuilder.py:1010
+#: src/guiutils/formbuilder.py:1060 src/guiutils/formbuilder.py:1123
+#: src/guiutils/formbuilder.py:1781
 msgid "Invalid"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1165
+#: src/guiutils/formbuilder.py:1174
 msgid "Font Spec"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1200
+#: src/guiutils/formbuilder.py:1209
 msgid "Color"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1236
+#: src/guiutils/formbuilder.py:1245
 msgid "Icon"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1240 src/guiutils/formbuilder.py:1535
+#: src/guiutils/formbuilder.py:1249 src/guiutils/formbuilder.py:1544
 msgid "Edit"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1240 src/guiutils/formbuilder.py:1535
+#: src/guiutils/formbuilder.py:1249 src/guiutils/formbuilder.py:1544
 msgid "Remove"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1240 src/guiutils/formbuilder.py:1535
+#: src/guiutils/formbuilder.py:1249 src/guiutils/formbuilder.py:1544
 #: src/guiutils/keyboard.py:498
 msgid "Insert"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1404
+#: src/guiutils/formbuilder.py:1413
 msgid "New Value"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1446
+#: src/guiutils/formbuilder.py:1455
 msgid "Edit Value"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1535 src/guiutils/formbuilder.py:1636
+#: src/guiutils/formbuilder.py:1544 src/guiutils/formbuilder.py:1646
 msgid "View as Text"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1638
+#: src/guiutils/formbuilder.py:1648
 msgid "View as List"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1845
+#: src/guiutils/formbuilder.py:1855
 msgid "Directory"
 msgstr ""
 
-#: src/guiutils/formbuilder.py:1847
+#: src/guiutils/formbuilder.py:1857
 msgid "Filename"
 msgstr ""
 
-#: src/guiutils/formutils.py:532 src/guiutils/formutils.py:846
+#: src/guiutils/formutils.py:622 src/guiutils/formutils.py:936
 msgid "_Apply"
 msgstr ""
 
@@ -692,87 +692,87 @@ msgstr ""
 msgid "Failed to write info file %s"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:1076
+#: src/guiutils/widgets_qt4.py:1077
 msgid "_Browse..."
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:1449
+#: src/guiutils/widgets_qt4.py:1460
 msgid "Select directory to use"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:1452
+#: src/guiutils/widgets_qt4.py:1463
 msgid "Select file to use"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:1985
+#: src/guiutils/widgets_qt4.py:2010
 msgid "Op_tions"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2329 src/guiutils/widgets_qt4.py:2457
-#: src/guiutils/widgets_qt4.py:2552
+#: src/guiutils/widgets_qt4.py:2354 src/guiutils/widgets_qt4.py:2482
+#: src/guiutils/widgets_qt4.py:2577
 msgid "Change..."
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2660
+#: src/guiutils/widgets_qt4.py:2685
 msgid "Wing Icons"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2664
+#: src/guiutils/widgets_qt4.py:2689
 msgid "Stock Icons"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2671
+#: src/guiutils/widgets_qt4.py:2696
 msgid "Select Icon File"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2677
+#: src/guiutils/widgets_qt4.py:2702
 msgid "Choose File"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2711
+#: src/guiutils/widgets_qt4.py:2736
 msgid "_Use Selected Icon"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2714
+#: src/guiutils/widgets_qt4.py:2739
 msgid "Choose Icon"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2874
+#: src/guiutils/widgets_qt4.py:2899
 msgid "Default from Theme"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2877
+#: src/guiutils/widgets_qt4.py:2902
 msgid "Custom (%s)..."
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2879
+#: src/guiutils/widgets_qt4.py:2904
 msgid "Custom..."
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:2928
+#: src/guiutils/widgets_qt4.py:2953
 msgid "Pick Custom Color"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:3671
+#: src/guiutils/widgets_qt4.py:3707
 msgid "_Options"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:3724
+#: src/guiutils/widgets_qt4.py:3756
 msgid "<Unknown>"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:4095
+#: src/guiutils/widgets_qt4.py:4197
 msgid "Please Wait"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:4119
+#: src/guiutils/widgets_qt4.py:4221
 msgid "Cancel"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:4192
+#: src/guiutils/widgets_qt4.py:4294
 msgid "Received %s characters of output"
 msgstr ""
 
-#: src/guiutils/widgets_qt4.py:4230
+#: src/guiutils/widgets_qt4.py:4332
 msgid "Received %s bytes of output"
 msgstr ""

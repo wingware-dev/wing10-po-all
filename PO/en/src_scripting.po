@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2003-07-10 12:24GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -20,41 +20,41 @@ msgstr ""
 msgid "%s.contexts callable failed"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:83
+#: src/scripting/cap_scriptmgr.py:105
 msgid "%scontexts must be list or tuple"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:95
+#: src/scripting/cap_scriptmgr.py:117
 msgid "%scontexts: Unknown context %s"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:170 src/scripting/cap_scriptmgr.py:174
-#: src/scripting/cap_scriptmgr.py:178 src/scripting/cap_scriptmgr.py:182
-#: src/scripting/cap_scriptmgr.py:186
+#: src/scripting/cap_scriptmgr.py:192 src/scripting/cap_scriptmgr.py:196
+#: src/scripting/cap_scriptmgr.py:200 src/scripting/cap_scriptmgr.py:204
+#: src/scripting/cap_scriptmgr.py:208
 msgid "Script Input Error::Scripts cannot read from stdin"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:687
+#: src/scripting/cap_scriptmgr.py:709
 msgid "Loading script directory %s"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:700
+#: src/scripting/cap_scriptmgr.py:722
 msgid "Failed to (re)load script module %s from %s:"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:794
+#: src/scripting/cap_scriptmgr.py:811
 msgid "Skipping directory %s (not a package)"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:797
+#: src/scripting/cap_scriptmgr.py:814
 msgid "Failed to find module %s in %s"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:835
+#: src/scripting/cap_scriptmgr.py:846
 msgid "Failed to load %s from %s:"
 msgstr ""
 
-#: src/scripting/cap_scriptmgr.py:850
+#: src/scripting/cap_scriptmgr.py:859
 msgid "Skipping module %s from %s (_ignore_scripts is set)"
 msgstr ""
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2003-07-10 12:24GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -52,89 +52,89 @@ msgstr ""
 msgid "Indentation error (unspecified)"
 msgstr ""
 
-#: src/pysource/manager.py:301
-msgid "(Analyzing Files: P{} S{} Q={}) "
+#: src/pysource/manager.py:319
+msgid " {} pending remote inspections"
 msgstr ""
 
-#: src/pysource/manager.py:305
-msgid "(Analyzing Files: {} pending remote inspections) "
+#: src/pysource/manager.py:322
+msgid "(Analyzing Files: {}) "
 msgstr ""
 
-#: src/pysource/manager.py:1046
+#: src/pysource/manager.py:1204
 msgid ""
 "Scrape errors for %s:\n"
 "%s"
 msgstr ""
 
-#: src/pysource/manager.py:1074
+#: src/pysource/manager.py:1232
 msgid "%s does not exist (scrape failed)"
 msgstr ""
 
-#: src/pysource/manager.py:1078
+#: src/pysource/manager.py:1236
 msgid "%s is empty (scrape failed; removing file now)"
 msgstr ""
 
-#: src/pysource/manager.py:1096
+#: src/pysource/manager.py:1254
 msgid "Scraping %s"
 msgstr ""
 
-#: src/pysource/manager.py:1106
+#: src/pysource/manager.py:1264
 msgid "Failed to scrape extension module %s: Python not found"
 msgstr ""
 
-#: src/pysource/manager.py:1125
+#: src/pysource/manager.py:1283
 msgid "Failed to scrape extension module %s: Container failed to start"
 msgstr ""
 
-#: src/pysource/manager.py:1142
+#: src/pysource/manager.py:1300
 msgid "Failed to scrape extension module %s: Cannot create directory %s"
 msgstr ""
 
-#: src/pysource/manager.py:1165
+#: src/pysource/manager.py:1323
 msgid "Timed out in remote scrape of extension module %s"
 msgstr ""
 
-#: src/pysource/manager.py:1167 src/pysource/manager.py:1225
+#: src/pysource/manager.py:1325 src/pysource/manager.py:1383
 msgid ""
 "Failed to start process to scrape extension module %s: could not find "
 "suitable rundir"
 msgstr ""
 
-#: src/pysource/manager.py:1170 src/pysource/manager.py:1283
+#: src/pysource/manager.py:1328 src/pysource/manager.py:1441
 msgid "Failed to start process to scrape extension module %s"
 msgstr ""
 
-#: src/pysource/manager.py:1172 src/pysource/manager.py:1288
+#: src/pysource/manager.py:1330 src/pysource/manager.py:1446
 msgid "Failed scraping API for %s"
 msgstr ""
 
-#: src/pysource/manager.py:1174 src/pysource/manager.py:1290
+#: src/pysource/manager.py:1332 src/pysource/manager.py:1448
 msgid "API scraping process for %s completed"
 msgstr ""
 
-#: src/pysource/manager.py:1197
+#: src/pysource/manager.py:1355
 msgid "Failed to start server to scrape extension module %s"
 msgstr ""
 
-#: src/pysource/manager.py:1265
+#: src/pysource/manager.py:1423
 msgid ""
 "Failed to start process to scrape extension module %s: cannot encode "
 "arguments"
 msgstr ""
 
-#: src/pysource/manager.py:1272
+#: src/pysource/manager.py:1430
 msgid "Cache file is %s"
 msgstr ""
 
-#: src/pysource/manager.py:4243
+#: src/pysource/manager.py:4811
 msgid "instance"
 msgstr ""
 
-#: src/pysource/manager.py:4244
+#: src/pysource/manager.py:4812
 msgid "class"
 msgstr ""
 
-#: src/pysource/manager.py:4245
+#: src/pysource/manager.py:4813
 msgid "module"
 msgstr ""
 

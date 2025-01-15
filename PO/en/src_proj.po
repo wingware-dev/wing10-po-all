@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.0.0\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2025-01-13 08:22-0500\n"
 "PO-Revision-Date: 2003-07-10 12:24GMT\n"
 "Last-Translator: \n"
 "Language-Team:  <C@li.org>\n"
@@ -141,12 +141,12 @@ msgstr ""
 #: src/proj/attribs.py:93
 msgid ""
 "Initial directory in which the debug process starts. The default is to use "
-"the directory of the debug file. This is also used for initial directory for "
-"Python Shell, for resolving partial Python Path entries, and some other "
-"features.  For these, the default is to use the directory of the main entry "
-"point is used, or the directory of the project when no main entry point is "
-"defined. Use $(WING:PROJECT_DIR) to set the initial directory to the "
-"project's directory."
+"the directory of the debug file or of the named module. This is also used "
+"for initial directory for Python Shell, for resolving partial Python Path "
+"entries, and some other features.  For these, the default is to use the "
+"directory of the main entry point is used, or the directory of the project "
+"when no main entry point is defined. Use $(WING:PROJECT_DIR) to set the "
+"initial directory to the project's directory."
 msgstr ""
 
 #: src/proj/attribs.py:104
@@ -178,21 +178,26 @@ msgid "Use pip"
 msgstr ""
 
 #: src/proj/attribs.py:129
-msgid "Use pipenv"
+msgid "Use Poetry"
 msgstr ""
 
 #: src/proj/attribs.py:130
+msgid "Use pipenv"
+msgstr ""
+
+#: src/proj/attribs.py:131
 msgid "Use conda"
 msgstr ""
 
-#: src/proj/attribs.py:135
+#: src/proj/attribs.py:136
 msgid ""
 "Selects the package manager to use with this project.  By default Wing tries "
 "to auto-detect the active package manager by inspecting the project.  If "
-"Pipfile is present, then pipenv is used. Otherwise, pip is used."
+"poetry.lock is present then Poetry is used,if Pipfile is present then pipenv "
+"is used, and otherwise pip is used."
 msgstr ""
 
-#: src/proj/attribs.py:145
+#: src/proj/attribs.py:146
 msgid ""
 "Whether to update any package manager configuration file found in the "
 "project directory when packages are managed by Wing.  When enabled, Wing "
@@ -200,14 +205,14 @@ msgid ""
 "install, remove, or update packages."
 msgstr ""
 
-#: src/proj/attribs.py:153
+#: src/proj/attribs.py:154
 msgid ""
 "Whether to automatically remove unused packages when uninstalling packages "
 "from Wing.  This is only available for package managers that support it "
 "(currently only pipenv)."
 msgstr ""
 
-#: src/proj/attribs.py:160
+#: src/proj/attribs.py:161
 msgid ""
 "The base directory for the project.  This overrides the project file "
 "location as the directory on which to base relative paths shown in the "
@@ -216,45 +221,45 @@ msgid ""
 "Default Directory Policy preference is set to Current Project."
 msgstr ""
 
-#: src/proj/attribs.py:169
+#: src/proj/attribs.py:170
 msgid ""
 "The main entry point for debugging, either a Python file or a named entry "
 "point.  When not specified, debugging starts in the current file in the "
 "environment specified in its File Properties under Debug/Execute."
 msgstr ""
 
-#: src/proj/attribs.py:173
+#: src/proj/attribs.py:174
 msgid ""
 "The main entry point, if any.  When set, this is where debugging and "
 "execution starts.  Otherwise debugging and execution start in the current "
 "file."
 msgstr ""
 
-#: src/proj/attribs.py:177 src/proj/attribs.py:236 src/proj/attribs.py:265
-#: src/proj/attribs.py:294 src/proj/attribs.py:310 src/proj/attribs.py:324
-#: src/proj/attribs.py:337
+#: src/proj/attribs.py:178 src/proj/attribs.py:238 src/proj/attribs.py:267
+#: src/proj/attribs.py:296 src/proj/attribs.py:312 src/proj/attribs.py:326
+#: src/proj/attribs.py:339
 msgid "Use Preferences Setting"
 msgstr ""
 
-#: src/proj/attribs.py:178
+#: src/proj/attribs.py:179
 msgid "Always Debug Child Processes"
 msgstr ""
 
-#: src/proj/attribs.py:179
+#: src/proj/attribs.py:180
 msgid "Never Debug Child Processes"
 msgstr ""
 
-#: src/proj/attribs.py:184
+#: src/proj/attribs.py:185
 msgid ""
 "Controls whether to automatically debug child processes spawned by a debug "
 "process."
 msgstr ""
 
-#: src/proj/attribs.py:194
+#: src/proj/attribs.py:195
 msgid "Used internally to track the project type at creation time."
 msgstr ""
 
-#: src/proj/attribs.py:227
+#: src/proj/attribs.py:229
 msgid ""
 "A list of modifications to the default set of attributes that are stored in "
 "the project files's shared layer (*.wpr).  Each item is +package.attrib-name "
@@ -262,91 +267,91 @@ msgid ""
 "user file (*.wpu) so it is not shared with other users."
 msgstr ""
 
-#: src/proj/attribs.py:237 src/proj/properties.py:2564
+#: src/proj/attribs.py:239 src/proj/properties.py:2682
 msgid "Line Feed \\n (Posix/Unix/macOS)"
 msgstr ""
 
-#: src/proj/attribs.py:238
+#: src/proj/attribs.py:240
 msgid "Carriage Return \\r (Mac OS <=9)"
 msgstr ""
 
-#: src/proj/attribs.py:239
+#: src/proj/attribs.py:241
 msgid "Carriage Return and Line Feed \\r\\n (Windows)"
 msgstr ""
 
-#: src/proj/attribs.py:244
+#: src/proj/attribs.py:246
 msgid ""
 "Preferred line ending style to use with this project.  This overrides the "
 "default line ending set in preferences."
 msgstr ""
 
-#: src/proj/attribs.py:251 src/proj/attribs.py:280
+#: src/proj/attribs.py:253 src/proj/attribs.py:282
 msgid "Ignore Conflicts"
 msgstr ""
 
-#: src/proj/attribs.py:252 src/proj/attribs.py:281
+#: src/proj/attribs.py:254 src/proj/attribs.py:283
 msgid "Warn About Conflicts"
 msgstr ""
 
-#: src/proj/attribs.py:253
+#: src/proj/attribs.py:255
 msgid "Auto-convert on Open"
 msgstr ""
 
-#: src/proj/attribs.py:258
+#: src/proj/attribs.py:260
 msgid ""
 "Policy for treating files that are opened if the line endings in the file do "
 "not match the preferred line ending style"
 msgstr ""
 
-#: src/proj/attribs.py:266
+#: src/proj/attribs.py:268
 msgid "Spaces Only"
 msgstr ""
 
-#: src/proj/attribs.py:267
+#: src/proj/attribs.py:269
 msgid "Tabs Only"
 msgstr ""
 
-#: src/proj/attribs.py:268
+#: src/proj/attribs.py:270
 msgid "Mixed Tabs and Spaces"
 msgstr ""
 
-#: src/proj/attribs.py:273
+#: src/proj/attribs.py:275
 msgid ""
 "Preferred indentation style to use with this project.  This overrides the "
 "default indentation style set in preferences."
 msgstr ""
 
-#: src/proj/attribs.py:286
+#: src/proj/attribs.py:288
 msgid ""
 "Policy for treating files that are opened if the indent style in the file "
 "does not match the preferred indent style"
 msgstr ""
 
-#: src/proj/attribs.py:299
+#: src/proj/attribs.py:301
 msgid ""
 "Controls whether to automatically strip trailing white space in the editor.  "
 "May be enabled for all files or only files that are part of the project."
 msgstr ""
 
-#: src/proj/attribs.py:315
+#: src/proj/attribs.py:317
 msgid ""
 "Controls when to automatically reformat code for PEP 8 or other formatting "
 "standard."
 msgstr ""
 
-#: src/proj/attribs.py:329
+#: src/proj/attribs.py:331
 msgid "Chooses the reformatter to use when auto-reformatting is enabled."
 msgstr ""
 
-#: src/proj/attribs.py:342
+#: src/proj/attribs.py:344
 msgid "Chooses the current directory to use when running auto-reformatters."
 msgstr ""
 
-#: src/proj/attribs.py:350 src/proj/properties.py:2998
+#: src/proj/attribs.py:352 src/proj/properties.py:3118
 msgid "Use Preference Setting"
 msgstr ""
 
-#: src/proj/attribs.py:352
+#: src/proj/attribs.py:354
 msgid ""
 "The default encoding to use for text files opened in the source editor and "
 "other tools, when an encoding for that file cannot be determined by reading "
@@ -354,23 +359,23 @@ msgid ""
 "to use for newly created files."
 msgstr ""
 
-#: src/proj/attribs.py:363
+#: src/proj/attribs.py:365
 msgid ""
 "Enable debugging of Django template files, so setting breakpoints, stepping, "
 "and viewing data will work in template files as well as Python code."
 msgstr ""
 
-#: src/proj/attribs.py:368
+#: src/proj/attribs.py:370
 msgid ""
 "Enable special event loop handling for matplotlib so that plots update "
 "interactively while working in the Python Shell and Debug Console."
 msgstr ""
 
-#: src/proj/attribs.py:373
+#: src/proj/attribs.py:375
 msgid "A container in which scripts can store information in the project file."
 msgstr ""
 
-#: src/proj/attribs.py:379
+#: src/proj/attribs.py:381
 msgid ""
 "Determines the TCP/IP port on which the IDE will listen for the connections "
 "from externally launched debug processes. This needs to be unique for each "
@@ -380,326 +385,325 @@ msgid ""
 "the debug process."
 msgstr ""
 
-#: src/proj/cap_findsymbol.py:1155
+#: src/proj/cap_findsymbol.py:1192
 msgid "_Sort Alphabetically"
 msgstr ""
 
-#: src/proj/cap_findsymbol.py:1157
+#: src/proj/cap_findsymbol.py:1194
 msgid "Sort items alphabetically rather than in the order found in the file"
 msgstr ""
 
-#: src/proj/cap_findsymbol.py:1158
+#: src/proj/cap_findsymbol.py:1195
 msgid "Include _Args in Search"
 msgstr ""
 
-#: src/proj/cap_findsymbol.py:1160
+#: src/proj/cap_findsymbol.py:1197
 msgid "Include the text of function arguments in the text on which to search"
 msgstr ""
 
-#: src/proj/cap_panel.py:82
+#: src/proj/cap_panel.py:79
 msgid "Click to open recent projects"
 msgstr ""
 
-#: src/proj/cap_panel.py:89
+#: src/proj/cap_panel.py:84
 msgid "_Options"
 msgstr ""
 
-#: src/proj/cap_panel.py:98
+#: src/proj/cap_panel.py:93
 msgid "Follow Selection"
 msgstr ""
 
-#: src/proj/cap_panel.py:99
+#: src/proj/cap_panel.py:94
 msgid "Follow Current Editor"
 msgstr ""
 
-#: src/proj/cap_panel.py:101
+#: src/proj/cap_panel.py:96
 msgid "View As Tree"
 msgstr ""
 
-#: src/proj/cap_panel.py:102
+#: src/proj/cap_panel.py:97
 msgid "View As Flattened Tree"
 msgstr ""
 
-#: src/proj/cap_panel.py:105
+#: src/proj/cap_panel.py:100
 msgid ""
 "When checked, the project selection is visited in a non-sticky editor that "
 "auto-closes when hidden.  Double clicking always opens a sticky file for "
 "editing."
 msgstr ""
 
-#: src/proj/cap_panel.py:108
+#: src/proj/cap_panel.py:103
 msgid ""
 "When checked, project tree expansion is automatically changed to show the "
 "file in the current editor."
 msgstr ""
 
-#: src/proj/cap_panel.py:134
+#: src/proj/cap_panel.py:129
 msgid "Sort By Name"
 msgstr ""
 
-#: src/proj/cap_panel.py:135
+#: src/proj/cap_panel.py:130
 msgid "Sort By Mime Type"
 msgstr ""
 
-#: src/proj/cap_panel.py:136
+#: src/proj/cap_panel.py:131
 msgid "Sort By Extension"
 msgstr ""
 
-#: src/proj/cap_panel.py:146
+#: src/proj/cap_panel.py:141
 msgid "List Files Before Directories"
 msgstr ""
 
-#: src/proj/cap_panel.py:155
+#: src/proj/cap_panel.py:150
 msgid "Show Project _Documentation"
 msgstr ""
 
-#: src/proj/cap_panel.py:205
+#: src/proj/cap_panel.py:202
 msgid "Project: %s%s [%i files / %i dirs]"
 msgstr ""
 
-#: src/proj/cap_panel.py:227
+#: src/proj/cap_panel.py:224
 msgid "Project"
 msgstr ""
 
-#: src/proj/cap_panel.py:233
+#: src/proj/cap_panel.py:230
 msgid "Project Manager"
 msgstr ""
 
-#: src/proj/cap_panel.py:393
+#: src/proj/cap_panel.py:390
 msgid "Project: <none>"
 msgstr ""
 
-#: src/proj/cap_panel.py:395
+#: src/proj/cap_panel.py:392
 msgid "Project: %s"
 msgstr ""
 
-#: src/proj/cap_panel.py:433 src/proj/cap_panel.py:445
+#: src/proj/cap_panel.py:430 src/proj/cap_panel.py:442
 msgid "Project panel state"
 msgstr ""
 
-#: src/proj/cap_panel.py:467
+#: src/proj/cap_panel.py:464
 msgid "Directory P_roperties..."
 msgstr ""
 
-#: src/proj/cap_panel.py:475
+#: src/proj/cap_panel.py:472
 msgid "File P_roperties..."
 msgstr ""
 
-#: src/proj/cap_panel.py:493 src/proj/cap_panel.py:495
+#: src/proj/cap_panel.py:490 src/proj/cap_panel.py:492
 msgid "Open File"
 msgstr ""
 
-#: src/proj/cap_panel.py:497
+#: src/proj/cap_panel.py:494
 msgid "Open Files"
 msgstr ""
 
-#: src/proj/cap_panel.py:502
+#: src/proj/cap_panel.py:499
 msgid "_Copy Filenames"
 msgstr ""
 
-#: src/proj/cap_panel.py:509
+#: src/proj/cap_panel.py:506
 msgid "Show in Explorer"
 msgstr ""
 
-#: src/proj/cap_panel.py:511
+#: src/proj/cap_panel.py:508
 msgid "Show in Finder"
 msgstr ""
 
-#: src/proj/cap_panel.py:513
+#: src/proj/cap_panel.py:510
 msgid "Show Directory"
 msgstr ""
 
-#: src/proj/cap_panel.py:515
+#: src/proj/cap_panel.py:512
 msgid "Open in External _Viewer"
 msgstr ""
 
-#: src/proj/cap_panel.py:516
+#: src/proj/cap_panel.py:513
 msgid "_Search in Selected"
 msgstr ""
 
-#: src/proj/cap_panel.py:519
+#: src/proj/cap_panel.py:516
 msgid "_Name Selected File Set..."
 msgstr ""
 
-#: src/proj/cap_panel.py:524
+#: src/proj/cap_panel.py:521
 msgid "_Debug Selected"
 msgstr ""
 
-#: src/proj/cap_panel.py:527
+#: src/proj/cap_panel.py:524
 msgid "E_xecute Selected"
 msgstr ""
 
-#: src/proj/cap_panel.py:530
+#: src/proj/cap_panel.py:527
 msgid "Set As Main Entry _Point"
 msgstr ""
 
-#: src/proj/cap_panel.py:532
+#: src/proj/cap_panel.py:529
 msgid "Clear Main Entry _Point"
 msgstr ""
 
-#: src/proj/cap_panel.py:551
+#: src/proj/cap_panel.py:548
 msgid "Re_move/Exclude From Project"
 msgstr ""
 
-#: src/proj/cap_panel.py:553
+#: src/proj/cap_panel.py:550
 msgid "_Add Existing File..."
 msgstr ""
 
-#: src/proj/cap_panel.py:554
+#: src/proj/cap_panel.py:551
 msgid "Add Existing D_irectory..."
 msgstr ""
 
-#: src/proj/cap_panel.py:556
+#: src/proj/cap_panel.py:553
 msgid "Res_can Directory"
 msgstr ""
 
-#: src/proj/cap_panel.py:563
+#: src/proj/cap_panel.py:560
 msgid "Dele_te"
 msgstr ""
 
-#: src/proj/cap_panel.py:565
+#: src/proj/cap_panel.py:562
 msgid "Move To _Trash"
 msgstr ""
 
-#: src/proj/cap_panel.py:572
+#: src/proj/cap_panel.py:569
 msgid "Renam_e..."
 msgstr ""
 
-#: src/proj/cap_panel.py:574
+#: src/proj/cap_panel.py:571
 msgid "_Create New File..."
 msgstr ""
 
-#: src/proj/cap_panel.py:575
+#: src/proj/cap_panel.py:572
 msgid "Create Ne_w Directory..."
 msgstr ""
 
-#: src/proj/cap_panel.py:576
+#: src/proj/cap_panel.py:573
 msgid "Create Ne_w Package..."
 msgstr ""
 
-#: src/proj/cap_panel.py:582
+#: src/proj/cap_panel.py:579
 msgid "Configure Menu..."
 msgstr ""
 
-#: src/proj/cap_panel.py:608
+#: src/proj/cap_panel.py:605
 msgid "Project File"
 msgstr ""
 
-#: src/proj/cap_panel.py:630
+#: src/proj/cap_panel.py:627
 msgid "New name for the directory"
 msgstr ""
 
-#: src/proj/cap_panel.py:631
+#: src/proj/cap_panel.py:628
 msgid "New Directory Name"
 msgstr ""
 
-#: src/proj/cap_panel.py:633
+#: src/proj/cap_panel.py:630
 msgid "New name for the file"
 msgstr ""
 
-#: src/proj/cap_panel.py:634
+#: src/proj/cap_panel.py:631
 msgid "New File Name"
 msgstr ""
 
-#: src/proj/cap_panel.py:903
+#: src/proj/cap_panel.py:900
 msgid "Move to Trash Failed"
 msgstr ""
 
-#: src/proj/cap_panel.py:904
+#: src/proj/cap_panel.py:901
 msgid "The following items could not be moved to the trash:"
 msgstr ""
 
-#: src/proj/cap_panel.py:910 src/proj/createproject.py:710
-#: src/proj/createproject.py:1104 src/proj/createproject.py:1124
-#: src/proj/manager.py:691 src/proj/manager.py:1389 src/proj/project.py:1728
-#: src/proj/properties.py:3595
+#: src/proj/cap_panel.py:907 src/proj/createproject.py:716
+#: src/proj/createproject.py:1130 src/proj/createproject.py:1150
+#: src/proj/manager.py:702 src/proj/manager.py:1402 src/proj/project.py:1731
 msgid "_OK"
 msgstr ""
 
-#: src/proj/cap_panel.py:921
+#: src/proj/cap_panel.py:918
 msgid "Recycle Selected Files and Directories?"
 msgstr ""
 
-#: src/proj/cap_panel.py:922
+#: src/proj/cap_panel.py:919
 msgid ""
 "Are you sure you want to move the selected files, directories, and all "
 "contents of the directories to the recycling bin?"
 msgstr ""
 
-#: src/proj/cap_panel.py:923
+#: src/proj/cap_panel.py:920
 msgid "_Recycle Selected Files and Directories"
 msgstr ""
 
-#: src/proj/cap_panel.py:925
+#: src/proj/cap_panel.py:922
 msgid "Move Selected Files and Directories to Trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:926
+#: src/proj/cap_panel.py:923
 msgid ""
 "Are you sure you want to move the selected files, directories, and all "
 "contents of the directories to the trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:927
+#: src/proj/cap_panel.py:924
 msgid "_Move Selected Files and Directories to Trash"
 msgstr ""
 
-#: src/proj/cap_panel.py:930
+#: src/proj/cap_panel.py:927
 msgid "Recycle Selected Files?"
 msgstr ""
 
-#: src/proj/cap_panel.py:931
+#: src/proj/cap_panel.py:928
 msgid "Are you sure you want to move the selected files to the recycling bin?"
 msgstr ""
 
-#: src/proj/cap_panel.py:932
+#: src/proj/cap_panel.py:929
 msgid "_Recycle Selected Files"
 msgstr ""
 
-#: src/proj/cap_panel.py:934
+#: src/proj/cap_panel.py:931
 msgid "Move Selected Files to Trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:935
+#: src/proj/cap_panel.py:932
 msgid "Are you sure you want to move the selected files to the trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:936
+#: src/proj/cap_panel.py:933
 msgid "_Move Selected Files to Trash"
 msgstr ""
 
-#: src/proj/cap_panel.py:939
+#: src/proj/cap_panel.py:936
 msgid "Recycle Selected Directories?"
 msgstr ""
 
-#: src/proj/cap_panel.py:940
+#: src/proj/cap_panel.py:937
 msgid ""
 "Are you sure you want to move the selected directories and all files within "
 "them to the recycling bin?"
 msgstr ""
 
-#: src/proj/cap_panel.py:941
+#: src/proj/cap_panel.py:938
 msgid "_Recycle Selected Directories"
 msgstr ""
 
-#: src/proj/cap_panel.py:943
+#: src/proj/cap_panel.py:940
 msgid "Move Selected Directories to Trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:944
+#: src/proj/cap_panel.py:941
 msgid ""
 "Are you sure you want to move the selected directories and all files within "
 "them to the trash?"
 msgstr ""
 
-#: src/proj/cap_panel.py:945
+#: src/proj/cap_panel.py:942
 msgid "_Move Selected Directories to Trash"
 msgstr ""
 
-#: src/proj/cap_panel.py:951 src/proj/createproject.py:711
-#: src/proj/createproject.py:862 src/proj/createproject.py:2716
-#: src/proj/manager.py:487 src/proj/manager.py:2371 src/proj/manager.py:2404
-#: src/proj/properties.py:2841
+#: src/proj/cap_panel.py:948 src/proj/createproject.py:717
+#: src/proj/createproject.py:877 src/proj/createproject.py:2951
+#: src/proj/manager.py:498 src/proj/manager.py:2482 src/proj/manager.py:2515
+#: src/proj/properties.py:2961
 msgid "_Cancel"
 msgstr ""
 
@@ -713,538 +717,581 @@ msgstr ""
 msgid "Failed to write parts of the user branch of the project file: "
 msgstr ""
 
-#: src/proj/cap_treepanel.py:613
+#: src/proj/cap_treepanel.py:620
 msgid "Move Selected Files?"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:614
+#: src/proj/cap_treepanel.py:621
 msgid "Are you sure you want to move the following items to %s ?"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:617
+#: src/proj/cap_treepanel.py:624
 msgid "Copy Selected Files?"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:618
+#: src/proj/cap_treepanel.py:625
 msgid "Are you sure you want to copy the following items to %s ?"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:629 src/proj/properties.py:675
-#: src/proj/properties.py:2370 src/proj/properties.py:2412
+#: src/proj/cap_treepanel.py:636 src/proj/properties.py:675
+#: src/proj/properties.py:2488 src/proj/properties.py:2530
 msgid "OK"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:630 src/proj/createproject.py:1307
-#: src/proj/createproject.py:2093
+#: src/proj/cap_treepanel.py:637 src/proj/createproject.py:1338
+#: src/proj/createproject.py:2242 src/proj/createproject.py:2285
+#: src/proj/createproject.py:6870
 msgid "Cancel"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:635
+#: src/proj/cap_treepanel.py:642
 msgid "_Don't show this dialog again"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:670 src/proj/cap_treepanel.py:671
+#: src/proj/cap_treepanel.py:677 src/proj/cap_treepanel.py:678
 msgid "main entry point"
 msgstr ""
 
-#: src/proj/cap_treepanel.py:708
+#: src/proj/cap_treepanel.py:715
 msgid ". (project home directory)"
 msgstr ""
 
-#: src/proj/createproject.py:57 src/proj/properties.py:955
+#: src/proj/createproject.py:58 src/proj/properties.py:955
 msgid "Custom"
 msgstr ""
 
-#: src/proj/createproject.py:183
+#: src/proj/createproject.py:184
 msgid ""
 "Please select the host and the source directory that you want to use with "
 "your new project."
 msgstr ""
 
-#: src/proj/createproject.py:215
+#: src/proj/createproject.py:222
 msgid "Remote Host Failed"
 msgstr ""
 
-#: src/proj/createproject.py:230
+#: src/proj/createproject.py:238
 msgid "Host:"
 msgstr ""
 
-#: src/proj/createproject.py:237
+#: src/proj/createproject.py:245
 msgid "Create Blan_k Project"
 msgstr ""
 
-#: src/proj/createproject.py:238
+#: src/proj/createproject.py:246
 msgid "_Use Existing Directory"
 msgstr ""
 
-#: src/proj/createproject.py:239
+#: src/proj/createproject.py:247
 msgid "Create _New Directory"
 msgstr ""
 
-#: src/proj/createproject.py:335
+#: src/proj/createproject.py:343
 msgid "Local Host"
 msgstr ""
 
-#: src/proj/createproject.py:354
+#: src/proj/createproject.py:359
 msgid "Create Configuration..."
 msgstr ""
 
-#: src/proj/createproject.py:382
+#: src/proj/createproject.py:387
 msgid "Inspecting Python environment"
 msgstr ""
 
-#: src/proj/createproject.py:397
-msgid "Set Python Executable to use pipenv's environment"
+#: src/proj/createproject.py:402
+msgid "Set Python Executable to use existing environment"
 msgstr ""
 
-#: src/proj/createproject.py:407 src/proj/createproject.py:596
+#: src/proj/createproject.py:412 src/proj/createproject.py:595
 msgid "Cr_eate Project"
 msgstr ""
 
-#: src/proj/createproject.py:409 src/proj/createproject.py:861
+#: src/proj/createproject.py:414 src/proj/createproject.py:876
 msgid "N_ext"
 msgstr ""
 
-#: src/proj/createproject.py:421
+#: src/proj/createproject.py:426
 msgid "Please select Python environment to use with your new project."
 msgstr ""
 
-#: src/proj/createproject.py:424
+#: src/proj/createproject.py:429
 msgid "Conda Env"
 msgstr ""
 
-#: src/proj/createproject.py:425
+#: src/proj/createproject.py:430
 msgid "Docker"
 msgstr ""
 
-#: src/proj/createproject.py:426
+#: src/proj/createproject.py:431
 msgid "pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:427
+#: src/proj/createproject.py:432
+msgid "Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:433
 msgid "Virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:504
+#: src/proj/createproject.py:500
 msgid "_Use Existing Python"
 msgstr ""
 
-#: src/proj/createproject.py:509
+#: src/proj/createproject.py:505
 msgid "Use Remote Host Config"
 msgstr ""
 
-#: src/proj/createproject.py:515
+#: src/proj/createproject.py:511
 msgid "Create _New Environment"
 msgstr ""
 
-#: src/proj/createproject.py:595 src/proj/createproject.py:859
+#: src/proj/createproject.py:594 src/proj/createproject.py:874
 msgid "_Back"
 msgstr ""
 
-#: src/proj/createproject.py:611
+#: src/proj/createproject.py:610
 msgid ""
 "Please enter the remote host configuration to use with your new project."
 msgstr ""
 
-#: src/proj/createproject.py:652
+#: src/proj/createproject.py:651
 msgid "AWS"
 msgstr ""
 
-#: src/proj/createproject.py:653
+#: src/proj/createproject.py:652
 msgid "Generic"
 msgstr ""
 
-#: src/proj/createproject.py:654
+#: src/proj/createproject.py:653
 msgid "Raspberry Pi"
 msgstr ""
 
-#: src/proj/createproject.py:655
+#: src/proj/createproject.py:654
 msgid "Vagrant"
+msgstr ""
+
+#: src/proj/createproject.py:655
+msgid "WSL"
 msgstr ""
 
 #: src/proj/createproject.py:660
 msgid "Remote Host Type:"
 msgstr ""
 
-#: src/proj/createproject.py:709 src/proj/createproject.py:858
+#: src/proj/createproject.py:715 src/proj/createproject.py:873
 msgid "_Show Documentation"
 msgstr ""
 
-#: src/proj/createproject.py:714
+#: src/proj/createproject.py:720
 msgid "New Remote Host"
 msgstr ""
 
-#: src/proj/createproject.py:736
+#: src/proj/createproject.py:748
 msgid ""
 "The selected remote host identifier is in use by an existing shared remote "
 "host configuration.  Please choose a different identifier for your new "
 "remote host configuration."
 msgstr ""
 
-#: src/proj/createproject.py:766
+#: src/proj/createproject.py:778
 msgid "Failed to create remote host: {}"
 msgstr ""
 
-#: src/proj/createproject.py:865
+#: src/proj/createproject.py:880
 msgid "New Project"
 msgstr ""
 
-#: src/proj/createproject.py:974
+#: src/proj/createproject.py:999
 msgid "Failed to reinspect project directory"
 msgstr ""
 
-#: src/proj/createproject.py:1001
+#: src/proj/createproject.py:1027
 msgid "Project Creation Canceled"
 msgstr ""
 
-#: src/proj/createproject.py:1003
+#: src/proj/createproject.py:1029
 msgid ""
 "Process creation has been canceled, but the following operations were "
 "already completed:"
 msgstr ""
 
-#: src/proj/createproject.py:1006
+#: src/proj/createproject.py:1032
 msgid "Process creation has been canceled"
 msgstr ""
 
-#: src/proj/createproject.py:1061
+#: src/proj/createproject.py:1087
 msgid "Project Created"
 msgstr ""
 
-#: src/proj/createproject.py:1063
+#: src/proj/createproject.py:1089
 msgid "The project was successfully created and saved."
 msgstr ""
 
-#: src/proj/createproject.py:1065
+#: src/proj/createproject.py:1091
 msgid "A new untitled project has been created.  You may want to save it now."
 msgstr ""
 
-#: src/proj/createproject.py:1068
+#: src/proj/createproject.py:1094
 msgid ""
 "Please add your source directory to the project so Wing can analyze and "
 "index your code."
 msgstr ""
 
-#: src/proj/createproject.py:1070
+#: src/proj/createproject.py:1096
 msgid "The following actions were completed during project setup: "
 msgstr ""
 
-#: src/proj/createproject.py:1072
+#: src/proj/createproject.py:1098
 msgid "Warnings encountered: "
 msgstr ""
 
-#: src/proj/createproject.py:1092
+#: src/proj/createproject.py:1118
 msgid "_Add Directory"
 msgstr ""
 
-#: src/proj/createproject.py:1095
+#: src/proj/createproject.py:1121
 msgid "_Project Properties"
 msgstr ""
 
-#: src/proj/createproject.py:1099
+#: src/proj/createproject.py:1125
 msgid "_Save Now"
 msgstr ""
 
-#: src/proj/createproject.py:1100
+#: src/proj/createproject.py:1126
 msgid "Save _Later"
 msgstr ""
 
-#: src/proj/createproject.py:1112
+#: src/proj/createproject.py:1138
 msgid "Project Configuration Failed"
 msgstr ""
 
-#: src/proj/createproject.py:1113
+#: src/proj/createproject.py:1139
 msgid ""
 "A new project was created, but following errors occurred while configuring "
 "it:"
 msgstr ""
 
-#: src/proj/createproject.py:1115
+#: src/proj/createproject.py:1141
 msgid "Project Creation Failed"
 msgstr ""
 
-#: src/proj/createproject.py:1116
+#: src/proj/createproject.py:1142
 msgid "Project creation failed with the following errors:"
 msgstr ""
 
-#: src/proj/createproject.py:1120 src/proj/createproject.py:1147
+#: src/proj/createproject.py:1146 src/proj/createproject.py:1178
 msgid "Some warnings were also encountered:"
 msgstr ""
 
-#: src/proj/createproject.py:1136
+#: src/proj/createproject.py:1167
 msgid "Configuration Warning"
 msgstr ""
 
-#: src/proj/createproject.py:1139
+#: src/proj/createproject.py:1170
 msgid "Configuration Error"
 msgstr ""
 
-#: src/proj/createproject.py:1140
+#: src/proj/createproject.py:1171
 msgid "Some values are invalid.  These must be corrected before continuing:"
 msgstr ""
 
-#: src/proj/createproject.py:1149
+#: src/proj/createproject.py:1180
 msgid "Some warnings were encountered:"
 msgstr ""
 
-#: src/proj/createproject.py:1310
+#: src/proj/createproject.py:1341
 msgid "Creating Project"
 msgstr ""
 
-#: src/proj/createproject.py:1342
+#: src/proj/createproject.py:1373
 msgid "Running {} in {}"
 msgstr ""
 
-#: src/proj/createproject.py:1355
+#: src/proj/createproject.py:1386
 msgid "Process failed to start:"
 msgstr ""
 
-#: src/proj/createproject.py:1485
+#: src/proj/createproject.py:1530
 msgid "Failed to re-probe the remote host"
 msgstr ""
 
-#: src/proj/createproject.py:1766
+#: src/proj/createproject.py:1846 src/proj/createproject.py:1892
 msgid "Output:"
 msgstr ""
 
-#: src/proj/createproject.py:1773
+#: src/proj/createproject.py:1853
+msgid "Failed to find Poetry virtualenv"
+msgstr ""
+
+#: src/proj/createproject.py:1857
+msgid "Failed to find Poetry virtualenv (empty output)"
+msgstr ""
+
+#: src/proj/createproject.py:1873
+msgid "Failed to start Poetry process"
+msgstr ""
+
+#: src/proj/createproject.py:1899
 msgid "Failed to get pipenv virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:1779
+#: src/proj/createproject.py:1907
 msgid "Failed to start pipenv process"
 msgstr ""
 
-#: src/proj/createproject.py:2029
+#: src/proj/createproject.py:2167
 msgid ""
 "The selected Python Executable could not be inspected and may be invalid."
 msgstr ""
 
-#: src/proj/createproject.py:2037
+#: src/proj/createproject.py:2175
 msgid ""
 "Unable to determine the Python version for the selected Python Executable"
 msgstr ""
 
-#: src/proj/createproject.py:2042
+#: src/proj/createproject.py:2180
 msgid ""
 "The selected Python Executable's version ({}) is not officially supported by "
 "Wing"
 msgstr ""
 
-#: src/proj/createproject.py:2080
+#: src/proj/createproject.py:2229
 msgid "Create Parent Directory?"
 msgstr ""
 
-#: src/proj/createproject.py:2081
-msgid "The selected parent directory does not exist.  Should it be created?"
+#: src/proj/createproject.py:2230
+msgid "The selected parent directory {} does not exist.  Should it be created?"
 msgstr ""
 
-#: src/proj/createproject.py:2088 src/proj/createproject.py:3168
+#: src/proj/createproject.py:2237 src/proj/createproject.py:3406
 msgid "The selected parent directory does not exist: {}"
 msgstr ""
 
-#: src/proj/createproject.py:2092
+#: src/proj/createproject.py:2241
 msgid "Create"
 msgstr ""
 
-#: src/proj/createproject.py:2107
+#: src/proj/createproject.py:2263
+msgid "Ignore Warnings?"
+msgstr ""
+
+#: src/proj/createproject.py:2264
+msgid ""
+"Some values may be incorrect and might cause your new project to be "
+"configured incorrectly.  Do you want to proceed with project creation anyway?"
+msgstr ""
+
+#: src/proj/createproject.py:2284
+msgid "Continue"
+msgstr ""
+
+#: src/proj/createproject.py:2299
 msgid "Configuring wingdbstub.py"
 msgstr ""
 
-#: src/proj/createproject.py:2138
+#: src/proj/createproject.py:2330
 msgid "Failed to write wingdbstub.py: {}"
 msgstr ""
 
-#: src/proj/createproject.py:2140
+#: src/proj/createproject.py:2332
 msgid "Configured wingdbstub.py"
 msgstr ""
 
-#: src/proj/createproject.py:2154
+#: src/proj/createproject.py:2346
 msgid "Installing security token"
 msgstr ""
 
-#: src/proj/createproject.py:2166
+#: src/proj/createproject.py:2358
 msgid "Failed to write security token: {}"
 msgstr ""
 
-#: src/proj/createproject.py:2168
+#: src/proj/createproject.py:2360
 msgid "Wrote security token"
 msgstr ""
 
-#: src/proj/createproject.py:2182
+#: src/proj/createproject.py:2374
 msgid "Could not contact remote host"
 msgstr ""
 
-#: src/proj/createproject.py:2197
+#: src/proj/createproject.py:2389
 msgid "Failed to launch container instance: {}"
 msgstr ""
 
-#: src/proj/createproject.py:2259
+#: src/proj/createproject.py:2449
+msgid "Failed to inspect packages file {}"
+msgstr ""
+
+#: src/proj/createproject.py:2454
+msgid "Packages file {} does not exist"
+msgstr ""
+
+#: src/proj/createproject.py:2466
 msgid "You must install at least one package"
 msgstr ""
 
-#: src/proj/createproject.py:2268
+#: src/proj/createproject.py:2482
 msgid "requirements.txt"
 msgstr ""
 
-#: src/proj/createproject.py:2274
+#: src/proj/createproject.py:2490
 msgid "Pipfile"
 msgstr ""
 
-#: src/proj/createproject.py:2280
+#: src/proj/createproject.py:2498
 msgid "environment.yml"
 msgstr ""
 
-#: src/proj/createproject.py:2288
+#: src/proj/createproject.py:2508
 msgid "Packages to Install"
 msgstr ""
 
-#: src/proj/createproject.py:2289
+#: src/proj/createproject.py:2509
 msgid ""
 "The packages to install initially.  Packages can also be added later from "
 "the Packages tool in the Tools menu."
 msgstr ""
 
-#: src/proj/createproject.py:2294
+#: src/proj/createproject.py:2514
 msgid "Package Names"
 msgstr ""
 
-#: src/proj/createproject.py:2331 src/proj/createproject.py:2336
-msgid "Failed to read selected requirements.txt"
+#: src/proj/createproject.py:2584
+msgid "Failed to read selected %s"
 msgstr ""
 
-#: src/proj/createproject.py:2358
-msgid "Failed to read selected Pipfile"
-msgstr ""
-
-#: src/proj/createproject.py:2372
+#: src/proj/createproject.py:2607
 msgid "Writing requirements.txt"
 msgstr ""
 
-#: src/proj/createproject.py:2388
+#: src/proj/createproject.py:2625
 msgid "Failed to write requirements.txt: {}"
 msgstr ""
 
-#: src/proj/createproject.py:2390
+#: src/proj/createproject.py:2627
 msgid "Wrote requirements.txt"
 msgstr ""
 
-#: src/proj/createproject.py:2473
-msgid "The remote host could not be reached: {}"
+#: src/proj/createproject.py:2712
+msgid "The remote host could not be reached"
 msgstr ""
 
-#: src/proj/createproject.py:2475 src/proj/createproject.py:2663
+#: src/proj/createproject.py:2714 src/proj/createproject.py:2898
 msgid "Installed the remote agent"
 msgstr ""
 
-#: src/proj/createproject.py:2477 src/proj/createproject.py:2665
+#: src/proj/createproject.py:2719 src/proj/createproject.py:2905
 msgid "Validated existing remote agent installation"
 msgstr ""
 
-#: src/proj/createproject.py:2530
+#: src/proj/createproject.py:2765
 msgid "The existing Vagrant project directory on the local host"
 msgstr ""
 
-#: src/proj/createproject.py:2535
+#: src/proj/createproject.py:2770
 msgid "Vagrant Project Directory"
 msgstr ""
 
-#: src/proj/createproject.py:2554
+#: src/proj/createproject.py:2789
 msgid "The selected Vagrant Project Directory %s does not exist"
 msgstr ""
 
-#: src/proj/createproject.py:2556
+#: src/proj/createproject.py:2791
 msgid "Vagrantfile not found in %s"
 msgstr ""
 
-#: src/proj/createproject.py:2566
+#: src/proj/createproject.py:2801
 msgid "Could not run 'vagrant ssh-config': failed to start"
 msgstr ""
 
-#: src/proj/createproject.py:2568
+#: src/proj/createproject.py:2803
 msgid "Could not run 'vagrant ssh-config': timed out"
 msgstr ""
 
-#: src/proj/createproject.py:2587
+#: src/proj/createproject.py:2822
 msgid "SSH Port from 'vagrant ssh-config' is not an integer: %s"
 msgstr ""
 
-#: src/proj/createproject.py:2591
+#: src/proj/createproject.py:2826
 msgid "SSH private key from 'vagrant ssh-config' does not exist: %s"
 msgstr ""
 
-#: src/proj/createproject.py:2595
+#: src/proj/createproject.py:2830
 msgid "Empty User line from 'vagrant ssh-config'"
 msgstr ""
 
-#: src/proj/createproject.py:2599
+#: src/proj/createproject.py:2834
 msgid "Empty HostName line from 'vagrant ssh-config'"
 msgstr ""
 
-#: src/proj/createproject.py:2602
+#: src/proj/createproject.py:2837
 msgid ""
 "Could not obtain the necessary data from 'vagrant ssh-config'.  Have you run "
 "'vagrant up' in %s?"
 msgstr ""
 
-#: src/proj/createproject.py:2617
+#: src/proj/createproject.py:2852
 msgid "Creating remote host configuration"
 msgstr ""
 
-#: src/proj/createproject.py:2647
+#: src/proj/createproject.py:2882
 msgid "Created remote host configuration"
 msgstr ""
 
-#: src/proj/createproject.py:2656
+#: src/proj/createproject.py:2891
 msgid "Installing remote agent"
 msgstr ""
 
-#: src/proj/createproject.py:2688
+#: src/proj/createproject.py:2900
+msgid "Remote agent installation failed"
+msgstr ""
+
+#: src/proj/createproject.py:2923
 msgid "Converting PuTTY private key"
 msgstr ""
 
-#: src/proj/createproject.py:2703
+#: src/proj/createproject.py:2938
 msgid ""
 "Please try converting again with puttygen.  Canceling will leave the project "
 "partially configured but unsaved."
 msgstr ""
 
-#: src/proj/createproject.py:2710
+#: src/proj/createproject.py:2945
 msgid "Failed to convert the Vagrant private key to PuTTY format"
 msgstr ""
 
-#: src/proj/createproject.py:2712
+#: src/proj/createproject.py:2947
 msgid "Converted PuTTY private key"
 msgstr ""
 
-#: src/proj/createproject.py:2715
+#: src/proj/createproject.py:2950
 msgid "_Retry puttygen"
 msgstr ""
 
-#: src/proj/createproject.py:2721
+#: src/proj/createproject.py:2956
 msgid "Could Not Convert Key"
 msgstr ""
 
-#: src/proj/createproject.py:2722
+#: src/proj/createproject.py:2957
 msgid ""
 "Could not convert the Vagrant private key to PuTTY format because puttygen."
 "exe failed to start.  It must be installed in the same directory as plink."
 "exe."
 msgstr ""
 
-#: src/proj/createproject.py:2732
+#: src/proj/createproject.py:2967
 msgid "Could Not Find Converted Key"
 msgstr ""
 
-#: src/proj/createproject.py:2733
+#: src/proj/createproject.py:2968
 msgid "Could not find the converted key file \"%s\"."
 msgstr ""
 
-#: src/proj/createproject.py:2747
+#: src/proj/createproject.py:2982
 msgid "Private Key Conversion"
 msgstr ""
 
-#: src/proj/createproject.py:2748
+#: src/proj/createproject.py:2983
 msgid ""
 "Vagrant's private key needs to be manually converted for PuTTY.  Continue to "
 "start puttygen with the private key loaded.  Then use Save Private Key in "
@@ -1253,616 +1300,722 @@ msgid ""
 "continue setting up your project."
 msgstr ""
 
-#: src/proj/createproject.py:2754
+#: src/proj/createproject.py:2989
 msgid "Start puttygen"
 msgstr ""
 
-#: src/proj/createproject.py:2781 src/proj/createproject.py:2880
-#: src/proj/createproject.py:3112 src/proj/properties.py:2448
+#: src/proj/createproject.py:3019 src/proj/createproject.py:3118
+#: src/proj/createproject.py:3350 src/proj/properties.py:2566
 msgid "Project Type"
 msgstr ""
 
-#: src/proj/createproject.py:2853
+#: src/proj/createproject.py:3091
 msgid "Source Directory"
 msgstr ""
 
-#: src/proj/createproject.py:2854
+#: src/proj/createproject.py:3092
 msgid "The existing source directory to use with this project."
 msgstr ""
 
-#: src/proj/createproject.py:2882 src/proj/createproject.py:3114
+#: src/proj/createproject.py:3120 src/proj/createproject.py:3352
 msgid ""
 "The type of project you wish to create.  Select Custom if none of the "
 "predefined types matches your project."
 msgstr ""
 
-#: src/proj/createproject.py:2911
+#: src/proj/createproject.py:3149
 msgid "This directory has a Python environment managed by {}"
 msgstr ""
 
-#: src/proj/createproject.py:2927
+#: src/proj/createproject.py:3165
 msgid "You must specify a directory to use for your project"
 msgstr ""
 
-#: src/proj/createproject.py:2933
+#: src/proj/createproject.py:3171
 msgid "Could not inspect selected directory"
 msgstr ""
 
-#: src/proj/createproject.py:2935
+#: src/proj/createproject.py:3173
 msgid "The selected directory does not exist"
 msgstr ""
 
-#: src/proj/createproject.py:2961 src/proj/createproject.py:3258
+#: src/proj/createproject.py:3199 src/proj/createproject.py:3496
 msgid "Adding directory to project"
 msgstr ""
 
-#: src/proj/createproject.py:2969 src/proj/createproject.py:3265
+#: src/proj/createproject.py:3207 src/proj/createproject.py:3503
 msgid "Added directory to project"
 msgstr ""
 
-#: src/proj/createproject.py:3044 src/proj/createproject.py:3052
-#: src/proj/properties.py:2055 src/proj/properties.py:2973
+#: src/proj/createproject.py:3282 src/proj/createproject.py:3290
+#: src/proj/properties.py:2139 src/proj/properties.py:3093
 msgid "None"
 msgstr ""
 
-#: src/proj/createproject.py:3045
+#: src/proj/createproject.py:3283
 msgid "Git"
 msgstr ""
 
-#: src/proj/createproject.py:3046
+#: src/proj/createproject.py:3284
 msgid "Mercurial"
 msgstr ""
 
-#: src/proj/createproject.py:3047
+#: src/proj/createproject.py:3285
 msgid "Subversion"
 msgstr ""
 
-#: src/proj/createproject.py:3053
+#: src/proj/createproject.py:3291
 msgid "Doctest"
 msgstr ""
 
-#: src/proj/createproject.py:3054
+#: src/proj/createproject.py:3292
 msgid "Django Tests"
 msgstr ""
 
-#: src/proj/createproject.py:3055
+#: src/proj/createproject.py:3293
 msgid "Nose"
 msgstr ""
 
-#: src/proj/createproject.py:3056
+#: src/proj/createproject.py:3294
 msgid "Pytest"
 msgstr ""
 
-#: src/proj/createproject.py:3057
+#: src/proj/createproject.py:3295
 msgid "Unittest"
 msgstr ""
 
-#: src/proj/createproject.py:3062 src/proj/createproject.py:3583
-#: src/proj/createproject.py:5271 src/proj/properties.py:542
+#: src/proj/createproject.py:3300 src/proj/createproject.py:3823
+#: src/proj/createproject.py:5785 src/proj/properties.py:542
 #: src/proj/properties.py:658
 msgid "Name"
 msgstr ""
 
-#: src/proj/createproject.py:3063
+#: src/proj/createproject.py:3301
 msgid "The new directory name to create for this project."
 msgstr ""
 
-#: src/proj/createproject.py:3069 src/proj/createproject.py:3584
-#: src/proj/createproject.py:5272
+#: src/proj/createproject.py:3307 src/proj/createproject.py:3824
+#: src/proj/createproject.py:5786
 msgid "Parent Directory"
 msgstr ""
 
-#: src/proj/createproject.py:3070
+#: src/proj/createproject.py:3308
 msgid "The parent directory where the new project directory should be created."
 msgstr ""
 
-#: src/proj/createproject.py:3086
+#: src/proj/createproject.py:3324
 msgid "Clone Repository"
 msgstr ""
 
-#: src/proj/createproject.py:3087
+#: src/proj/createproject.py:3325
 msgid ""
 "The revision control repository URL to clone into the new directory, if "
 "any.  No repository is cloned if this is left blank."
 msgstr ""
 
-#: src/proj/createproject.py:3098
+#: src/proj/createproject.py:3336
 msgid "Test Framework"
 msgstr ""
 
-#: src/proj/createproject.py:3099
+#: src/proj/createproject.py:3337
 msgid "The unit testing framework to use with the new project, if any."
 msgstr ""
 
-#: src/proj/createproject.py:3138
+#: src/proj/createproject.py:3376
 msgid "You must specify a parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3140
+#: src/proj/createproject.py:3378
 msgid "You must provide a name for the new directory"
 msgstr ""
 
-#: src/proj/createproject.py:3142
+#: src/proj/createproject.py:3380
 msgid "The character {} may be not be used in the new directory name"
 msgstr ""
 
-#: src/proj/createproject.py:3148
+#: src/proj/createproject.py:3386
 msgid ""
 "You must select a revision control system when entering a repository URL"
 msgstr ""
 
-#: src/proj/createproject.py:3156
+#: src/proj/createproject.py:3394
 msgid "Could not inspect the selected parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3161
+#: src/proj/createproject.py:3399
 msgid "The selected directory already exists"
 msgstr ""
 
-#: src/proj/createproject.py:3203 src/proj/createproject.py:3901
+#: src/proj/createproject.py:3441 src/proj/createproject.py:4148
 msgid "Creating directories"
 msgstr ""
 
-#: src/proj/createproject.py:3229
+#: src/proj/createproject.py:3467
 msgid "Failed to create remote parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3230
+#: src/proj/createproject.py:3468
 msgid "Created parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3231
+#: src/proj/createproject.py:3469
 msgid "Failed to create remote source directory"
 msgstr ""
 
-#: src/proj/createproject.py:3232
+#: src/proj/createproject.py:3470
 msgid "Created source directory"
 msgstr ""
 
-#: src/proj/createproject.py:3236
+#: src/proj/createproject.py:3474
 msgid "Inspecting locations"
 msgstr ""
 
-#: src/proj/createproject.py:3241
+#: src/proj/createproject.py:3479
 msgid "Failed to inspect directories"
 msgstr ""
 
-#: src/proj/createproject.py:3269
+#: src/proj/createproject.py:3507
 msgid "Setting test framework"
 msgstr ""
 
-#: src/proj/createproject.py:3276
+#: src/proj/createproject.py:3514
 msgid "Set testing framework"
 msgstr ""
 
-#: src/proj/createproject.py:3314
+#: src/proj/createproject.py:3552
 msgid "Saving the project"
 msgstr ""
 
-#: src/proj/createproject.py:3323
+#: src/proj/createproject.py:3561
 msgid "Saved the project"
 msgstr ""
 
-#: src/proj/createproject.py:3357
+#: src/proj/createproject.py:3595
 msgid "Pulling revision control repository"
 msgstr ""
 
-#: src/proj/createproject.py:3379
+#: src/proj/createproject.py:3617
 msgid "Repository fetch was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:3381
+#: src/proj/createproject.py:3619
 msgid "Failed to fetch repository"
 msgstr ""
 
-#: src/proj/createproject.py:3383
+#: src/proj/createproject.py:3621
 msgid "Fetched revision control repository"
 msgstr ""
 
-#: src/proj/createproject.py:3386
+#: src/proj/createproject.py:3624
 msgid "Failed to start process to fetch repository"
 msgstr ""
 
-#: src/proj/createproject.py:3412 src/proj/properties.py:2080
+#: src/proj/createproject.py:3650 src/proj/properties.py:2164
 msgid "Activated Env"
 msgstr ""
 
-#: src/proj/createproject.py:3418 src/proj/properties.py:2088
+#: src/proj/createproject.py:3656 src/proj/properties.py:2172
 msgid "Container"
 msgstr ""
 
-#: src/proj/createproject.py:3421 src/proj/properties.py:2091
+#: src/proj/createproject.py:3659 src/proj/properties.py:2175
 msgid "Cluster"
 msgstr ""
 
-#: src/proj/createproject.py:3430 src/proj/createproject.py:3615
-#: src/proj/createproject.py:4121 src/proj/properties.py:2104
+#: src/proj/createproject.py:3668 src/proj/createproject.py:3855
+#: src/proj/createproject.py:4384 src/proj/properties.py:2188
 msgid "Command Line"
 msgstr ""
 
-#: src/proj/createproject.py:3446 src/proj/createproject.py:3500
-#: src/proj/createproject.py:3785 src/proj/createproject.py:4727
-#: src/proj/createproject.py:5490
+#: src/proj/createproject.py:3684 src/proj/createproject.py:3738
+#: src/proj/createproject.py:4027 src/proj/createproject.py:5231
+#: src/proj/createproject.py:6009
 msgid "Setting Python Executable"
 msgstr ""
 
-#: src/proj/createproject.py:3452 src/proj/createproject.py:3502
-#: src/proj/createproject.py:3814 src/proj/createproject.py:4371
-#: src/proj/createproject.py:4729 src/proj/createproject.py:5525
+#: src/proj/createproject.py:3690 src/proj/createproject.py:3740
+#: src/proj/createproject.py:4056 src/proj/createproject.py:4640
+#: src/proj/createproject.py:5233 src/proj/createproject.py:6044
 msgid "Set Python Executable"
 msgstr ""
 
-#: src/proj/createproject.py:3469
+#: src/proj/createproject.py:3707
 msgid "Wing will use the Python in remote host configuration '{}'"
 msgstr ""
 
-#: src/proj/createproject.py:3478 src/proj/createproject.py:3602
-#: src/proj/createproject.py:4108 src/proj/properties.py:96
+#: src/proj/createproject.py:3716 src/proj/createproject.py:3842
+#: src/proj/createproject.py:4371 src/proj/properties.py:96
 msgid "Python Executable"
 msgstr ""
 
-#: src/proj/createproject.py:3505
+#: src/proj/createproject.py:3743
 msgid "Configuring line ending"
 msgstr ""
 
-#: src/proj/createproject.py:3507
+#: src/proj/createproject.py:3745
 msgid "Configured line ending to \\n"
 msgstr ""
 
-#: src/proj/createproject.py:3513
+#: src/proj/createproject.py:3751
 msgid "The selected parent directory '%s' does not exist or is not a directory"
 msgstr ""
 
-#: src/proj/createproject.py:3514
+#: src/proj/createproject.py:3752
 msgid "The environment directory '%s' already exists"
 msgstr ""
 
-#: src/proj/createproject.py:3520
+#: src/proj/createproject.py:3758
 msgid "The name of the virtualenv to be created"
 msgstr ""
 
-#: src/proj/createproject.py:3525
+#: src/proj/createproject.py:3763
 msgid ""
 "The directory where the new virtualenv will be created.  The new "
 "virtualenv's directory will be created inside this parent directory."
 msgstr ""
 
-#: src/proj/createproject.py:3532
+#: src/proj/createproject.py:3770
 msgid ""
 "Whether to upgrade pip to the latest, to compensate for the fact that "
 "virtualenv usually installs an old version even if the base installation of "
 "Python has a newer one."
 msgstr ""
 
-#: src/proj/createproject.py:3539
+#: src/proj/createproject.py:3777
 msgid ""
 "Whether to inherit the site-packages installed globally into the selected "
 "Python. When disabled, the virtualenv will be completely isolated from the "
 "global system."
 msgstr ""
 
-#: src/proj/createproject.py:3604
+#: src/proj/createproject.py:3844
 msgid "The Python to use when creating the new virtualenv."
 msgstr ""
 
-#: src/proj/createproject.py:3623
+#: src/proj/createproject.py:3863
 msgid "Upgrade pip"
 msgstr ""
 
-#: src/proj/createproject.py:3627
+#: src/proj/createproject.py:3867
 msgid "Inherit global site-packages"
 msgstr ""
 
-#: src/proj/createproject.py:3671 src/proj/createproject.py:4149
+#: src/proj/createproject.py:3911 src/proj/createproject.py:4412
 msgid "You must choose a base Python to use with your new environment"
 msgstr ""
 
-#: src/proj/createproject.py:3675
+#: src/proj/createproject.py:3915
 msgid "You must select a parent directory for the new environment"
 msgstr ""
 
-#: src/proj/createproject.py:3683 src/proj/createproject.py:5304
+#: src/proj/createproject.py:3923 src/proj/createproject.py:5818
 msgid "You must specify a name for the new environment"
 msgstr ""
 
-#: src/proj/createproject.py:3685 src/proj/createproject.py:5306
+#: src/proj/createproject.py:3925 src/proj/createproject.py:5820
 msgid "The environment name cannot contain '%s'"
 msgstr ""
 
-#: src/proj/createproject.py:3707
+#: src/proj/createproject.py:3947
 msgid "Could not inspect selected parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3746
+#: src/proj/createproject.py:3987
 msgid "Could not find virtualenv for the selected Python Executable."
 msgstr ""
 
-#: src/proj/createproject.py:3795 src/proj/createproject.py:4353
+#: src/proj/createproject.py:4037 src/proj/createproject.py:4622
 msgid "Failed to inspect locations: {}"
 msgstr ""
 
-#: src/proj/createproject.py:3799 src/proj/createproject.py:4336
+#: src/proj/createproject.py:4041 src/proj/createproject.py:4605
 msgid "Configuring Python Executable"
 msgstr ""
 
-#: src/proj/createproject.py:3835 src/proj/createproject.py:4390
+#: src/proj/createproject.py:4078 src/proj/createproject.py:4660
 msgid "Failed to re-inspect remote locations"
 msgstr ""
 
-#: src/proj/createproject.py:3885
+#: src/proj/createproject.py:4132
 msgid "Creating parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3913
+#: src/proj/createproject.py:4160
 msgid "Failed to create parent directory"
 msgstr ""
 
-#: src/proj/createproject.py:3929
+#: src/proj/createproject.py:4176
 msgid "Creating virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:3948
+#: src/proj/createproject.py:4195
 msgid "Virtualenv creation was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:3952
+#: src/proj/createproject.py:4199
 msgid ""
 "Failed to create the environment; virtualenv may not be available in the "
 "selected base Python installation."
 msgstr ""
 
-#: src/proj/createproject.py:3957
+#: src/proj/createproject.py:4204
 msgid "Created the virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:3960
+#: src/proj/createproject.py:4207
 msgid "Failed to start process to create virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:3975
+#: src/proj/createproject.py:4222
 msgid "Upgrading pip"
 msgstr ""
 
-#: src/proj/createproject.py:3984
+#: src/proj/createproject.py:4230
 msgid "Could not inspect pip for upgrade"
 msgstr ""
 
-#: src/proj/createproject.py:3988
-msgid "Pip is missing from the virtualenv and could not be upgraded"
-msgstr ""
-
-#: src/proj/createproject.py:4001
+#: src/proj/createproject.py:4243
 msgid "Virtualenv pip upgrade was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:4003
+#: src/proj/createproject.py:4245
 msgid "Failed to upgrade the virtualenv's pip"
 msgstr ""
 
-#: src/proj/createproject.py:4005
+#: src/proj/createproject.py:4247
 msgid "Upgraded the virtualenv's pip"
 msgstr ""
 
-#: src/proj/createproject.py:4008
+#: src/proj/createproject.py:4250
 msgid "Failed to start process to upgrade the virtualenv's pip"
 msgstr ""
 
-#: src/proj/createproject.py:4020
+#: src/proj/createproject.py:4276
 msgid "Installing packages"
 msgstr ""
 
-#: src/proj/createproject.py:4046
+#: src/proj/createproject.py:4289
+msgid "Failed remote inspection during package installation"
+msgstr ""
+
+#: src/proj/createproject.py:4305
 msgid "Package installation was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:4048
+#: src/proj/createproject.py:4307
 msgid "Failed to install packages"
 msgstr ""
 
-#: src/proj/createproject.py:4050
+#: src/proj/createproject.py:4309
 msgid "Installed packages"
 msgstr ""
 
-#: src/proj/createproject.py:4053
+#: src/proj/createproject.py:4312
 msgid "Failed to start process to install packages"
 msgstr ""
 
-#: src/proj/createproject.py:4093 src/proj/properties.py:3288
-#: src/proj/properties.py:3297 src/proj/properties.py:3305
+#: src/proj/createproject.py:4356 src/proj/properties.py:3408
+#: src/proj/properties.py:3417 src/proj/properties.py:3425
 msgid "Directory"
 msgstr ""
 
-#: src/proj/createproject.py:4110
+#: src/proj/createproject.py:4373
 msgid "The Python to use when creating the new environment."
 msgstr ""
 
-#: src/proj/createproject.py:4174
+#: src/proj/createproject.py:4437
 msgid "Could not find pip for the selected Python Executable."
 msgstr ""
 
-#: src/proj/createproject.py:4232
+#: src/proj/createproject.py:4495
 msgid "Checking for pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4240 src/proj/createproject.py:4263
+#: src/proj/createproject.py:4503 src/proj/createproject.py:4526
 msgid "Pipenv installation was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:4247
+#: src/proj/createproject.py:4510
 msgid "Failed to start process to check for pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4257
+#: src/proj/createproject.py:4520
 msgid "Installing pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4265
+#: src/proj/createproject.py:4528
 msgid "Failed to install pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4267
+#: src/proj/createproject.py:4530
 msgid "Installed pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4270
+#: src/proj/createproject.py:4533
 msgid "Failed to start process to install pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4280
+#: src/proj/createproject.py:4543
 msgid "Creating new pipenv environment"
 msgstr ""
 
-#: src/proj/createproject.py:4292
+#: src/proj/createproject.py:4559
 msgid "Canceled pipenv creation"
 msgstr ""
 
-#: src/proj/createproject.py:4294
+#: src/proj/createproject.py:4561
 msgid "Failed to create pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4296
+#: src/proj/createproject.py:4563
 msgid "Created new pipenv environment"
 msgstr ""
 
-#: src/proj/createproject.py:4299
+#: src/proj/createproject.py:4566
 msgid "Failed to start process to create pipenv"
 msgstr ""
 
-#: src/proj/createproject.py:4309
+#: src/proj/createproject.py:4578
 msgid "Finding pipenv virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:4318
+#: src/proj/createproject.py:4587
 msgid "Inspecting pipenv was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:4320
+#: src/proj/createproject.py:4589
 msgid "Failed to pipenv virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:4326
+#: src/proj/createproject.py:4595
 msgid "Failed to start process to find pipenv's virtualenv"
 msgstr ""
 
-#: src/proj/createproject.py:4440
+#: src/proj/createproject.py:4741
+msgid "Checking for Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4749 src/proj/createproject.py:4772
+msgid "Poetry installation was canceled"
+msgstr ""
+
+#: src/proj/createproject.py:4756
+msgid "Failed to start process to check for Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4766
+msgid "Installing Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4774
+msgid "Failed to install Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4776
+msgid "Installed Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4779
+msgid "Failed to start process to install Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4789
+msgid "Creating new Poetry environment"
+msgstr ""
+
+#: src/proj/createproject.py:4798
+msgid "Canceled Poetry environment creation"
+msgstr ""
+
+#: src/proj/createproject.py:4800
+msgid "Failed to create Poetry environment"
+msgstr ""
+
+#: src/proj/createproject.py:4802
+msgid "Created new Poetry environment"
+msgstr ""
+
+#: src/proj/createproject.py:4805
+msgid "Failed to start process to create Poetry environment"
+msgstr ""
+
+#: src/proj/createproject.py:4814
+msgid "Adding packages to Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4834
+msgid "Canceled Poetry package add"
+msgstr ""
+
+#: src/proj/createproject.py:4836
+msgid "Failed to add packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4838
+msgid "Added packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4841
+msgid "Failed to start process to add packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4852
+msgid "Installing packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4861
+msgid "Canceled Poetry package installation"
+msgstr ""
+
+#: src/proj/createproject.py:4863
+msgid "Failed to install packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4865
+msgid "Installed packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4868
+msgid "Failed to start process to install packages with Poetry"
+msgstr ""
+
+#: src/proj/createproject.py:4878
+msgid "Finding Poetry virtualenv"
+msgstr ""
+
+#: src/proj/createproject.py:4887
+msgid "Inspecting Poetry environment was canceled"
+msgstr ""
+
+#: src/proj/createproject.py:4889
+msgid "Failed find Poetry's virtualenv"
+msgstr ""
+
+#: src/proj/createproject.py:4898
+msgid "Failed to start process to find Poetry's virtualenv"
+msgstr ""
+
+#: src/proj/createproject.py:4940
 msgid "With Existing Container"
 msgstr ""
 
-#: src/proj/createproject.py:4441
+#: src/proj/createproject.py:4941
 msgid "Create New Container"
 msgstr ""
 
-#: src/proj/createproject.py:4578
+#: src/proj/createproject.py:5082
 msgid "Uses -v Option for 'docker run'"
 msgstr ""
 
-#: src/proj/createproject.py:4579
+#: src/proj/createproject.py:5083
 msgid "Uses COPY in Dockerfile"
 msgstr ""
 
-#: src/proj/createproject.py:4587
+#: src/proj/createproject.py:5091
 msgid "Configuration"
 msgstr ""
 
-#: src/proj/createproject.py:4588
+#: src/proj/createproject.py:5092
 msgid ""
 "The container configuration to use, either the Dockerfile or an image ID."
 msgstr ""
 
-#: src/proj/createproject.py:4591
+#: src/proj/createproject.py:5095
 msgid "Use Image ID"
 msgstr ""
 
-#: src/proj/createproject.py:4592
+#: src/proj/createproject.py:5096
 msgid "Select Dockerfile"
 msgstr ""
 
-#: src/proj/createproject.py:4597 src/proj/createproject.py:4871
+#: src/proj/createproject.py:5101 src/proj/createproject.py:5380
 msgid "Image ID"
 msgstr ""
 
-#: src/proj/createproject.py:4598
+#: src/proj/createproject.py:5102
 msgid ""
 "The image to use for this container.  If Select Dockerfile is used above, "
 "this should match the image name defined in the configuration, if any.  "
 "Otherwise, it may be any image to use for the container."
 msgstr ""
 
-#: src/proj/createproject.py:4607
+#: src/proj/createproject.py:5111
 msgid "Mapping Type"
 msgstr ""
 
-#: src/proj/createproject.py:4608
+#: src/proj/createproject.py:5112
 msgid ""
 "Whether the mapping of host-side directories into the container is "
 "accomplished with -v option for 'docker run' or using COPY directives in the "
 "Dockerfile."
 msgstr ""
 
-#: src/proj/createproject.py:4666
+#: src/proj/createproject.py:5170
 msgid ""
 "Invalid image ID.  This should be the ID set with 'AS' after 'FROM' in the "
 "selected Dockerfile, if any,or any valid Docker image ID."
 msgstr ""
 
-#: src/proj/createproject.py:4670
+#: src/proj/createproject.py:5174
 msgid "The selected Dockerfile does not exist"
 msgstr ""
 
-#: src/proj/createproject.py:4675
+#: src/proj/createproject.py:5179
 msgid "Failed to parse the selected Dockerfile"
 msgstr ""
 
-#: src/proj/createproject.py:4682
-msgid "The selected image ID is not in those specified in the Dockerfile."
+#: src/proj/createproject.py:5186
+msgid ""
+"The selected image ID must be one of those specified in the Dockerfile with "
+"FROM ... AS image_id"
 msgstr ""
 
-#: src/proj/createproject.py:4702 src/proj/createproject.py:5021
+#: src/proj/createproject.py:5206 src/proj/createproject.py:5532
 msgid "Creating container configuration"
 msgstr ""
 
-#: src/proj/createproject.py:4724 src/proj/createproject.py:5053
+#: src/proj/createproject.py:5228 src/proj/createproject.py:5564
 msgid "Created container configuration"
 msgstr ""
 
-#: src/proj/createproject.py:4733
+#: src/proj/createproject.py:5237
 msgid "Adding project directories"
 msgstr ""
 
-#: src/proj/createproject.py:4740
+#: src/proj/createproject.py:5244
 msgid "Added project directories"
 msgstr ""
 
-#: src/proj/createproject.py:4744 src/proj/createproject.py:5057
+#: src/proj/createproject.py:5248 src/proj/createproject.py:5568
 msgid "Displayed Containers tool"
 msgstr ""
 
-#: src/proj/createproject.py:4782
+#: src/proj/createproject.py:5286
 msgid ""
 "The Python version specifier to use when creating the new container.  This "
 "can be any version supported for the 'python' official Docker image.  "
 "Defaults to the latest version at the time of creating the container."
 msgstr ""
 
-#: src/proj/createproject.py:4789
+#: src/proj/createproject.py:5293
 msgid ""
 "The image ID for the newly created container image, optionally including a "
 "tag with the name:tag format."
 msgstr ""
 
-#: src/proj/createproject.py:4795
+#: src/proj/createproject.py:5299
 msgid ""
 "The Docker project directory to create on the local host.  This is also "
 "where the new project support files will be written."
 msgstr ""
 
-#: src/proj/createproject.py:4801
+#: src/proj/createproject.py:5305
 msgid ""
 "Full path container-side directory for mapping the Docker Project Directory "
 "into the container"
 msgstr ""
 
-#: src/proj/createproject.py:4807
+#: src/proj/createproject.py:5311
 msgid ""
 "Enable this to establish file mappings to the container so that changes on "
 "the host are immediately reflected in the container.  This reduces the time "
@@ -1870,115 +2023,115 @@ msgid ""
 "code, to try out changes without having to restart the container."
 msgstr ""
 
-#: src/proj/createproject.py:4872
+#: src/proj/createproject.py:5381
 msgid "Host-side Directory"
 msgstr ""
 
-#: src/proj/createproject.py:4874
+#: src/proj/createproject.py:5383
 msgid "Container-side Directory"
 msgstr ""
 
-#: src/proj/createproject.py:4883
+#: src/proj/createproject.py:5392
 msgid "Establish File Mappings (Recommended)"
 msgstr ""
 
-#: src/proj/createproject.py:4885
+#: src/proj/createproject.py:5394
 msgid "Python Version Specifier"
 msgstr ""
 
-#: src/proj/createproject.py:4916
+#: src/proj/createproject.py:5425
 msgid "You must provide an image ID for the new container"
 msgstr ""
 
-#: src/proj/createproject.py:4919
+#: src/proj/createproject.py:5428
 msgid "Cannot create the Docker Project Directory %s"
 msgstr ""
 
-#: src/proj/createproject.py:4922
+#: src/proj/createproject.py:5431
 msgid "Parent directory does not exist"
 msgstr ""
 
-#: src/proj/createproject.py:4924
+#: src/proj/createproject.py:5433
 msgid "It already exists but is not a directory"
 msgstr ""
 
-#: src/proj/createproject.py:4928
+#: src/proj/createproject.py:5437
 msgid ""
 "You must specify where the Docker Project Directory should be mapped into "
 "the container"
 msgstr ""
 
-#: src/proj/createproject.py:4930
+#: src/proj/createproject.py:5439
 msgid "The Container-side Mapped Directory must be a full path"
 msgstr ""
 
-#: src/proj/createproject.py:4973
+#: src/proj/createproject.py:5482
 msgid "Creating Docker directory"
 msgstr ""
 
-#: src/proj/createproject.py:4978
+#: src/proj/createproject.py:5487
 msgid "Created Docker directory"
 msgstr ""
 
-#: src/proj/createproject.py:4989
+#: src/proj/createproject.py:5498
 msgid "Adding project directory"
 msgstr ""
 
-#: src/proj/createproject.py:4992
+#: src/proj/createproject.py:5501
 msgid "Added project directory"
 msgstr ""
 
-#: src/proj/createproject.py:5006
+#: src/proj/createproject.py:5515
 msgid "Writing container build script"
 msgstr ""
 
-#: src/proj/createproject.py:5010
+#: src/proj/createproject.py:5521
 msgid ""
 "Script that builds or rebuilds the container image using the Dockerfile and "
 "requirements.txt"
 msgstr ""
 
-#: src/proj/createproject.py:5011
+#: src/proj/createproject.py:5522
 msgid "Do not move, rename, or delete this file"
 msgstr ""
 
-#: src/proj/createproject.py:5017
+#: src/proj/createproject.py:5528
 msgid "Wrote container build script"
 msgstr ""
 
-#: src/proj/createproject.py:5067
+#: src/proj/createproject.py:5578
 msgid "Building container (this may take a while)"
 msgstr ""
 
-#: src/proj/createproject.py:5073
+#: src/proj/createproject.py:5584
 msgid "Failed to build the container"
 msgstr ""
 
-#: src/proj/createproject.py:5075
+#: src/proj/createproject.py:5586
 msgid "Built container"
 msgstr ""
 
-#: src/proj/createproject.py:5102
+#: src/proj/createproject.py:5613
 msgid "Creating Dockerfile"
 msgstr ""
 
-#: src/proj/createproject.py:5132
+#: src/proj/createproject.py:5643
 msgid "Wrote Dockerfile"
 msgstr ""
 
-#: src/proj/createproject.py:5171
+#: src/proj/createproject.py:5682
 msgid "Writing starter files"
 msgstr ""
 
-#: src/proj/createproject.py:5193 src/proj/createproject.py:5807
+#: src/proj/createproject.py:5704 src/proj/createproject.py:6329
 msgid "Wrote starter files"
 msgstr ""
 
-#: src/proj/createproject.py:5200
+#: src/proj/createproject.py:5711
 msgid "The name of the Anaconda environment to be created"
 msgstr ""
 
-#: src/proj/createproject.py:5205
+#: src/proj/createproject.py:5716
 msgid ""
 "The environments directory to use.  The new environment's directory will be "
 "created inside this parent directory.  The default is the first directory in "
@@ -1986,415 +2139,451 @@ msgid ""
 "installation directory."
 msgstr ""
 
-#: src/proj/createproject.py:5213
+#: src/proj/createproject.py:5724
 msgid ""
 "The Anaconda installation to use.  It must contain the directory conda-meta."
 msgstr ""
 
-#: src/proj/createproject.py:5266
+#: src/proj/createproject.py:5780
 msgid "Anaconda Default"
 msgstr ""
 
-#: src/proj/createproject.py:5267
+#: src/proj/createproject.py:5781
 msgid "Selected Directory:"
 msgstr ""
 
-#: src/proj/createproject.py:5284
+#: src/proj/createproject.py:5798
 msgid "Anaconda Installation"
 msgstr ""
 
-#: src/proj/createproject.py:5310
+#: src/proj/createproject.py:5824
 msgid ""
 "The selected Anaconda install '%s' is not a directory or does not look like "
 "a valid Anaconda installation"
 msgstr ""
 
-#: src/proj/createproject.py:5386
+#: src/proj/createproject.py:5900
 msgid "Running conda create"
 msgstr ""
 
-#: src/proj/createproject.py:5422
-msgid "Failed to read selected environment.yml"
-msgstr ""
-
-#: src/proj/createproject.py:5443
+#: src/proj/createproject.py:5908
 msgid "Running conda with: {}"
 msgstr ""
 
-#: src/proj/createproject.py:5444
+#: src/proj/createproject.py:5909
 msgid "Creating New Anaconda Environment"
 msgstr ""
 
-#: src/proj/createproject.py:5449
+#: src/proj/createproject.py:5914
 msgid "Conda env creation was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:5451
+#: src/proj/createproject.py:5916
 msgid "Failed to create the environment"
 msgstr ""
 
-#: src/proj/createproject.py:5453
+#: src/proj/createproject.py:5918
 msgid "Created conda env"
 msgstr ""
 
-#: src/proj/createproject.py:5456
+#: src/proj/createproject.py:5921
 msgid "Failed to start process to create conda env"
 msgstr ""
 
-#: src/proj/createproject.py:5465
+#: src/proj/createproject.py:5939
+msgid "Failed to read selected environment.yml"
+msgstr ""
+
+#: src/proj/createproject.py:5984
 msgid "Inspecting Environment"
 msgstr ""
 
-#: src/proj/createproject.py:5483
+#: src/proj/createproject.py:6002
 msgid ""
 "Could not find the created conda environment directory.  Please report this "
 "to support@wingware.com."
 msgstr ""
 
-#: src/proj/createproject.py:5563
+#: src/proj/createproject.py:6081
 msgid ""
 "Enable this to use wingdbstub to initiate debug, rather than launching code "
 "from the IDE."
 msgstr ""
 
-#: src/proj/createproject.py:5569
+#: src/proj/createproject.py:6087
 msgid "Use wingdbstub for Debugging"
 msgstr ""
 
-#: src/proj/createproject.py:5576
+#: src/proj/createproject.py:6094
 msgid "Setting project type"
 msgstr ""
 
-#: src/proj/createproject.py:5591
+#: src/proj/createproject.py:6109
 msgid "Setting Project Home Directory"
 msgstr ""
 
-#: src/proj/createproject.py:5593
+#: src/proj/createproject.py:6111
 msgid "Set Project Home Directory"
 msgstr ""
 
-#: src/proj/createproject.py:5597
+#: src/proj/createproject.py:6115
 msgid "Enabling debug listen"
 msgstr ""
 
-#: src/proj/createproject.py:5599
+#: src/proj/createproject.py:6117
 msgid "Enabled debug listening"
 msgstr ""
 
-#: src/proj/createproject.py:5604
+#: src/proj/createproject.py:6122
 msgid "Showing project tool"
 msgstr ""
 
-#: src/proj/createproject.py:5609
+#: src/proj/createproject.py:6127
 msgid "Showing documentation"
 msgstr ""
 
-#: src/proj/createproject.py:5616
+#: src/proj/createproject.py:6134
 msgid "Showed How-To for {}"
 msgstr ""
 
-#: src/proj/createproject.py:5649 src/proj/createproject.py:5824
+#: src/proj/createproject.py:6167 src/proj/createproject.py:6346
 msgid "Configuring project"
 msgstr ""
 
-#: src/proj/createproject.py:5651
+#: src/proj/createproject.py:6169
 msgid "Configured Python to run without -u"
 msgstr ""
 
-#: src/proj/createproject.py:5674
+#: src/proj/createproject.py:6192
 msgid "Inspecting directories"
 msgstr ""
 
-#: src/proj/createproject.py:5677
+#: src/proj/createproject.py:6195
 msgid "Could not inspect directories: {}"
 msgstr ""
 
-#: src/proj/createproject.py:5686
+#: src/proj/createproject.py:6204
 msgid ""
 "You need to turn on Developer Mode in Unreal Editor under Preferences > "
 "Plugins > Python and then restart Unreal Editor before auto-completion will "
 "work"
 msgstr ""
 
-#: src/proj/createproject.py:5690
+#: src/proj/createproject.py:6208
 msgid "Adding stubs directory to Python Path"
 msgstr ""
 
-#: src/proj/createproject.py:5692
+#: src/proj/createproject.py:6210
 msgid "Added stubs directory to Python Path"
 msgstr ""
 
-#: src/proj/createproject.py:5698
+#: src/proj/createproject.py:6216
 msgid "Unreal Editor needs to be restarted before debugging will work"
 msgstr ""
 
-#: src/proj/createproject.py:5699
+#: src/proj/createproject.py:6217
 msgid "Creating missing Content/Python directory"
 msgstr ""
 
-#: src/proj/createproject.py:5705 src/proj/createproject.py:5710
+#: src/proj/createproject.py:6223 src/proj/createproject.py:6228
 msgid "Created missing Content/Python directory"
 msgstr ""
 
-#: src/proj/createproject.py:5717
+#: src/proj/createproject.py:6235
 msgid "Moving wingdbstub.py into place"
 msgstr ""
 
-#: src/proj/createproject.py:5760
+#: src/proj/createproject.py:6278
 msgid "Enabled child process debugging (for reload)"
 msgstr ""
 
-#: src/proj/createproject.py:5805
+#: src/proj/createproject.py:6293
+msgid ""
+"For a better debugging experience, be sure to add argument use_reloader=True "
+"to your app.run() invocation.  You may also need to set app.debug=False in "
+"your code before Wing's debugger will work.  For details see Setting up Auto-"
+"Reload and Turning off Flask's Debugger in the document that has been shown "
+"in Wing's Help viewer or at https://wingware.com/doc/howtos/flask"
+msgstr ""
+
+#: src/proj/createproject.py:6327
 msgid "Failed to write starter files"
 msgstr ""
 
-#: src/proj/createproject.py:5826
+#: src/proj/createproject.py:6348
 msgid "Enabled matplotlib event loop support"
 msgstr ""
 
-#: src/proj/createproject.py:5865
+#: src/proj/createproject.py:6393
 msgid ""
 "Django project creation won't work unless Django is installed in your new "
 "Python environment"
 msgstr ""
 
-#: src/proj/createproject.py:5925
+#: src/proj/createproject.py:6459
 msgid "Enabling Django template debugging"
 msgstr ""
 
-#: src/proj/createproject.py:5927
+#: src/proj/createproject.py:6461
 msgid "Enabled debugging Django templates"
 msgstr ""
 
-#: src/proj/createproject.py:5931
+#: src/proj/createproject.py:6465
 msgid "Finding the configured Python"
 msgstr ""
 
-#: src/proj/createproject.py:5937
+#: src/proj/createproject.py:6471
 msgid "Could not find Python"
 msgstr ""
 
-#: src/proj/createproject.py:5967
+#: src/proj/createproject.py:6501
 msgid "Started the container environment"
 msgstr ""
 
-#: src/proj/createproject.py:5973
+#: src/proj/createproject.py:6507
 msgid "Finding django-admin"
 msgstr ""
 
-#: src/proj/createproject.py:5985
+#: src/proj/createproject.py:6519
 msgid "Could not inspect django-admin: {}"
 msgstr ""
 
-#: src/proj/createproject.py:6002
+#: src/proj/createproject.py:6536
 msgid "Expected django-admin does not exist for {}"
 msgstr ""
 
-#: src/proj/createproject.py:6018
+#: src/proj/createproject.py:6552
 msgid "Reinspecting all project directories"
 msgstr ""
 
-#: src/proj/createproject.py:6022
+#: src/proj/createproject.py:6556
 msgid "Could not reinspect project directories: {}"
 msgstr ""
 
-#: src/proj/createproject.py:6035
+#: src/proj/createproject.py:6569
 msgid "Waiting for project files"
 msgstr ""
 
-#: src/proj/createproject.py:6055
+#: src/proj/createproject.py:6589
 msgid "Scanned project files"
 msgstr ""
 
-#: src/proj/createproject.py:6095 src/proj/createproject.py:6139
+#: src/proj/createproject.py:6629 src/proj/createproject.py:6673
 msgid "Django project creation was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:6119
+#: src/proj/createproject.py:6653
 msgid "Running django-admin startproject"
 msgstr ""
 
-#: src/proj/createproject.py:6142
+#: src/proj/createproject.py:6676
 msgid "Django startproject failed"
 msgstr ""
 
-#: src/proj/createproject.py:6145
+#: src/proj/createproject.py:6679
 msgid "Ran django-admin startproject"
 msgstr ""
 
-#: src/proj/createproject.py:6187
+#: src/proj/createproject.py:6768
 msgid "Failed to inspect key files: {}"
 msgstr ""
 
-#: src/proj/createproject.py:6216
+#: src/proj/createproject.py:6823
+msgid "Project closed during scan for manage.py and settings"
+msgstr ""
+
+#: src/proj/createproject.py:6829 src/proj/createproject.py:6844
 msgid "Could not find manage.py and settings in the source directory"
 msgstr ""
 
-#: src/proj/createproject.py:6220
-msgid "Multiple manage.py and settings pairs found in project"
+#: src/proj/createproject.py:6852
+msgid "Multiple manage.py and settings files found"
 msgstr ""
 
-#: src/proj/createproject.py:6234
-msgid "Reading settings.py"
+#: src/proj/createproject.py:6853
+msgid ""
+"Wing found multiple manage.py and/or settings modules in your project.  "
+"Which do you want to use for development?"
 msgstr ""
 
-#: src/proj/createproject.py:6239
-msgid "Could not read settings.py"
+#: src/proj/createproject.py:6862
+msgid "Project creation canceled"
 msgstr ""
 
-#: src/proj/createproject.py:6244
-msgid "Read settings.py"
+#: src/proj/createproject.py:6871
+msgid "Use Selected"
 msgstr ""
 
-#: src/proj/createproject.py:6250
-msgid "Writing configured settings.py"
+#: src/proj/createproject.py:6880
+msgid "Reading Django settings"
 msgstr ""
 
-#: src/proj/createproject.py:6322
-msgid "Failed to write updated settings.py"
+#: src/proj/createproject.py:6885
+msgid "Could not read Django settings"
 msgstr ""
 
-#: src/proj/createproject.py:6324
-msgid "Set database engine and name in settings.py to use sqlite3 by default"
+#: src/proj/createproject.py:6890
+msgid "Read Django settings"
 msgstr ""
 
-#: src/proj/createproject.py:6325
-msgid "Add django.contrib.admin to INSTALLED_APPS in settings.py"
+#: src/proj/createproject.py:6896
+msgid "Writing configured Django settings"
 msgstr ""
 
-#: src/proj/createproject.py:6326
-msgid "Configured settings.py"
+#: src/proj/createproject.py:6969
+msgid "Failed to write updated Django settings"
 msgstr ""
 
-#: src/proj/createproject.py:6357
+#: src/proj/createproject.py:6971
+msgid ""
+"Set database engine and name in Django settings to use sqlite3 by default"
+msgstr ""
+
+#: src/proj/createproject.py:6972
+msgid "Add django.contrib.admin to INSTALLED_APPS in Django settings"
+msgstr ""
+
+#: src/proj/createproject.py:6973
+msgid "Configured Django settings"
+msgstr ""
+
+#: src/proj/createproject.py:7004
 msgid "Could not inspect manage.py"
 msgstr ""
 
-#: src/proj/createproject.py:6382
+#: src/proj/createproject.py:7029
 msgid "The superuser account must be created manually with this command: %s"
 msgstr ""
 
-#: src/proj/createproject.py:6397
+#: src/proj/createproject.py:7044
 msgid "Running django-admin {}"
 msgstr ""
 
-#: src/proj/createproject.py:6424
+#: src/proj/createproject.py:7071
 msgid "Django {} was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:6427
+#: src/proj/createproject.py:7074
 msgid "Django {} failed"
 msgstr ""
 
-#: src/proj/createproject.py:6442
+#: src/proj/createproject.py:7089
 msgid "Finding base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6458
+#: src/proj/createproject.py:7105
 msgid "Copying base_site.html was canceled"
 msgstr ""
 
-#: src/proj/createproject.py:6461
+#: src/proj/createproject.py:7108
 msgid "Could not locate base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6486
+#: src/proj/createproject.py:7133
 msgid "Reading base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6491
+#: src/proj/createproject.py:7138
 msgid "Failed to read base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6500
+#: src/proj/createproject.py:7147
 msgid "Writing base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6509
+#: src/proj/createproject.py:7156
 msgid "Failed to write base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6511
+#: src/proj/createproject.py:7158
 msgid "Wrote base_site.html"
 msgstr ""
 
-#: src/proj/createproject.py:6518
+#: src/proj/createproject.py:7165
 msgid "Setting main entry point"
 msgstr ""
 
-#: src/proj/createproject.py:6523
+#: src/proj/createproject.py:7170
 msgid "Failed to set main entry point"
 msgstr ""
 
-#: src/proj/createproject.py:6529
+#: src/proj/createproject.py:7176
 msgid "Run Django Server"
 msgstr ""
 
-#: src/proj/createproject.py:6542
+#: src/proj/createproject.py:7189
 msgid "Set %s as main entry point with run arguments %s"
 msgstr ""
 
-#: src/proj/createproject.py:6544
+#: src/proj/createproject.py:7191
 msgid "Set main entry point"
 msgstr ""
 
-#: src/proj/createproject.py:6553
+#: src/proj/createproject.py:7200
 msgid "Configuring the project"
 msgstr ""
 
-#: src/proj/createproject.py:6557
+#: src/proj/createproject.py:7204
 msgid "Enabled child process debugging (for reload"
 msgstr ""
 
-#: src/proj/createproject.py:6571
+#: src/proj/createproject.py:7219
 msgid "Set PYTHONSTARTUP_CODE in the environment for the Python Shell"
 msgstr ""
 
-#: src/proj/createproject.py:6573
+#: src/proj/createproject.py:7221
 msgid "Added DJANGO_SITENAME and DJANGO_SETTINGS_MODULE to the environment"
 msgstr ""
 
-#: src/proj/createproject.py:6587
+#: src/proj/createproject.py:7235
 msgid "Added directories to the Python Path"
 msgstr ""
 
-#: src/proj/createproject.py:6596
+#: src/proj/createproject.py:7244
 msgid "Configured unit testing for Django"
 msgstr ""
 
-#: src/proj/createproject.py:6598
+#: src/proj/createproject.py:7246
 msgid "Configured the project"
 msgstr ""
 
-#: src/proj/createproject.py:6670 src/proj/createproject.py:6695
-#: src/proj/createproject.py:6733
+#: src/proj/createproject.py:7256
+msgid "Failed to create OS Command for collectstatic"
+msgstr ""
+
+#: src/proj/createproject.py:7261
+msgid "Created OS Command for collectstatic"
+msgstr ""
+
+#: src/proj/createproject.py:7263
+msgid "Collect Static Files"
+msgstr ""
+
+#: src/proj/createproject.py:7314 src/proj/createproject.py:7323
+msgid "Failed to write debugging support file %s"
+msgstr ""
+
+#: src/proj/createproject.py:7326
+msgid ""
+"Wrote debugging support file {} so Wing's debugger can stop at exception"
+msgstr ""
+
+#: src/proj/createproject.py:7328
+msgid "Wrote debugging support file"
+msgstr ""
+
+#: src/proj/createproject.py:7346 src/proj/createproject.py:7385
 msgid "Configured template debugging"
 msgstr ""
 
-#: src/proj/createproject.py:6674
-msgid ""
-"Failed to update %s with template debug enabled (missing TEMPLATES section); "
-"falling back to using TEMPLATE_DEBUG"
-msgstr ""
-
-#: src/proj/createproject.py:6687
+#: src/proj/createproject.py:7377
 msgid "Failed to write %s with template debug enabled"
 msgstr ""
 
-#: src/proj/createproject.py:6693
+#: src/proj/createproject.py:7383
 msgid ""
 "Set option 'debug': True in TEMPLATES in the site's {} file so Wing's "
 "debugger can debug templates"
-msgstr ""
-
-#: src/proj/createproject.py:6729
-msgid "Failed to write %s with TEMPLATE_DEBUG enabled"
-msgstr ""
-
-#: src/proj/createproject.py:6731
-msgid ""
-"Set TEMPLATE_DEBUG = True in the site's settings.py file so Wing's debugger "
-"can debug templates"
 msgstr ""
 
 #: src/proj/manager.py:112
@@ -2455,72 +2644,72 @@ msgid ""
 "files?"
 msgstr ""
 
-#: src/proj/manager.py:486
+#: src/proj/manager.py:497
 msgid "_Replace the Selected Files"
 msgstr ""
 
-#: src/proj/manager.py:619
+#: src/proj/manager.py:630
 msgid "Could not inspect remote target file"
 msgstr ""
 
-#: src/proj/manager.py:623
+#: src/proj/manager.py:634
 msgid "Target file already exists"
 msgstr ""
 
-#: src/proj/manager.py:675
+#: src/proj/manager.py:686
 msgid "Could not Move"
 msgstr ""
 
-#: src/proj/manager.py:676
+#: src/proj/manager.py:687
 msgid ""
 "Some of the selected items could not be moved on disk.  Please check their "
 "permissions and try again."
 msgstr ""
 
-#: src/proj/manager.py:679
+#: src/proj/manager.py:690
 msgid "Could not Copy"
 msgstr ""
 
-#: src/proj/manager.py:680
+#: src/proj/manager.py:691
 msgid ""
 "Some of the selected items could not be copied on disk.  Please check their "
 "permissions and try again."
 msgstr ""
 
-#: src/proj/manager.py:688
+#: src/proj/manager.py:699
 msgid "Errors:"
 msgstr ""
 
-#: src/proj/manager.py:1214
+#: src/proj/manager.py:1227
 msgid "Open Project"
 msgstr ""
 
-#: src/proj/manager.py:1215
+#: src/proj/manager.py:1228
 msgid "Select project to open"
 msgstr ""
 
-#: src/proj/manager.py:1232
+#: src/proj/manager.py:1245
 msgid "Could not open project::Remote project open timed out"
 msgstr ""
 
-#: src/proj/manager.py:1253
+#: src/proj/manager.py:1266
 msgid "Waiting for Remote Host"
 msgstr ""
 
-#: src/proj/manager.py:1256
+#: src/proj/manager.py:1269
 msgid ""
 "Waiting for remote host to open remotely stored project... %i seconds left"
 msgstr ""
 
-#: src/proj/manager.py:1316
+#: src/proj/manager.py:1329
 msgid "Converting project..."
 msgstr ""
 
-#: src/proj/manager.py:1327
+#: src/proj/manager.py:1340
 msgid "Project Conversion Options"
 msgstr ""
 
-#: src/proj/manager.py:1328
+#: src/proj/manager.py:1341
 msgid ""
 "Would you like to convert this project to use the new auto-updating "
 "directory style available in Wing 3+?  Doing so may include more files than "
@@ -2532,54 +2721,54 @@ msgid ""
 "case. The converted project will be opened as a new untitled project."
 msgstr ""
 
-#: src/proj/manager.py:1339
+#: src/proj/manager.py:1352
 msgid "Use _Auto-Updating Project"
 msgstr ""
 
-#: src/proj/manager.py:1340
+#: src/proj/manager.py:1353
 msgid "Use _Static Project"
 msgstr ""
 
-#: src/proj/manager.py:1349
+#: src/proj/manager.py:1362
 msgid "Creating project instance..."
 msgstr ""
 
-#: src/proj/manager.py:1363
+#: src/proj/manager.py:1376
 msgid "Close prior project..."
 msgstr ""
 
-#: src/proj/manager.py:1366
+#: src/proj/manager.py:1379
 msgid "Project opened"
 msgstr ""
 
-#: src/proj/manager.py:1369
+#: src/proj/manager.py:1382
 msgid "Reading project..."
 msgstr ""
 
-#: src/proj/manager.py:1385
+#: src/proj/manager.py:1398
 msgid "Failed to load project"
 msgstr ""
 
-#: src/proj/manager.py:1386
+#: src/proj/manager.py:1399
 msgid ""
 "Could not open project file '%s': it may be unreadable or  in an invalid "
 "file format.  Try opening it from the File menu to  inspect the contents of "
 "the file."
 msgstr ""
 
-#: src/proj/manager.py:1407
+#: src/proj/manager.py:1420
 msgid "Failed to save portions of visual state:"
 msgstr ""
 
-#: src/proj/manager.py:1460
+#: src/proj/manager.py:1473
 msgid "Creating GUI..."
 msgstr ""
 
-#: src/proj/manager.py:1464
+#: src/proj/manager.py:1477
 msgid "Update command GUI..."
 msgstr ""
 
-#: src/proj/manager.py:1495
+#: src/proj/manager.py:1508
 msgid ""
 "Converted version %s project::This Wing version %s project file has been "
 "converted to Wing %s.x auto-updating project file format. You may want to "
@@ -2587,7 +2776,7 @@ msgid ""
 "since Wing %s.x project files cannot be opened with older versions of Wing."
 msgstr ""
 
-#: src/proj/manager.py:1501
+#: src/proj/manager.py:1514
 msgid ""
 "Converted version %s project::This Wing version %s project file has been "
 "converted to Wing %s.x project file format with a static list of files.  To "
@@ -2596,7 +2785,7 @@ msgid ""
 "cannot be opened with older versions of Wing."
 msgstr ""
 
-#: src/proj/manager.py:1507
+#: src/proj/manager.py:1520
 msgid ""
 "Converted version %s project::This Wing version %s project file has been "
 "converted to Wing %s.x project file format.  Please save it to a new file "
@@ -2604,31 +2793,31 @@ msgid ""
 "Wing."
 msgstr ""
 
-#: src/proj/manager.py:1617
+#: src/proj/manager.py:1630
 msgid "Save Project As"
 msgstr ""
 
-#: src/proj/manager.py:2370
+#: src/proj/manager.py:2481
 msgid "_Open Selected"
 msgstr ""
 
-#: src/proj/manager.py:2373
+#: src/proj/manager.py:2484
 msgid "Select Project File to Open"
 msgstr ""
 
-#: src/proj/manager.py:2403
+#: src/proj/manager.py:2514
 msgid "_Goto Definition"
 msgstr ""
 
-#: src/proj/manager.py:2406
+#: src/proj/manager.py:2517
 msgid "Find Symbol in Project"
 msgstr ""
 
-#: src/proj/manager.py:2524
+#: src/proj/manager.py:2635
 msgid "Enter fragments separated by spaces:"
 msgstr ""
 
-#: src/proj/manager.py:2604
+#: src/proj/manager.py:2715
 msgid "Match on _Full Path"
 msgstr ""
 
@@ -2715,7 +2904,7 @@ msgstr ""
 #: src/proj/prefs.py:119
 msgid ""
 "Whether to automatically correct Python Executable in Project Properties "
-"when it does not match the virtualenv created by pipenv."
+"when it does not match the virtualenv created by Poetry or pipenv."
 msgstr ""
 
 #: src/proj/projcvt.py:477 src/proj/properties.py:100
@@ -2726,29 +2915,29 @@ msgstr ""
 msgid "Launch Config"
 msgstr ""
 
-#: src/proj/project.py:1314
+#: src/proj/project.py:1317
 msgid "New Project #%d.wpr"
 msgstr ""
 
-#: src/proj/project.py:1688
+#: src/proj/project.py:1691
 msgid ""
 "\n"
 "\n"
 "Project locked by: hostname=%s, user=%s, process_id=%s."
 msgstr ""
 
-#: src/proj/project.py:1690
+#: src/proj/project.py:1693
 msgid ""
 "\n"
 "\n"
 "Note: Could not read lock file.  Reason: %s"
 msgstr ""
 
-#: src/proj/project.py:1692
+#: src/proj/project.py:1695
 msgid "Project Opened Read-Only"
 msgstr ""
 
-#: src/proj/project.py:1693
+#: src/proj/project.py:1696
 msgid ""
 "This project is already open in another instance of Wing so has been opened "
 "read-only.  Use Save Project As to save any changes to another project "
@@ -2756,92 +2945,92 @@ msgid ""
 "written by the other instance of Wing.%s"
 msgstr ""
 
-#: src/proj/project.py:1703
+#: src/proj/project.py:1706
 msgid ""
 "Failed to Override Lock::The lock could not be overridden for remote file %s"
 msgstr ""
 
-#: src/proj/project.py:1706
+#: src/proj/project.py:1709
 msgid ""
 "Failed to Override Lock::The lock could not be overridden.  Please check "
 "whether the lock file %s is read-only."
 msgstr ""
 
-#: src/proj/project.py:1719
+#: src/proj/project.py:1722
 msgid "Choose Other Project..."
 msgstr ""
 
-#: src/proj/project.py:1727
+#: src/proj/project.py:1730
 msgid "O_pen Other"
 msgstr ""
 
-#: src/proj/project.py:1729
+#: src/proj/project.py:1732
 msgid "O_verride Lock"
 msgstr ""
 
-#: src/proj/project.py:1837
+#: src/proj/project.py:1840
 msgid "Remote project open canceled or timed out for %s"
 msgstr ""
 
-#: src/proj/project.py:1843
+#: src/proj/project.py:1846
 msgid "Could not open project::Failed to open remote project file"
 msgstr ""
 
-#: src/proj/project.py:1878
+#: src/proj/project.py:1881
 msgid ""
 "Could not open project::Cannot open version 1.0 projects from a remote "
 "location"
 msgstr ""
 
-#: src/proj/project.py:1939
+#: src/proj/project.py:1942
 msgid ""
 "Could not open project::Failed to open user branch of remote project file"
 msgstr ""
 
-#: src/proj/project.py:1954
+#: src/proj/project.py:1957
 msgid "Could not read per-user project data in '%s'"
 msgstr ""
 
-#: src/proj/project.py:1959
+#: src/proj/project.py:1962
 msgid ""
 "Could not open per-user project data in '%s': it may be unreadable or  in an "
 "invalid file format.  Try opening it from the File menu to  inspect the "
 "contents of the file."
 msgstr ""
 
-#: src/proj/project.py:2126
+#: src/proj/project.py:2129
 msgid "Project Write Failed::Failed to write remote project file %s: "
 msgstr ""
 
-#: src/proj/project.py:2158 src/proj/project.py:2182
+#: src/proj/project.py:2161 src/proj/project.py:2185
 msgid "General write error"
 msgstr ""
 
-#: src/proj/project.py:2188
+#: src/proj/project.py:2191
 msgid ""
 "Unexpected failure to save project file %s: Please submit a bug report from "
 "the Help menu."
 msgstr ""
 
-#: src/proj/project.py:2194
+#: src/proj/project.py:2197
 msgid "Failed to write parts of the project file: "
 msgstr ""
 
-#: src/proj/project.py:2695
+#: src/proj/project.py:2698
 msgid "Cannot add Unsaved Files"
 msgstr ""
 
-#: src/proj/project.py:2696
+#: src/proj/project.py:2699
 msgid ""
 "Sorry, you cannot add an unsaved file.  Please save the file before adding "
 "it to the project."
 msgstr ""
 
-#: src/proj/project.py:2703
+#: src/proj/project.py:2706
 msgid "Cannot Add Container Files"
 msgstr ""
 
-#: src/proj/project.py:2704
+#: src/proj/project.py:2707
 msgid ""
 "Sorry, you cannot add files that exist only on a container (without any "
 "local copy) to the project."
@@ -2997,8 +3186,8 @@ msgid "Edit the selected Launch Configuration"
 msgstr ""
 
 #: src/proj/properties.py:435 src/proj/properties.py:615
-#: src/proj/properties.py:3610 src/proj/properties.py:3718
-#: src/proj/properties.py:3820
+#: src/proj/properties.py:3746 src/proj/properties.py:3854
+#: src/proj/properties.py:3956
 msgid "_Edit"
 msgstr ""
 
@@ -3007,8 +3196,8 @@ msgid "Create and use a new Launch Configuration"
 msgstr ""
 
 #: src/proj/properties.py:436 src/proj/properties.py:616
-#: src/proj/properties.py:3611 src/proj/properties.py:3719
-#: src/proj/properties.py:3821
+#: src/proj/properties.py:3747 src/proj/properties.py:3855
+#: src/proj/properties.py:3957
 msgid "_New"
 msgstr ""
 
@@ -3019,8 +3208,8 @@ msgid ""
 msgstr ""
 
 #: src/proj/properties.py:437 src/proj/properties.py:617
-#: src/proj/properties.py:3612 src/proj/properties.py:3720
-#: src/proj/properties.py:3822
+#: src/proj/properties.py:3748 src/proj/properties.py:3856
+#: src/proj/properties.py:3958
 msgid "_Manage"
 msgstr ""
 
@@ -3080,7 +3269,7 @@ msgstr ""
 msgid "Please select a file before configuring the environment"
 msgstr ""
 
-#: src/proj/properties.py:747 src/proj/properties.py:2024
+#: src/proj/properties.py:747 src/proj/properties.py:2108
 msgid "Start Debug in Current Editor File"
 msgstr ""
 
@@ -3096,7 +3285,7 @@ msgstr ""
 msgid "Always start debugging with the selected named entry point."
 msgstr ""
 
-#: src/proj/properties.py:753 src/proj/properties.py:2025
+#: src/proj/properties.py:753 src/proj/properties.py:2109
 msgid "Start Debug in Selected File:"
 msgstr ""
 
@@ -3126,15 +3315,15 @@ msgstr ""
 msgid "View/edit project property"
 msgstr ""
 
-#: src/proj/properties.py:1492
+#: src/proj/properties.py:1491
 msgid "Initial directory '%s' does not exist"
 msgstr ""
 
-#: src/proj/properties.py:1494
+#: src/proj/properties.py:1493
 msgid "Initial directory '%s' is not a directory"
 msgstr ""
 
-#: src/proj/properties.py:1496
+#: src/proj/properties.py:1495
 msgid ""
 "Initial directory '%s' is a partial path -- This must be a full path to "
 "avoid problems locating source files for analysis and debugging.  Use ${WING:"
@@ -3142,167 +3331,175 @@ msgid ""
 "environment variable with ${VAR}."
 msgstr ""
 
-#: src/proj/properties.py:1520
+#: src/proj/properties.py:1518
 msgid "Cannot use a Named Entry Point in this version of Wing"
 msgstr ""
 
-#: src/proj/properties.py:1523
+#: src/proj/properties.py:1521
 msgid "Named Entry Point '%s' does not exist"
 msgstr ""
 
-#: src/proj/properties.py:1526
+#: src/proj/properties.py:1524
 msgid "Main Entry Point '%s' does not exist"
 msgstr ""
 
-#: src/proj/properties.py:1528
+#: src/proj/properties.py:1526
 msgid "Main Entry Point '%s' is a directory"
 msgstr ""
 
-#: src/proj/properties.py:1588
+#: src/proj/properties.py:1642
 msgid "Also tried %s."
 msgstr ""
 
-#: src/proj/properties.py:1590
+#: src/proj/properties.py:1644
 msgid ""
 "It should be the name of a Python interpreter that is on your PATH (such as "
 "python, python3, python.exe), a full path to the Python interpreter you wish "
 "to use, or a command line that invokes Python with any appended arguments."
 msgstr ""
 
-#: src/proj/properties.py:1592
+#: src/proj/properties.py:1646
 msgid "Executable '%s' was not found."
 msgstr ""
 
-#: src/proj/properties.py:1594
+#: src/proj/properties.py:1648
 msgid "Found executable '%s' is not a file."
 msgstr ""
 
-#: src/proj/properties.py:1601
+#: src/proj/properties.py:1655
 msgid "Found executable '%s' is a Python file."
 msgstr ""
 
-#: src/proj/properties.py:1611
+#: src/proj/properties.py:1665
 msgid "Could not launch or inspect Python executable '%s'."
 msgstr ""
 
-#: src/proj/properties.py:1625
+#: src/proj/properties.py:1679
 msgid "Python executable cannot be found so must be specified here"
 msgstr ""
 
-#: src/proj/properties.py:1627
+#: src/proj/properties.py:1681
 msgid "Python executable '%s' does not exist"
 msgstr ""
 
-#: src/proj/properties.py:1629
+#: src/proj/properties.py:1683
 msgid "Python executable '%s' is not a file"
 msgstr ""
 
-#: src/proj/properties.py:1648
+#: src/proj/properties.py:1698
 msgid ""
-"You must specify the command that activates a virtualenv or conda environment"
+"When using the Activated Env option, please enter the command that activates "
+"the environment, such as '%s' or '%s' (without the quotes)."
 msgstr ""
 
-#: src/proj/properties.py:1650
-msgid ""
-"You have selected Activated Env for Python Executable but may be trying to "
-"invoke Python.  If you are using a command line that starts Python, you "
-"should select the Command Line option instead, even if you are entering the "
-"Python executable for a virtualenv. Use Activated Env only to enter the "
-"command that activates the environment (such as '/my/env/bin/activate' or "
-"'conda activate myenv')."
-msgstr ""
-
-#: src/proj/properties.py:1677
-msgid "Project Home Directory '%s' does not exist"
-msgstr ""
-
-#: src/proj/properties.py:1679
-msgid "Project Home '%s' is not a directory"
+#: src/proj/properties.py:1703
+msgid "Activation command is empty."
 msgstr ""
 
 #: src/proj/properties.py:1710
+msgid ""
+"You have selected Activated Env for Python Executable but seem to be "
+"invoking Python.  If that is the case, you should select the Command Line "
+"option instead, even if you are running a virtualenv Python."
+msgstr ""
+
+#: src/proj/properties.py:1715
+msgid ""
+"You have selected Activated Env for Python Executable but may have entered "
+"an invalid activate command: '%s'."
+msgstr ""
+
+#: src/proj/properties.py:1760
+msgid "Project Home Directory '%s' does not exist"
+msgstr ""
+
+#: src/proj/properties.py:1762
+msgid "Project Home '%s' is not a directory"
+msgstr ""
+
+#: src/proj/properties.py:1791
 msgid ""
 "PYTHONPATH entry '%s' is a partial path -- We strongly recommend using full "
 "paths here to avoid problems locating source files for analysis and "
 "debugging.  "
 msgstr ""
 
-#: src/proj/properties.py:1713
+#: src/proj/properties.py:1794
 msgid ""
 "If you must use a partial path, be sure to set Initial Directory under the "
 "Debug tab or define a Main Entry Point so that the starting directory for "
 "all files in your project is unambiguous."
 msgstr ""
 
-#: src/proj/properties.py:1718
+#: src/proj/properties.py:1799
 msgid "PYTHONPATH entry '%s' is also a partial path"
 msgstr ""
 
-#: src/proj/properties.py:1737
+#: src/proj/properties.py:1818
 msgid "PYTHONPATH entry '%s' does not exist or cannot be found"
 msgstr ""
 
-#: src/proj/properties.py:1739
+#: src/proj/properties.py:1820
 msgid "PYTHONPATH entry '%s' is not a directory"
 msgstr ""
 
-#: src/proj/properties.py:1753
+#: src/proj/properties.py:1834
 msgid "Environment must be in var=value form, one per line:"
 msgstr ""
 
-#: src/proj/properties.py:1755
+#: src/proj/properties.py:1836
 msgid "Env entry %s is invalid"
 msgstr ""
 
-#: src/proj/properties.py:1778
+#: src/proj/properties.py:1859
 msgid "(from project properties)"
 msgstr ""
 
-#: src/proj/properties.py:1785
+#: src/proj/properties.py:1866
 msgid ""
 "This file is stored on remote host '%s' but the selected launch "
 "configuration %s is for a host '%s'"
 msgstr ""
 
-#: src/proj/properties.py:1788
+#: src/proj/properties.py:1869
 msgid ""
 "This file is stored on remote host '%s' but the selected launch "
 "configuration %s is for localhost"
 msgstr ""
 
-#: src/proj/properties.py:1792
+#: src/proj/properties.py:1873
 msgid ""
 "This file is stored on localhost but the selected launch configuration %s is "
 "for a remote host '%s'"
 msgstr ""
 
-#: src/proj/properties.py:1804
+#: src/proj/properties.py:1885
 msgid "The file needs a .py or similar extension to be imported as a module"
 msgstr ""
 
-#: src/proj/properties.py:1806
+#: src/proj/properties.py:1887
 msgid ""
 "The filename without its extension cannot contain a . character to be "
 "imported as a module"
 msgstr ""
 
-#: src/proj/properties.py:1808
+#: src/proj/properties.py:1889
 msgid "The module name for the file needs to be a dotted name"
 msgstr ""
 
-#: src/proj/properties.py:1819
+#: src/proj/properties.py:1900
 msgid "The selected launch configuration no longer exists."
 msgstr ""
 
-#: src/proj/properties.py:1834
+#: src/proj/properties.py:1915
 msgid "Single User (One File)"
 msgstr ""
 
-#: src/proj/properties.py:1835
+#: src/proj/properties.py:1916
 msgid "Shared (Two Files)"
 msgstr ""
 
-#: src/proj/properties.py:1840
+#: src/proj/properties.py:1921
 msgid ""
 "Type of project:  Single user projects store all values in one *.wpr file, "
 "and shared projects stores the sharable configuration in *.wpr and user-"
@@ -3311,83 +3508,83 @@ msgid ""
 "projects cannot be read byWing Personal."
 msgstr ""
 
-#: src/proj/properties.py:1988
+#: src/proj/properties.py:2069
 msgid "Python Configuration"
 msgstr ""
 
-#: src/proj/properties.py:1990
+#: src/proj/properties.py:2071
 msgid "Project Properties: %s"
 msgstr ""
 
-#: src/proj/properties.py:2030
+#: src/proj/properties.py:2114
 msgid "Analyze main entry point for sys.path changes"
 msgstr ""
 
-#: src/proj/properties.py:2037
+#: src/proj/properties.py:2121
 msgid "Debug Child Processes"
 msgstr ""
 
-#: src/proj/properties.py:2039
+#: src/proj/properties.py:2123
 msgid "View/edit Debug Child Processes preference"
 msgstr ""
 
-#: src/proj/properties.py:2061 src/proj/properties.py:2984
+#: src/proj/properties.py:2145 src/proj/properties.py:3104
 msgid "Unbuffered (-u)"
 msgstr ""
 
-#: src/proj/properties.py:2065
+#: src/proj/properties.py:2149
 msgid "Debug Server Port"
 msgstr ""
 
-#: src/proj/properties.py:2074
+#: src/proj/properties.py:2158
 msgid "Automatic Perspectives"
 msgstr ""
 
-#: src/proj/properties.py:2095
+#: src/proj/properties.py:2179
 msgid "Remote"
 msgstr ""
 
-#: src/proj/properties.py:2116
+#: src/proj/properties.py:2201
 msgid "Package Manager"
 msgstr ""
 
-#: src/proj/properties.py:2118
+#: src/proj/properties.py:2203
 msgid "Auto-Update Package Configuration File"
 msgstr ""
 
-#: src/proj/properties.py:2120
+#: src/proj/properties.py:2205
 msgid "Uninstall Removes Unused Packages"
 msgstr ""
 
-#: src/proj/properties.py:2131 src/proj/properties.py:3105
+#: src/proj/properties.py:2216 src/proj/properties.py:3225
 msgid "_Debug/Execute"
 msgstr ""
 
-#: src/proj/properties.py:2133 src/proj/properties.py:3115
+#: src/proj/properties.py:2218 src/proj/properties.py:3235
 msgid "_Debug"
 msgstr ""
 
-#: src/proj/properties.py:2139
+#: src/proj/properties.py:2224
 msgid "E_nvironment"
 msgstr ""
 
-#: src/proj/properties.py:2143
+#: src/proj/properties.py:2228
 msgid "Opt_ions"
 msgstr ""
 
-#: src/proj/properties.py:2147
+#: src/proj/properties.py:2232
 msgid "E_xtensions"
 msgstr ""
 
-#: src/proj/properties.py:2165
+#: src/proj/properties.py:2250
 msgid "_VCS"
 msgstr ""
 
-#: src/proj/properties.py:2344
+#: src/proj/properties.py:2462
 msgid "Environment in Containers"
 msgstr ""
 
-#: src/proj/properties.py:2346
+#: src/proj/properties.py:2464
 msgid ""
 "You have defined Environment in your Project Properties but your container "
 "configuration prevents the container from inheriting the environment.  If "
@@ -3397,7 +3594,7 @@ msgid ""
 "references in your configurations and when running local processes."
 msgstr ""
 
-#: src/proj/properties.py:2352
+#: src/proj/properties.py:2470
 msgid ""
 "You have defined Environment in your Project Properties that will be "
 "inherited by your container.  If you do not want the container to inherit "
@@ -3407,19 +3604,19 @@ msgid ""
 "running local processes."
 msgstr ""
 
-#: src/proj/properties.py:2369
+#: src/proj/properties.py:2487
 msgid "Open Container Configuration"
 msgstr ""
 
-#: src/proj/properties.py:2374 src/proj/properties.py:2416
+#: src/proj/properties.py:2492 src/proj/properties.py:2534
 msgid "Don't show this again"
 msgstr ""
 
-#: src/proj/properties.py:2387
+#: src/proj/properties.py:2505
 msgid "Environment in Clusters"
 msgstr ""
 
-#: src/proj/properties.py:2389
+#: src/proj/properties.py:2507
 msgid ""
 "You have defined Environment in your Project Properties but your cluster "
 "configuration prevents the cluster from inheriting the environment.  If you "
@@ -3429,7 +3626,7 @@ msgid ""
 "variable references in your configurations and when running local processes."
 msgstr ""
 
-#: src/proj/properties.py:2395
+#: src/proj/properties.py:2513
 msgid ""
 "You have defined Environment in your Project Properties that will be "
 "inherited by services in your cluster when it is started from Wing.  If you "
@@ -3439,156 +3636,156 @@ msgid ""
 "in your configurations and when running local processes."
 msgstr ""
 
-#: src/proj/properties.py:2411
+#: src/proj/properties.py:2529
 msgid "Open Cluster Configuration"
 msgstr ""
 
-#: src/proj/properties.py:2461
+#: src/proj/properties.py:2579
 msgid "Default File Encoding"
 msgstr ""
 
-#: src/proj/properties.py:2463
+#: src/proj/properties.py:2581
 msgid "View/edit Default Encoding Preference"
 msgstr ""
 
-#: src/proj/properties.py:2467
+#: src/proj/properties.py:2585
 msgid "Location of Project File"
 msgstr ""
 
-#: src/proj/properties.py:2468
+#: src/proj/properties.py:2586
 msgid "Specified Directory:"
 msgstr ""
 
-#: src/proj/properties.py:2471
+#: src/proj/properties.py:2589
 msgid "Preferred Line Ending"
 msgstr ""
 
-#: src/proj/properties.py:2473
+#: src/proj/properties.py:2591
 msgid "View/edit Line Ending preference"
 msgstr ""
 
-#: src/proj/properties.py:2476
+#: src/proj/properties.py:2594
 msgid "Line Ending Policy"
 msgstr ""
 
-#: src/proj/properties.py:2478
+#: src/proj/properties.py:2596
 msgid "Preferred Indent Style"
 msgstr ""
 
-#: src/proj/properties.py:2480
+#: src/proj/properties.py:2598
 msgid "View/edit Indent Style preference"
 msgstr ""
 
-#: src/proj/properties.py:2483
+#: src/proj/properties.py:2601
 msgid "Indent Style Policy"
 msgstr ""
 
-#: src/proj/properties.py:2485
+#: src/proj/properties.py:2603
 msgid "Strip Trailing White Space"
 msgstr ""
 
-#: src/proj/properties.py:2487
+#: src/proj/properties.py:2605
 msgid "View/edit Strip Trailing White Space preference"
 msgstr ""
 
-#: src/proj/properties.py:2490
+#: src/proj/properties.py:2608
 msgid "Auto-Reformat"
 msgstr ""
 
-#: src/proj/properties.py:2492 src/proj/properties.py:2497
-#: src/proj/properties.py:2507
+#: src/proj/properties.py:2610 src/proj/properties.py:2615
+#: src/proj/properties.py:2625
 msgid "View/edit Auto-reformatting preferences"
 msgstr ""
 
-#: src/proj/properties.py:2495
+#: src/proj/properties.py:2613
 msgid "Reformatter"
 msgstr ""
 
-#: src/proj/properties.py:2500
+#: src/proj/properties.py:2618
 msgid "Reformatter Run Directory"
 msgstr ""
 
-#: src/proj/properties.py:2527
+#: src/proj/properties.py:2645
 msgid "Enable Django Template Debugging"
 msgstr ""
 
-#: src/proj/properties.py:2528 src/proj/properties.py:2532
+#: src/proj/properties.py:2646 src/proj/properties.py:2650
 msgid "Help"
 msgstr ""
 
-#: src/proj/properties.py:2529
+#: src/proj/properties.py:2647
 msgid "Show Django setup How-To in the help viewer"
 msgstr ""
 
-#: src/proj/properties.py:2531
+#: src/proj/properties.py:2649
 msgid "Matplotlib Event Loop Support"
 msgstr ""
 
-#: src/proj/properties.py:2533
+#: src/proj/properties.py:2651
 msgid "Show Matplotlib How-To in the help viewer"
 msgstr ""
 
-#: src/proj/properties.py:2548
+#: src/proj/properties.py:2666
 msgid "Version Control"
 msgstr ""
 
-#: src/proj/properties.py:2551
+#: src/proj/properties.py:2669
 msgid "Show Preferences"
 msgstr ""
 
-#: src/proj/properties.py:2565
+#: src/proj/properties.py:2683
 msgid "Carriage Return \\r (Mac OS <= 9)"
 msgstr ""
 
-#: src/proj/properties.py:2566
+#: src/proj/properties.py:2684
 msgid "Carriage Return + Line Feed \\r\\n (Windows)"
 msgstr ""
 
-#: src/proj/properties.py:2571
+#: src/proj/properties.py:2689
 msgid ""
 "The type of end-of-line characters to use in this file.  Changing this value "
 "will cause the file's existing line endings to be translated in the editor.  "
 "Save the editor to change the file on disk."
 msgstr ""
 
-#: src/proj/properties.py:2589
+#: src/proj/properties.py:2707
 msgid ""
 "The file type to use for this file.  This affects how Wing sees the file for "
 "source analysis and how it is syntax highlighted."
 msgstr ""
 
-#: src/proj/properties.py:2596
+#: src/proj/properties.py:2714
 msgid ""
 "Sets whether or not this file is read-only on disk.  Be cautious with this "
 "option if you are using a revision control system that relies on file "
 "permissions for locking."
 msgstr ""
 
-#: src/proj/properties.py:2780
+#: src/proj/properties.py:2900
 msgid "Could not convert encoding"
 msgstr ""
 
-#: src/proj/properties.py:2782
+#: src/proj/properties.py:2902
 msgid ""
 "Encoding of this file cannot be set here because the file contains a comment "
 "specifying '%s' encoding.  Please edit the comment instead."
 msgstr ""
 
-#: src/proj/properties.py:2787
+#: src/proj/properties.py:2907
 msgid ""
 "Encoding of this file cannot be set here because Python 3always defaults to "
 "utf-8. Please add a coding comment instead."
 msgstr ""
 
-#: src/proj/properties.py:2814
+#: src/proj/properties.py:2934
 msgid "Reload file with new encoding?"
 msgstr ""
 
-#: src/proj/properties.py:2816 src/proj/properties.py:2820
+#: src/proj/properties.py:2936 src/proj/properties.py:2940
 msgid "\"set by preference\""
 msgstr ""
 
-#: src/proj/properties.py:2823
+#: src/proj/properties.py:2943
 msgid ""
 "You have changed the encoding of this file from %s to %s.  Would you like to "
 "discard changes and reload the file now using the new encoding, or just save "
@@ -3597,148 +3794,148 @@ msgid ""
 "encoding."
 msgstr ""
 
-#: src/proj/properties.py:2837
+#: src/proj/properties.py:2957
 msgid "Abandon Changes?"
 msgstr ""
 
-#: src/proj/properties.py:2838
+#: src/proj/properties.py:2958
 msgid ""
 "Do you really want to abandon your changes and reread this file from disk?"
 msgstr ""
 
-#: src/proj/properties.py:2840
+#: src/proj/properties.py:2960
 msgid "_Abandon Changes"
 msgstr ""
 
-#: src/proj/properties.py:2851
+#: src/proj/properties.py:2971
 msgid "_Reload Now"
 msgstr ""
 
-#: src/proj/properties.py:2852
+#: src/proj/properties.py:2972
 msgid "Do _Not Reload"
 msgstr ""
 
-#: src/proj/properties.py:2853
+#: src/proj/properties.py:2973
 msgid "_Cancel Encoding Change"
 msgstr ""
 
-#: src/proj/properties.py:2887
+#: src/proj/properties.py:3007
 msgid "File Properties: %s"
 msgstr ""
 
-#: src/proj/properties.py:3010
+#: src/proj/properties.py:3130
 msgid "Set by Encoding Comment (%s)"
 msgstr ""
 
-#: src/proj/properties.py:3012
+#: src/proj/properties.py:3132
 msgid "Set to utf-8 for Python 3"
 msgstr ""
 
-#: src/proj/properties.py:3025 src/proj/properties.py:3029
+#: src/proj/properties.py:3145 src/proj/properties.py:3149
 msgid "Plain Text"
 msgstr ""
 
-#: src/proj/properties.py:3030
+#: src/proj/properties.py:3150
 msgid "By File Name (%s)"
 msgstr ""
 
-#: src/proj/properties.py:3035
+#: src/proj/properties.py:3155
 msgid "File Type"
 msgstr ""
 
-#: src/proj/properties.py:3037
+#: src/proj/properties.py:3157
 msgid "Encoding"
 msgstr ""
 
-#: src/proj/properties.py:3039
+#: src/proj/properties.py:3159
 msgid "View/edit Default Text Encoding preference"
 msgstr ""
 
-#: src/proj/properties.py:3043
+#: src/proj/properties.py:3163
 msgid "Line Ending Style"
 msgstr ""
 
-#: src/proj/properties.py:3045
+#: src/proj/properties.py:3165
 msgid "Indent Style"
 msgstr ""
 
-#: src/proj/properties.py:3047
+#: src/proj/properties.py:3167
 msgid "Convert Indents"
 msgstr ""
 
-#: src/proj/properties.py:3048
+#: src/proj/properties.py:3168
 msgid "Display the indentation conversion tool"
 msgstr ""
 
-#: src/proj/properties.py:3052
+#: src/proj/properties.py:3172
 msgid "Read-only on Disk"
 msgstr ""
 
-#: src/proj/properties.py:3061
+#: src/proj/properties.py:3181
 msgid "Show White Space"
 msgstr ""
 
-#: src/proj/properties.py:3063
+#: src/proj/properties.py:3183
 msgid "View/edit Show Whitespace preference"
 msgstr ""
 
-#: src/proj/properties.py:3066
+#: src/proj/properties.py:3186
 msgid "Show EOL"
 msgstr ""
 
-#: src/proj/properties.py:3068
+#: src/proj/properties.py:3188
 msgid "View/edit Show EOL preference"
 msgstr ""
 
-#: src/proj/properties.py:3071
+#: src/proj/properties.py:3191
 msgid "Show Indent Guides"
 msgstr ""
 
-#: src/proj/properties.py:3073
+#: src/proj/properties.py:3193
 msgid "View/edit Show Indent Guides preference"
 msgstr ""
 
-#: src/proj/properties.py:3076
+#: src/proj/properties.py:3196
 msgid "Ignore Indent Errors"
 msgstr ""
 
-#: src/proj/properties.py:3078
+#: src/proj/properties.py:3198
 msgid "Ignore EOL Errors"
 msgstr ""
 
-#: src/proj/properties.py:3080
+#: src/proj/properties.py:3200
 msgid "Ensure Ending EOL"
 msgstr ""
 
-#: src/proj/properties.py:3082
+#: src/proj/properties.py:3202
 msgid "View/edit Ensure Ending EOL When Saving preference"
 msgstr ""
 
-#: src/proj/properties.py:3094
+#: src/proj/properties.py:3214
 msgid "_File Attributes"
 msgstr ""
 
-#: src/proj/properties.py:3099
+#: src/proj/properties.py:3219
 msgid "_Editor"
 msgstr ""
 
-#: src/proj/properties.py:3110
+#: src/proj/properties.py:3230
 msgid "_Environment"
 msgstr ""
 
-#: src/proj/properties.py:3193
+#: src/proj/properties.py:3313
 msgid "Debug Environment: %s"
 msgstr ""
 
-#: src/proj/properties.py:3219
+#: src/proj/properties.py:3339
 msgid "Name of directory"
 msgstr ""
 
-#: src/proj/properties.py:3221
+#: src/proj/properties.py:3341
 msgid "Check this to scan all sub-directories recursively."
 msgstr ""
 
-#: src/proj/properties.py:3223
+#: src/proj/properties.py:3343
 msgid ""
 "The filter that specifies which of the directory's files should be included "
 "in the project.  This should be an fnmatch/glob style pattern (such as '*' "
@@ -3746,7 +3943,7 @@ msgid ""
 "button to configure Filters."
 msgstr ""
 
-#: src/proj/properties.py:3229
+#: src/proj/properties.py:3349
 msgid ""
 "Whether to show files matching the Hidden and Temporary file filter.  When "
 "checked, those files are not included in the project.  When unchecked, all "
@@ -3754,7 +3951,7 @@ msgid ""
 "the Hidden and Temporary file filter in preferences."
 msgstr ""
 
-#: src/proj/properties.py:3235
+#: src/proj/properties.py:3355
 msgid ""
 "Check this to watch for changes on disk and update the project view to "
 "reflect any changes to files existing on disk.  When unchecked, the "
@@ -3762,167 +3959,175 @@ msgid ""
 "directory and selecting Rescan Directory."
 msgstr ""
 
-#: src/proj/properties.py:3237
+#: src/proj/properties.py:3357
 msgid "The name of the directory."
 msgstr ""
 
-#: src/proj/properties.py:3239
+#: src/proj/properties.py:3359
 msgid ""
 "Files and directories located within this directory that have been manually "
 "removed or excluded from display in the project.  Use the Clear Excludes "
 "button to remove all excludes for this directory."
 msgstr ""
 
-#: src/proj/properties.py:3249
+#: src/proj/properties.py:3369
 msgid "Add Directory"
 msgstr ""
 
-#: src/proj/properties.py:3251
+#: src/proj/properties.py:3371
 msgid "Directory Properties"
 msgstr ""
 
-#: src/proj/properties.py:3278
+#: src/proj/properties.py:3398
 msgid "No Excludes"
 msgstr ""
 
-#: src/proj/properties.py:3279
+#: src/proj/properties.py:3399
 msgid "Hidden and Temporary files"
 msgstr ""
 
-#: src/proj/properties.py:3313
+#: src/proj/properties.py:3433
 msgid "Include"
 msgstr ""
 
-#: src/proj/properties.py:3321
+#: src/proj/properties.py:3441
 msgid "Exclude"
 msgstr ""
 
-#: src/proj/properties.py:3328
+#: src/proj/properties.py:3448
 msgid "Recursive"
 msgstr ""
 
-#: src/proj/properties.py:3330
+#: src/proj/properties.py:3450
 msgid "Watch for external changes"
 msgstr ""
 
-#: src/proj/properties.py:3338
+#: src/proj/properties.py:3458
 msgid "Clear Excludes"
 msgstr ""
 
-#: src/proj/properties.py:3339
+#: src/proj/properties.py:3459
 msgid "Immediately clear all exclusions for this directory"
 msgstr ""
 
-#: src/proj/properties.py:3422
+#: src/proj/properties.py:3542
 msgid "No files or subdirectories excluded"
 msgstr ""
 
-#: src/proj/properties.py:3424
+#: src/proj/properties.py:3544
 msgid "%s files or subdirectories excluded"
 msgstr ""
 
-#: src/proj/properties.py:3492
+#: src/proj/properties.py:3612
 msgid "Remote Inspect Failed"
 msgstr ""
 
-#: src/proj/properties.py:3493
+#: src/proj/properties.py:3613
 msgid "Could not show file dialog because remote inspect of %s failed"
 msgstr ""
 
-#: src/proj/properties.py:3570
+#: src/proj/properties.py:3690
 msgid "The following referenced environment variables were undefined: "
 msgstr ""
 
-#: src/proj/properties.py:3574
+#: src/proj/properties.py:3704
 msgid "Invalid Properties"
 msgstr ""
 
-#: src/proj/properties.py:3574
+#: src/proj/properties.py:3704
 msgid ""
 "Some values are invalid:\n"
 "\n"
 msgstr ""
 
-#: src/proj/properties.py:3578
+#: src/proj/properties.py:3708
 msgid ""
 "\n"
 "Some warnings were also encountered:\n"
 "\n"
 msgstr ""
 
-#: src/proj/properties.py:3581
+#: src/proj/properties.py:3711
 msgid ""
 "\n"
 "Please correct the values and try again.\n"
 msgstr ""
 
-#: src/proj/properties.py:3586
+#: src/proj/properties.py:3716
 msgid ""
 "\n"
 "Some property warnings were encountered:\n"
 "\n"
 msgstr ""
 
-#: src/proj/properties.py:3596
+#: src/proj/properties.py:3729
+msgid "_Ignore Warnings"
+msgstr ""
+
+#: src/proj/properties.py:3730
+msgid "_Reopen Project Properties"
+msgstr ""
+
+#: src/proj/properties.py:3732
 msgid "Properties Warnings"
 msgstr ""
 
-#: src/proj/properties.py:3610
+#: src/proj/properties.py:3746
 msgid "Edit the selected remote host configuration"
 msgstr ""
 
-#: src/proj/properties.py:3611
+#: src/proj/properties.py:3747
 msgid "Create and use a new remote host configuration"
 msgstr ""
 
-#: src/proj/properties.py:3612
+#: src/proj/properties.py:3748
 msgid ""
 "Show the remote host configuration manager to add, edit, or delete named "
 "remote hosts."
 msgstr ""
 
-#: src/proj/properties.py:3647
+#: src/proj/properties.py:3783
 msgid "Create Remote Host Configuration"
 msgstr ""
 
-#: src/proj/properties.py:3718
+#: src/proj/properties.py:3854
 msgid "Edit the selected container configuration"
 msgstr ""
 
-#: src/proj/properties.py:3719
+#: src/proj/properties.py:3855
 msgid "Create and use a new container configuration"
 msgstr ""
 
-#: src/proj/properties.py:3720
+#: src/proj/properties.py:3856
 msgid ""
 "Show the container configuration manager to add, edit, or delete containers."
 msgstr ""
 
-#: src/proj/properties.py:3755
+#: src/proj/properties.py:3891
 msgid "Create Container Configuration"
 msgstr ""
 
-#: src/proj/properties.py:3820
+#: src/proj/properties.py:3956
 msgid "Edit the selected cluster configuration"
 msgstr ""
 
-#: src/proj/properties.py:3821
+#: src/proj/properties.py:3957
 msgid "Create and use a new cluster configuration"
 msgstr ""
 
-#: src/proj/properties.py:3822
+#: src/proj/properties.py:3958
 msgid ""
 "Show the cluster configuration manager to add, edit, or delete clusters."
 msgstr ""
 
-#: src/proj/properties.py:3850
+#: src/proj/properties.py:3986
 msgid "In-Cluster"
 msgstr ""
 
-#: src/proj/properties.py:3853
+#: src/proj/properties.py:3989
 msgid "Service:"
 msgstr ""
 
-#: src/proj/properties.py:3917
+#: src/proj/properties.py:4053
 msgid "Create Cluster Configuration"
 msgstr ""

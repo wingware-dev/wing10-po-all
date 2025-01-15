@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 9.0.1\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2022-12-14 09:33 EST\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -39,11 +39,11 @@ msgstr ""
 msgid "Shutting down Docker Compose: running {} in {}"
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:370
+#: plugins/cluster/dockercompose.py:371
 msgid "Get the built image used by the service."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:380
+#: plugins/cluster/dockercompose.py:381
 msgid ""
 "Get the image from which the named service was built; falls back on the "
 "service image\n"
@@ -51,7 +51,7 @@ msgid ""
 "nothing was built."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:436
+#: plugins/cluster/dockercompose.py:437
 msgid ""
 "Create a derived cluster configuration based on the given configuration, in "
 "order\n"
@@ -69,21 +69,21 @@ msgid ""
 "needed."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:489
+#: plugins/cluster/dockercompose.py:490
 msgid " yaml is defined as utf-16 or utf-8.  We assume it's utf-8 "
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:532
+#: plugins/cluster/dockercompose.py:533
 msgid ""
 "Get a list of config paths for all clusters that are currently running or\n"
 "    in the process of terminating."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:538
+#: plugins/cluster/dockercompose.py:539
 msgid "Shut down all currently running clusters."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:544
+#: plugins/cluster/dockercompose.py:545
 msgid ""
 "Register a callback to invoke when the runtime status of clusters change. "
 "The\n"
@@ -94,6 +94,6 @@ msgid ""
 "    kStartFailed, kTerminating."
 msgstr ""
 
-#: plugins/cluster/dockercompose.py:552
+#: plugins/cluster/dockercompose.py:553
 msgid "Remove a callback previously registered with RegisterStatusCallback()."
 msgstr ""

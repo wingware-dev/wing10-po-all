@@ -32,6 +32,7 @@ These contain strings users will see in the UI:
 	bootstrap.po
 	build-files.po
 	src.po
+	src_ai.po
 	src_browser.po
 	src_cache.po
 	src_codewarnings.po
@@ -46,15 +47,23 @@ These contain strings users will see in the UI:
 	src_package.po
 	src_plugins_cluster.po
 	src_plugins_container.po
-	plugins_cluster_dockercompose.po
-	plugins_container_docker.po
-	plugins_container_lxc.po
+	src_package.po
 	src_pref.po
 	src_process.po
 	src_proj.po
 	src_pysource.po
 	src_refactoring.po
 	src_scripting.po
+	src_search.po
+	src_testing.po
+	src_versioncontrol.po
+	src_wingbase.po
+	src_wingide.po
+	src_wingutils.po
+  plugins_ai_openai_gpt.po			
+	plugins_cluster_dockercompose.po
+	plugins_container_docker.po
+	plugins_container_lxc.po
 	scripts_debugger_extensions.po
 	scripts_django.po
 	scripts_editor_extensions.po
@@ -62,14 +71,7 @@ These contain strings users will see in the UI:
 	scripts_experimental.po
 	scripts_pylintpanel.po
 	scripts_brief.po
-	src_search.po
-	src_testing.po
-	src_versioncontrol.po
-	src_wingbase.po
-	src_wingide.po
-	src_wingutils.po
 	
-
 These contain strings that are mostly the docstrings for commands.  They are currently
 only used in the documentation, which is only in English, so most of these strings can
 be skipped.  However, a few are strings that end up in the UI because they are extracted
@@ -90,6 +92,9 @@ from strings in code and not docstrings:
 These are currently unused or only contain error strings and can be entirely skipped:
 	
 	plugins_container__docker_sleep.po
+  plugins_ai__openai_completion.po
+  plugins_ai__openai_installer.po	
+  plugins_ai__openai_chat.po		
 	scripts_brief.po
 	scripts_testapi.po
 	src_profile.po

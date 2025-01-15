@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.0.1\n"
-"POT-Creation-Date: 2022-12-14 09:52-0500\n"
+"POT-Creation-Date: 2024-06-20 07:18-0400\n"
 "PO-Revision-Date: 2011-03-30 22:09 EDT\n"
 "Last-Translator: Wingware <support@wingware.com>\n"
 "Language-Team: None\n"
@@ -76,61 +76,72 @@ msgstr ""
 #: src/refactoring/commands.py:269
 msgid ""
 " Start delete symbol refactoring. Uses given symbol if not None, name\n"
-"    clicked if clicked is true, or name at cursor in current editor "
+"    clicked if clicked is true, or name at cursor in current editor.\n"
+"    \n"
+"    If find_only_given_name is true, the symbol given is to be deleted; "
+"otherwise\n"
+"    the class, function, or module referred to by the symbol is to be "
+"deleted.\n"
+"    If find_only_given_name is None, it's set to true if the symbol is\n"
+"    defined by an import and false otherwise. "
 msgstr ""
 
-#: src/refactoring/commands.py:292
+#: src/refactoring/commands.py:303
 msgid " Internal command to generate items for refactoring menu "
 msgstr ""
 
-#: src/refactoring/commands.py:295
+#: src/refactoring/commands.py:306
 msgid "Delete Symbol"
 msgstr ""
 
-#: src/refactoring/commands.py:297
+#: src/refactoring/commands.py:308
 msgid "Symbol"
 msgstr ""
 
-#: src/refactoring/commands.py:300
+#: src/refactoring/commands.py:311
 msgid "Class"
 msgstr ""
 
-#: src/refactoring/commands.py:302
+#: src/refactoring/commands.py:313
 msgid "Method"
 msgstr ""
 
-#: src/refactoring/commands.py:304
+#: src/refactoring/commands.py:315
 msgid "Function"
 msgstr ""
 
-#: src/refactoring/commands.py:306
+#: src/refactoring/commands.py:317
 msgid "Argument"
 msgstr ""
 
-#: src/refactoring/commands.py:308
+#: src/refactoring/commands.py:319
 msgid "Imported Name"
 msgstr ""
 
-#: src/refactoring/commands.py:310
+#: src/refactoring/commands.py:321
 msgid "Variable"
 msgstr ""
 
-#: src/refactoring/commands.py:312
+#: src/refactoring/commands.py:323
 msgid "Attribute"
 msgstr ""
 
-#: src/refactoring/commands.py:314
+#: src/refactoring/commands.py:325
 msgid "Delete {}"
 msgstr ""
 
-#: src/refactoring/commands.py:323
+#: src/refactoring/commands.py:334
 msgid ""
 " Return symbol for the delete-symbol command and what type of symbol\n"
 "    it is. "
 msgstr ""
 
-#: src/refactoring/commands.py:360
+#: src/refactoring/commands.py:371
 msgid ""
 " Find if tok is followed by := and return CFullyScopedName, kVariable if\n"
 "      it is. None, None is returned if it isn't followed by := "
+msgstr ""
+
+#: src/refactoring/commands.py:464
+msgid " Start cleanup imports refactoring "
 msgstr ""
