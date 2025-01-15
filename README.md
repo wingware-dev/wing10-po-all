@@ -218,9 +218,10 @@ that's set up by default to assume you're running this script from the Wing sour
 case here. This is also used to get access to the OpenAI API key that you will need to run this
 code, but you'll probably want to change the script so it doesn't depend on Wing to do that. If you
 do retain that code (the call to openai_gpt._APIKey()) then you'll need to place your OpenAI API key
-in the default key file in the user settings directory.  There may be other problems to solve; this
-script was used successfully to update the German language translations, but that's all that has
-been tried.
+in the default key file in the user settings directory.  The list of files in the script is also
+somewhat outdated and would need to be updated.  There may be other problems to solve; this
+script was used successfully to help update the Wing 10 German language translations, but that's all 
+that has been tried.
 
 Note that there is a difference between how strings are handled for languages in the kLanguagesWeKnow 
 list and others; you'll likely want to add your language to that list and be sure to manually review 
