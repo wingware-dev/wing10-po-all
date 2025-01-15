@@ -209,6 +209,25 @@ wing10-po-all repository, drop in your PO/xx directory and add it to the forked 
 with `git add`.  Then submit a pull request and *also* email support@wingware.com so that
 we can be sure your pull request is processed quickly.  
 
+AI Assisted Translation
+-----------------------
+
+The file ai_translate.py could be used to attempt AI-assisted translation but needs some
+modification before it'll work. You will need to at least change the value of 'winghome' since
+that's set up by default to assume you're running this script from the Wing sources, which isn't the
+case here. This is also used to get access to the OpenAI API key that you will need to run this
+code, but you'll probably want to change the script so it doesn't depend on Wing to do that. If you
+do retain that code (the call to openai_gpt._APIKey()) then you'll need to place your OpenAI API key
+in the default key file in the user settings directory.  There may be other problems to solve; this
+script was used successfully to update the German language translations, but that's all that has
+been tried.
+
+Note that there is a difference between how strings are handled for languages in the kLanguagesWeKnow 
+list and others; you'll likely want to add your language to that list and be sure to manually review 
+all the translated strings.  If you don't add your language there, the script leaves the strings
+as "fuzzy" in the .po file and thus they won't be shown in the UI until they are reviewed and
+the fuzzy tag is removed.
+
 Getting Help
 ------------
 
