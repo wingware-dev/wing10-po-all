@@ -60,7 +60,7 @@ These contain strings users will see in the UI:
 	src_wingbase.po
 	src_wingide.po
 	src_wingutils.po
-        plugins_ai_openai_gpt.po			
+	plugins_ai_openai_gpt.po			
 	plugins_cluster_dockercompose.po
 	plugins_container_docker.po
 	plugins_container_lxc.po
