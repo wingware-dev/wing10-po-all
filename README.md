@@ -228,6 +228,9 @@ all the translated strings.  If you don't add your language there, the script le
 as "fuzzy" in the .po file and thus they won't be shown in the UI until they are reviewed and
 the fuzzy tag is removed.
 
+If you have success with this script but the cost of using OpenAI is too high, please contact us
+and we can make arrangements to run it for you.
+
 Getting Help
 ------------
 
